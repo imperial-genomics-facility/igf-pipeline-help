@@ -29,18 +29,25 @@ title: IGF Help pages - Demultiplexing Fastq
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Demultiplexing Fastq</h1>
             <h2>Overview</h2>
-              <p></p>
+              <p>Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq (v 2.20). A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, for allocating fastq reads to the individual samples and filtering the artifacts present in the raw data.</p>
+
             <h2>Software and version information</h2>
               <ul>
                 <li>
-                  <a href"https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html">Bcl2Fastq (v2.20)</a>
+                  <a href="https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html">Bcl2Fastq (v2.20)</a>
                 </li>
               </ul>
             <h2>Samplesheet Format</h2>
+              <h3>>Required information</h3>
+                <ul>
+                  <li>Adapter information</li>
+                  <li>Sample name</li>
+                  <li>Index barcode information</li>
+                </ul>
             <h2>List of resources</h2>
               <ul>
                 <li>
-                  <a href"https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html">Bcl2Fastq download page:</a>
+                  <a href="https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html">Bcl2Fastq download page:</a>
                 </li>
                 <li>
                  <a href="https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2_guide_15051736_v2.pdf" >Bcl2Fastq documentation</a>
