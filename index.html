@@ -8,80 +8,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="dashboard.css" rel="stylesheet">
     <link href="sticky-footer.css" rel="stylesheet">
-   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" ">
-    plot_data = function(json_file){
-      google.charts.load("current", {packages: ["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-       $.getJSON(json_file, function(jsonData) {
-          var data = new google.visualization.DataTable(jsonData);
-          var options = {
-            animation: {startup: true,
-                        duration: 800,
-                        easing: 'in'},
-            bar: { groupWidth: "60%" },
-            vAxis: {title: 'Sample ID',
-                    textStyle:{fontSize: 10}
-                   },
-            hAxis: {title: 'Number of Reads',
-                    slantedText : true,
-                    slantedTextAngle : 45,
-                    textStyle:{fontSize: 10}
-                    },
-            orientation: 'vertical',
-            legend: {position: 'right',
-                     textStyle: {color: '#708090',
-                                 fontSize: 10}
-                    },
-            colors:['#4682B4',  // Steel Blue
-                    '#A233A2',  // Vivid Violet
-                    '#FF7F50',  // Coral - orange
-                    '#6787E7',  // Cornflower Blue
-                    '#B75555',  // Fuzzy Wuzzy Brown
-                    '#2E8B57',  // Sea Green
-                    '#191970',  // Midnight Blue
-                    '#DB7093',  // Pale Violet Red
-                    '#90EE90',  // Light Green
-                    '#00FFFF',  // Aqua
-                    '#FFD700',  // Gold
-                    '#DC143C',  // Crimson
-                   ],
-          }
-          var chart = new google.visualization.ColumnChart(document.getElementById('barchart_material'));
-          chart.draw(data, options);
-       });
-      }
-     };
-    </script>
-    <script type="text/javascript">
-    seqrunInfo = function(json_file) {
-      $.getJSON(json_file, function(dataObject) {
-    $.each( dataObject, function (index, value) {
-      console.log(index);
-        $('#testfield').append("<li>"+"<a href=\""+value.path+"\">"+value.flowcell_id+"</a></li>");
-    });
-  });
-};
-    </script>
-    <title>IGF QC Report</title>
+    
+    <title>IGF Help Pages</title>
 </head>
 <body>
   <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#"><img style='height:30px' src='http://eliot.med.ic.ac.uk/report/static_pages/igf.png' /> IGF QC Report</a>
+        <a class="navbar-brand" href="#"><img style='height:30px' src='igf.png' /> IGF QC Report</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Project Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Help pages<span class="sr-only">(current)</span></a>
            </li>
-           <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="http://www.imperial.ac.uk/medicine/research-and-impact/facilities/genomics-facility/about/">About</a>
             </li>
@@ -95,30 +36,14 @@
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Fastq<span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </nav>
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-          <h1>Project Information</h1>
-          <dl class="row">
-           <dt class="col-sm-3">Project Name</dt>
-           <dd class="col-sm-9">{{ ProjectName }}</dd>
-          </dl>
-          <h2>Sequencing runs</h2>
-          <ul>
-          <div id="testfield" class="table-responsive">
-            <script>
-            seqrunInfo(json_file="{{ seqrunInfoFile }}");
-            </script>
-          </div>
-          </ul>
-          <h2>Sample stats</h2>
-           <div id="barchart_material" style="width: 700px; height: {{ ImageHeight }}px;"></div>
-           <script>
-             plot_data(json_file="{{ sampleReadCountFile }}");
-           </script>
+          <h1>Help Information</h1>
+     
             
         </main>
       </div>
