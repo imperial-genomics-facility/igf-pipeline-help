@@ -1,32 +1,8 @@
 ---
-layout: default
-title: IGF Help pages - Demultiplexing Fastq
+layout: demultiplexing_template
+title: IGF Help pages
 ---
-    
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-          <ul class="nav nav-pills flex-column">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Main<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="demultiplexing.html">Demultiplexing Fastq<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="fastq_qc.html">Fastq QC<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="sc_transcriptome.html">Single cell Transcriptome<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="ref_genome.html">Reference Genome<span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </nav>
-
-        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+ 
           <h1>Demultiplexing Fastq</h1>
             <h2>Overview</h2>
               <p>Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq (v 2.20). A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, for allocating fastq reads to the individual samples and filtering the artifacts present in the raw data.</p>
@@ -61,7 +37,5 @@ title: IGF Help pages - Demultiplexing Fastq
              <ul>
                <li>None</li>
              </ul>
-        </main>
-      </div>
-    </div>
+     
 
