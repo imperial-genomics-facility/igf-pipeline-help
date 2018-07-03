@@ -22,6 +22,15 @@ These mixed reference genomes usually required for only analysing single cell sa
 
 * Transcriptome data: [refdata-cellranger-hg19-and-mm10-2.1.0.tar.gz](http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-and-mm10-2.1.0.tar.gz)
 
+
+## List of resources
+
+* [Which human reference genome to use?](https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use)
+* [Hg38 Fasta file for analysis pipeline](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz)
+* [About hg38 reference genome](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/README_analysis_sets.txt)
+* [Gencode gtf](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_28/gencode.v28.primary_assembly.annotation.gtf.gz)
+
+
 ## Change logs
 
 * None
