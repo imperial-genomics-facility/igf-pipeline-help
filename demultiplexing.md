@@ -124,7 +124,7 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
 Fastq files can be accessed from our iRODS data distribution server. Please check the [Data access](data_access.html) page for more details on this topic. Following files are present in each of the lane level tar files
 
 * Fastq reads
-  - R1 and R2 are the reads 1 and read 2
+  - R1 and R2 are the read 1 and read 2
   - I1 and I2 are the index reads
 * Demuliplexing html report
 * Manifest file containing the md5 checksum of the fastq files
