@@ -71,7 +71,6 @@ Following are the required columns for `[Data]` section of the samplesheet files
         <td>A string of ATGC</td>
         <td>Optional</td>
       </tr>
-      </tr>
       <tr>
         <td>Sample_Plate</td>
         <td>alphanumeric</td>
@@ -81,7 +80,6 @@ Following are the required columns for `[Data]` section of the samplesheet files
         <td>Sample_Well</td>
         <td>alphanumeric</td>
         <td>Optional</td>
-      </tr>
       </tr>
       <tr>
         <td>Description</td>
