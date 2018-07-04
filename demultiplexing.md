@@ -7,7 +7,7 @@ title: IGF Help pages - demultiplexing fastq
 
 ## Overview
 
-Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq (v 2.20). A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, for allocating fastq reads to the individual samples and filtering the artifacts present in the raw data.
+Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq. A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, for allocating fastq reads to the individual samples and filtering the artifacts present in the raw data.
 
 ## Software and version information
 
@@ -15,12 +15,26 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 
 ## Samplesheet Format
 
-Samplesheets are plain text, comma separated files. Its divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
+Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. Its divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
+
+### Data Format
+
+Following are the required columns for `[Data]` section of the samplesheet files.
+
+| Column Name | Allowed characters | Comment                       |
+|-------------|--------------------|-------------------------------|
+| Lane        |    1-8             | Only required for Hiseq runs  |
 
 
-* Adapter information
-* Sample name
-* Index barcode information
+### Adapter trimming
+
+Demultiplexing pipeline is configured to trim Illumina generic adapters from the reads, with the default run settings.
+
+| Adapter name | Adapter Sequence                  |
+|--------------|-----------------------------------|
+| Adapter      | AGATCGGAAGAGCACACGTCTGAACTCCAGTCA |
+| AdapterRead2 | AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT |
+
 
 ## Demultiplexing of single cell samples (10xgenomics)
 
