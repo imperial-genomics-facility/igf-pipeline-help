@@ -29,7 +29,7 @@ Following are the required columns for `[Data]` section of the samplesheet files
 | Sample_Name | A-Z, 0-9, "-"   (NO SPACE)    | User given sample name which will be used by Bcl2Fastq for naming fastq files |
 | Sample_Project | A-Z, 0-9, "-"   (NO SPACE) | Name of the project |
 | I7_Index_ID | alphanumeric | Required |
-| index       | String of ATGC or "SI-GA-\[A to Z]\[one or more digits] | Required |
+| index       | String of ATGC or "SI-GA-\[A-Z]\[digits] | Required |
 | I5_Index_ID | alphanumeric | Optional, only required for dual index runs |
 | index2 | String of ATGC | Optional |
 | Sample_Plate |  alphanumeric | Optional |
