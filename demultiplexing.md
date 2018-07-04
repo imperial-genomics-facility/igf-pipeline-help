@@ -146,4 +146,4 @@ Demultiplexing of single cell samples are done using the specific set of [single
 ## Change logs
 
 * 2018 Feb 25
- - Updated Bcl2fastq tool from version v2.18
+  - Updated Bcl2fastq tool from version v2.18
