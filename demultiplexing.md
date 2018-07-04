@@ -21,8 +21,8 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 
 Following are the required columns for `[Data]` section of the samplesheet files. A validation schema for this samplesheet section can be found [here](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation).
 
-<div class="table-responsive">
-  <table class="table table-hover">
+
+<table class="table table-hover">
     <thead>
       <tr class="table-light">
         <td scope="col">Column Name</td>
@@ -89,23 +89,9 @@ Following are the required columns for `[Data]` section of the samplesheet files
         <td>Only accepted value is "10X" for single cell samples</td>
       </tr>
     </tbody>
-  </table>
-</div>
+</table>
 
 
-| Column Name | Allowed characters        | Comment                       |
-|-------------|---------------------------|-------------------------------|
-| Lane        | Number 1 to 8                 | Optional, only required for Hiseq runs  |
-| Sample_ID   | A-Z, 0-9, "-" (NO SPACE)      | An unique id will be assiged by genomics facility for each samples   |
-| Sample_Name | A-Z, 0-9, "-"   (NO SPACE)    | User given sample name which will be used by Bcl2Fastq for naming fastq files |
-| Sample_Project | A-Z, 0-9, "-"   (NO SPACE) | Name of the project |
-| I7_Index_ID | alphanumeric                  | Required |
-| index       | ATGC or SI-GA-\[A-Z]\[digits] | Required |
-| I5_Index_ID | alphanumeric                  | Optional, only required for dual index runs |
-| index2 | String of ATGC                     | Optional |
-| Sample_Plate |  alphanumeric                | Optional |
-| Sample_Well | alphanumeric                  | Optional |
-| Description | alphanumeric                  | only accepted value is "10X" for single cell samples |
 
 
 
