@@ -21,9 +21,14 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 
 Following are the required columns for `[Data]` section of the samplesheet files.
 
-| Column Name | Allowed characters | Comment                       |
-|-------------|--------------------|-------------------------------|
-| Lane        |    1-8             | Only required for Hiseq runs  |
+| Column Name | Allowed characters        | Comment                       |
+|-------------|---------------------------|-------------------------------|
+| Lane        | Number 1 to 8                 | Optional, only required for Hiseq runs  |
+| Sample_ID   | A-Z, 0-9, "-" (NO SPACE)      | An unique id will be assiged by genomics facility for each samples   |
+| Sample_Name | A-Z, 0-9, "-"   (NO SPACE)    | User given sample name which will be used by Bcl2Fastq for naming fastq files |
+| Sample_Project | A-Z, 0-9, "-"   (NO SPACE) | Name of the project |
+| I7_Index_ID | alphanumeric | Required |
+| index       | A string of ATGC or a single cell index "SI-GA-\[A to Z]\[one or more digit] |
 
 
 ### Adapter trimming
