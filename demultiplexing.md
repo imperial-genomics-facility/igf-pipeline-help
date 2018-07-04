@@ -15,6 +15,9 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 
 ## Samplesheet Format
 
+Samplesheets are plain text, comma separated files. Its divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
+
+
 * Adapter information
 * Sample name
 * Index barcode information
