@@ -21,6 +21,77 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 
 Following are the required columns for `[Data]` section of the samplesheet files. A validation schema for this samplesheet section can be found [here](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation).
 
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-light">
+        <td scope="col">Column Name</td>
+        <td scope="col">Allowed characters</td>
+        <td scope="col">Comment</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lane</td>
+        <td>Number 1 to 8</td>
+        <td>Optional, only required for Hiseq runs</td>
+      </tr>
+      <tr>
+        <td>Sample_ID</td>
+        <td>A-Z, 0-9, "-" (NO SPACE)</td>
+        <td>An unique id will be assiged by genomics facility for each samples/td>
+      </tr>
+      <tr>
+        <td>Sample_Name</td>
+        <td>A-Z, 0-9, "-"   (NO SPACE)</td>
+        <td>User given sample name which will be used by Bcl2Fastq for naming fastq files </td>
+      </tr>
+      <tr>
+        <td>Sample_Project</td>
+        <td>A-Z, 0-9, "-"   (NO SPACE)</td>
+        <td>Name of the project, with quotation id</td>
+      </tr>
+      <tr>
+        <td>I7_Index_ID</td>
+        <td>alphanumeric</td>
+        <td>Required</td>
+      </tr>
+      <tr>
+        <td>index</td>
+        <td>A string of "ATGC" or "SI-GA-[A-Z][digits]"</td>
+        <td>Required</td>
+      </tr>
+      <tr>
+        <td>I5_Index_ID</td>
+        <td>alphanumeric</td>
+        <td>Optional, only required for dual index runs</td>
+      </tr>
+      <tr>
+        <td>index2</td>
+        <td>A string of ATGC</td>
+        <td>Optional</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>Sample_Plate</td>
+        <td>alphanumeric</td>
+        <td>Optional</td>
+      </tr>
+      <tr>
+        <td>Sample_Well</td>
+        <td>alphanumeric</td>
+        <td>Optional</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td>alphanumeric</td>
+        <td>Only accepted value is "10X" for single cell samples</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 | Column Name | Allowed characters        | Comment                       |
 |-------------|---------------------------|-------------------------------|
