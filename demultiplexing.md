@@ -19,7 +19,7 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 
 ### Data Format
 
-Following are the required columns for `[Data]` section of the samplesheet files.
+Following are the required columns for `[Data]` section of the samplesheet files. A validation schema for this samplesheet section can be found [here](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation).
 
 
 | Column Name | Allowed characters        | Comment                       |
@@ -60,6 +60,7 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
 * [Bcl2Fastq documentation](https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2_guide_15051736_v2.pdf)
 * [Samplesheet Format Specifications](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf)
 * [List of single cell barcodes](https://support.10xgenomics.com/single-cell-gene-expression/sequencing/doc/specifications-sample-index-sets-for-single-cell-3)
+* [Samplesheet validation schema](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation)
 
 ## Change logs
 
