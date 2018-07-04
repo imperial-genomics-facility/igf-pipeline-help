@@ -22,12 +22,12 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 Following are the required columns for `[Data]` section of the samplesheet files. A validation schema for this samplesheet section can be found [here](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation).
 
 
-<table class="table table-hover">
+  <table class="table table-hover">
     <thead>
       <tr class="table-light">
-        <td scope="col">Column Name</td>
-        <td scope="col">Allowed characters</td>
-        <td scope="col">Comment</td>
+        <td scope="header">Column Name</td>
+        <td scope="header">Allowed characters</td>
+        <td scope="header">Comment</td>
       </tr>
     </thead>
     <tbody>
@@ -39,12 +39,12 @@ Following are the required columns for `[Data]` section of the samplesheet files
       <tr>
         <td>Sample_ID</td>
         <td>A-Z, 0-9, "-" (NO SPACE)</td>
-        <td>An unique id will be assiged by genomics facility for each samples/td>
+        <td>An unique id will be assiged by genomics facility for each samples</td>
       </tr>
       <tr>
         <td>Sample_Name</td>
         <td>A-Z, 0-9, "-"   (NO SPACE)</td>
-        <td>User given sample name which will be used by Bcl2Fastq for naming fastq files </td>
+        <td>User given sample name which will be used by Bcl2Fastq for naming fastq files</td>
       </tr>
       <tr>
         <td>Sample_Project</td>
@@ -87,7 +87,7 @@ Following are the required columns for `[Data]` section of the samplesheet files
         <td>Only accepted value is "10X" for single cell samples</td>
       </tr>
     </tbody>
-</table>
+  </table>
 
 
 
