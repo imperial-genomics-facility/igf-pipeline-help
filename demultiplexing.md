@@ -21,6 +21,7 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 
 Following are the required columns for `[Data]` section of the samplesheet files.
 
+
 | Column Name | Allowed characters        | Comment                       |
 |-------------|---------------------------|-------------------------------|
 | Lane        | Number 1 to 8                 | Optional, only required for Hiseq runs  |
@@ -28,17 +29,25 @@ Following are the required columns for `[Data]` section of the samplesheet files
 | Sample_Name | A-Z, 0-9, "-"   (NO SPACE)    | User given sample name which will be used by Bcl2Fastq for naming fastq files |
 | Sample_Project | A-Z, 0-9, "-"   (NO SPACE) | Name of the project |
 | I7_Index_ID | alphanumeric | Required |
-| index       | A string of ATGC or a single cell index "SI-GA-\[A to Z]\[one or more digit] |
+| index       | String of ATGC or "SI-GA-\[A to Z]\[one or more digits] | Required |
+| I5_Index_ID | alphanumeric | Optional, only required for dual index runs |
+| index2 | String of ATGC | Optional |
+| Sample_Plate |  alphanumeric | Optional |
+| Sample_Well | alphanumeric | Optional |
+| Description | alphanumeric | only accepted value is "10X" for single cell samples |
+
 
 
 ### Adapter trimming
 
 Demultiplexing pipeline is configured to trim Illumina generic adapters from the reads, with the default run settings.
 
+
 | Adapter name | Adapter Sequence                  |
 |--------------|-----------------------------------|
 | Adapter      | AGATCGGAAGAGCACACGTCTGAACTCCAGTCA |
 | AdapterRead2 | AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT |
+
 
 
 ## Demultiplexing of single cell samples (10xgenomics)
