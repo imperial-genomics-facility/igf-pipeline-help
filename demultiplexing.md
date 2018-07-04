@@ -21,13 +21,13 @@ Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. 
 
 Following are the required columns for `[Data]` section of the samplesheet files. A validation schema for this samplesheet section can be found [here](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation).
 
-
+<div class="table-responsive">
   <table class="table table-hover">
     <thead>
       <tr class="table-light">
-        <td scope="header">Column Name</td>
-        <td scope="header">Allowed characters</td>
-        <td scope="header">Comment</td>
+        <td scope="col">Column Name</td>
+        <td scope="col">Allowed characters</td>
+        <td scope="col">Comment</td>
       </tr>
     </thead>
     <tbody>
@@ -88,26 +88,52 @@ Following are the required columns for `[Data]` section of the samplesheet files
       </tr>
     </tbody>
   </table>
+</div>
 
 
 
-
-
-### Adapter trimming
+### Adapter trimming setting
 
 Demultiplexing pipeline is configured to trim Illumina generic adapters from the reads, with the default run settings.
 
 
-| Adapter name | Adapter Sequence                  |
-|--------------|-----------------------------------|
-| Adapter      | AGATCGGAAGAGCACACGTCTGAACTCCAGTCA |
-| AdapterRead2 | AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT |
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-light">
+        <td scope="col">Adapter name</td>
+        <td scope="col">Adapter Sequence</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adapter</td>
+        <td>AGATCGGAAGAGCACACGTCTGAACTCCAGTCA</td>
+      </tr>
+      <tr>
+        <td>AdapterRead2</td>
+        <td>AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT</td>
+      </tr>
+       </tbody>
+  </table>
+</div>
 
+
+## Fastq output
+
+Fastq files can be accessed from our iRODS data distribution server. Please check the [Data access](data_access.html) page for more details on this topic. Following files are present in each of the lane level tar files
+
+* Fastq reads
+ - R1 and R2 are the reads 1 and read 2
+ - I1 and I2 are the index reads
+* Demuliplexing html report
+* Manifest file containing the md5 checksum of the fastq files
+* Samplesheet file (for the lane)
 
 
 ## Demultiplexing of single cell samples (10xgenomics)
 
-[List of single cell barcodes](https://support.10xgenomics.com/single-cell-gene-expression/sequencing/doc/specifications-sample-index-sets-for-single-cell-3)
+Demultiplexing of single cell samples are done using the specific set of [single cell barcodes](https://support.10xgenomics.com/single-cell-gene-expression/sequencing/doc/specifications-sample-index-sets-for-single-cell-3).
 
 ## List of resources
 
@@ -119,4 +145,5 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
 
 ## Change logs
 
-* None
+* 2018 Feb 25
+ - Updated Bcl2fastq tool from version v2.18
