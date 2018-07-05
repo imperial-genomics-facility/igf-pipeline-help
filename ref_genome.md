@@ -5,7 +5,7 @@ title: IGF Help Pages - Reference Genomes
 
 # Information about the Reference Genomes
 
-We use following regerence gemome datasets for running analysis pipelines
+Following reference datasets are used for running analysis pipelines:
 
 ## Human
 
@@ -16,7 +16,7 @@ We use following regerence gemome datasets for running analysis pipelines
 
 ## Human and mouse mixture
 
-These mixed reference genomes usually required for only analysing single cell samples.
+These mixed reference genomes are usually required for analysing only single cell samples.
 
 ### Genome build hg19 and mm10 (from 10xgenomics)
 
