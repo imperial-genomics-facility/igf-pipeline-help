@@ -15,7 +15,7 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 
 ## Samplesheet Format
 
-Samplesheets are plain text, comma separated files with name `SampleSheet.csv`. Its divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
+Samplesheets are plain text files, separated by commas, with name `SampleSheet.csv`. It is divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
 
 ### Data Format
 
@@ -39,7 +39,7 @@ Following are the required columns for `[Data]` section of the samplesheet files
       <tr>
         <td>Sample_ID</td>
         <td>A-Z, 0-9, "-" (NO SPACE)</td>
-        <td>An unique id will be assiged by genomics facility for each samples</td>
+        <td>An unique id will be assigned by genomics facility for each samples</td>
       </tr>
       <tr>
         <td>Sample_Name</td>
