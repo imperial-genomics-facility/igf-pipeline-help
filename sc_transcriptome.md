@@ -15,7 +15,7 @@ title: IGF Help Pages - Single Cell Transcriptome
 
 ## Reference Genome
 
-We used following reference genomes for running Cellranger data analysis pipeline
+Following reference genomes are used for running Cellranger data analysis pipeline:
 
 * Human: A [custom reference genome]((https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references)) using the hg38 genome build and Gencode (v28) gene sets
 * Human and mouse mixture:  A mixed genome of hg19 and mm10 from [Cellranger website](http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-and-mm10-2.1.0.tar.gz)
