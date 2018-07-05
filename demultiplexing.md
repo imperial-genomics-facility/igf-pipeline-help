@@ -7,7 +7,7 @@ title: IGF Help pages - demultiplexing fastq
 
 ## Overview
 
-Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq. A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, in order to allocating fastq reads to the individual samples and filtering the artifacts present in the raw data.
+Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq. A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, in order to allocate fastq reads to the individual samples and filtering the artifacts present in the raw data.
 
 ## Software and version information
 
