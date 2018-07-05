@@ -7,19 +7,19 @@ title: IGF Help pages - data access
 
 ## Overview
 
-A local installation of [iRODS server](http://eliot.med.ic.ac.uk:8080/idrop-web) is used for the data handover to the users. A copy of data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall.
-Users are only allowed to access this server once they are connected to the college's network (either direct or VPN access).
+A local installation of [iRODS server](http://eliot.med.ic.ac.uk:8080/idrop-web) is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall.
+Users are only allowed to access this server, once they are connected to the college's network (either direct or VPN access).
 
 ## Browser based file transfer
 
-* Connect to Imperial colege network (direct LAN conection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/method/set-up-vpn/))
+* Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/method/set-up-vpn/))
 * Go to [http://eliot.med.ic.ac.uk:8080/idrop-web](http://eliot.med.ic.ac.uk:8080/idrop-web) and log in using your login credentials
 
 ## Command line file transfer
 
 ### Steps for setting up iRODS client in HPC CX1 
 
-* Create directory .irods under home (e.g., mkdir -p ~/.irods)
+* Create directory `.irods` under home (e.g. `mkdir -p ~/.irods`)
 * Create iRODS environment file .irods/irods_environment.json
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username)
 
@@ -41,9 +41,9 @@ Users are only allowed to access this server once they are connected to the coll
 
 ### Steps for command line transfer in HPC CX1
 
-* Load irods tool (module load irods/4.2.0)
+* Load irods tool (e.g. `module load irods/4.2.0`)
 * Set up your iRODS account using command `iinit` and specify your password
-* Download data using commandline tool  `iget` (e.g., iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH)
+* Download data using commandline tool  `iget` (e.g. `iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH`)
 
 ## List of resources
 
