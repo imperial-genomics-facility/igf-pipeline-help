@@ -10,8 +10,8 @@ title: IGF Help Pages - Fastq QC
 
 Raw data processing pipeline also generate basic quality reports for the fastq files using the following tools:
 
-* [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc) for Fastq reads quality check
-* [FastQ Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen) for Sample species contamination check
+* [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc) for fastq reads quality check. See the official FastQC [help documents](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/) for more detail.
+* [FastQ Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen) for sample (species) contamination check
 * [MultiQC](http://multiqc.info/) for merging all the reports (for all samples) together and for creating a top-level summary report of each lane (per project)
 
 ### List of genomes included for FastQ Screen analysis
