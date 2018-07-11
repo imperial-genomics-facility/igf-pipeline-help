@@ -14,9 +14,9 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 * [Bcl2Fastq (v2.20)](https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html)
 
 ### Bcl2Fastq command line
+Example Bcl2Fastq command.
 
 <pre><code>
-
   bcl2fastq 
     --runfolder-dir /path/input 
     --sample-sheet /path/SampleSheet.csv 
