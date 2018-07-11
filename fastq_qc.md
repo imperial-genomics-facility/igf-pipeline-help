@@ -36,10 +36,9 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * [MultiQC (v1.5)](http://multiqc.info/)
 
 ### FastQC command line
-Example FastQC command line.
+Example FastQC command.
 
 <pre><code>
-
   fastqc 
     -q
     --noextract
@@ -52,11 +51,10 @@ Example FastQC command line.
     
 </code></pre>
 
-### FastQ Screen
-Example FastQ Screen commandline.
+### FastQ Screen command line
+Example FastQ Screen command.
 
 <pre><code>
-
   fastqscreen
     --conf fastqscreen_conf
     --outdir /path/fastqscreen_output
