@@ -13,6 +13,26 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 
 * [Bcl2Fastq (v2.20)](https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html)
 
+### Bcl2Fastq command line
+
+<pre><code>
+
+  bcl2fastq 
+    --runfolder-dir /path/input 
+    --sample-sheet /path/SampleSheet.csv 
+    --output-dir /path/output 
+    --reports-dir /path/Reports 
+    --use-bases-mask BASES_MASK 
+    --stats-dir /path/Stats 
+    -p 2 
+    --create-fastq-for-index-reads 
+    -w 1 
+    --barcode-mismatches 1 
+    -r 1 
+    --auto-set-to-zero-barcode-mismatches
+  
+</code></pre>
+
 ## Samplesheet Format
 
 Samplesheets are plain text files, separated by commas, with name `SampleSheet.csv`. It is divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
