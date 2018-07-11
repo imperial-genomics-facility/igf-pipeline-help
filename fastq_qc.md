@@ -35,6 +35,40 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * [FastQ screen (v0.11.1)](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/)
 * [MultiQC (v1.5)](http://multiqc.info/)
 
+### FastQC command line
+Example FastQC command line.
+
+<pre><code>
+
+  fastqc 
+    -q
+    --noextract
+    -f fastq 
+    -k 7 
+    -t 1
+    -o /path/fastqc_output
+    -d /path/temp_work_dir 
+    /path/fastq_file
+    
+</code></pre>
+
+### FastQ Screen
+Example FastQ Screen commandline.
+
+<pre><code>
+
+  fastqscreen
+    --conf fastqscreen_conf
+    --outdir /path/fastqscreen_output
+    --aligner bowtie2
+    --force
+    --quiet
+    --subset 100000
+    --threads 1
+    /path/fastq_file
+    
+</code></pre>
+
 ## List of resources
 
 * [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc)
