@@ -153,7 +153,29 @@ Fastq files can be accessed from our iRODS data distribution server. Please chec
 
 ## Demultiplexing of single cell samples (10xgenomics)
 
-Demultiplexing of single cell samples are done using the specific set of [single cell barcodes](https://support.10xgenomics.com/single-cell-gene-expression/sequencing/doc/specifications-sample-index-sets-for-single-cell-3).
+Demultiplexing of single cell samples are done using the specific set of [single cell barcodes](https://support.10xgenomics.com/single-cell-gene-expression/sequencing/doc/specifications-sample-index-sets-for-single-cell-3) following the 10xgenomics's [documentation](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/bcl2fastq-direct).
+
+### Bcl2Fastq command line for single cell samples
+Example Bcl2Fastq command.
+
+<pre><code>
+  bcl2fastq 
+    --runfolder-dir /path/input 
+    --sample-sheet /path/SampleSheet.csv 
+    --output-dir /path/output 
+    --reports-dir /path/Reports 
+    --use-bases-mask BASES_MASK 
+    --stats-dir /path/Stats 
+    -p 2 
+    --create-fastq-for-index-reads 
+    -w 1 
+    --barcode-mismatches 1 
+    -r 1 
+    --auto-set-to-zero-barcode-mismatches
+    --mask-short-adapter-reads=8
+    --minimum-trimmed-read-length=8
+  
+</code></pre>
 
 ## List of resources
 
