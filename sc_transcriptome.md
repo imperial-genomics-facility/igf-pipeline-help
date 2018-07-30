@@ -40,6 +40,17 @@ Following reference genomes are used for running Cellranger data analysis pipeli
 * Human and mouse mixture:  A mixed genome of hg19 and mm10 from [Cellranger website](http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-and-mm10-2.1.0.tar.gz)
 * Mouse: mm10 reference genome from [Cellranger website](http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-mm10-2.1.0.tar.gz)
 
+## Alignmnt summary metrics
+A multiqc report for the alignment bam is produced combining the following Picard and Samtools metrics (per sample)
+
+* Picard CollectAlignmentSummaryMetrics
+* Picard CollectBaseDistributionByCycle
+* Picard CollectGcBiasMetrics
+* Picard QualityScoreDistribution
+* Picard CollectRnaSeqMetrics
+* Samtools flagstat
+* Samtools idxstats
+
 ## List of resources
 
 * [Custom reference genome building](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references)
