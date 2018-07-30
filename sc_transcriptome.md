@@ -13,6 +13,25 @@ title: IGF Help Pages - Single Cell Transcriptome
 
 * [Cellranger (2.1.1)](https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)
 
+### Cellranger command line
+Example cellranger count command.
+
+<pre><code>
+  cellranger count 
+    --fastqs=/fastq_directory_path 
+    --id=ID 
+    --transcriptome=/path/transcriptome/cellranger/GRCh38 
+    --nopreflight 
+    --maxjobs=10 
+    --mempercore=4 
+    --disable-ui 
+    --jobmode=pbspro 
+    --localcores=1 
+    --localmem=4
+    
+</code></pre>
+
+
 ## Reference Genome
 
 Following reference genomes are used for running Cellranger data analysis pipeline:
