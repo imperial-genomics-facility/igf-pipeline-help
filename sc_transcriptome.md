@@ -20,7 +20,7 @@ Example cellranger count command.
   cellranger count 
     --fastqs=/fastq_directory_path 
     --id=ID 
-    --transcriptome=/path/transcriptome/cellranger/GRCh38 
+    --transcriptome=/path/transcriptome
     --nopreflight 
     --maxjobs=10 
     --mempercore=4 
