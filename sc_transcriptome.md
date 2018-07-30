@@ -41,7 +41,7 @@ Following reference genomes are used for running Cellranger data analysis pipeli
 * Mouse: mm10 reference genome from [Cellranger website](http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-mm10-2.1.0.tar.gz)
 
 
-## Alignmnt summary metrics
+## Alignment summary metrics
 
 A multiqc report for the alignment bam is produced (per sample) combining the following Picard and Samtools metrics.
 
