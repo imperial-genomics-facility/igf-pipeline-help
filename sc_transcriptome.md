@@ -2,10 +2,10 @@
 layout: sc_transcriptome_template
 title: IGF Help Pages - Single Cell Transcriptome
 ---
-* [Single Cell Transcriptome Analysis (10xgenomics)](#Single Cell Transcriptome Analysis (10xgenomics))
-  * [Overview](##Overview)
-  * [Software and versions](##Software and versions)
-    * [Cellranger command line](###Cellranger command line) 
+* [Single Cell Transcriptome Analysis (10xgenomics)](#SingleCellTranscriptomeAnalysis(10xgenomics))
+  * [Overview](#Overview)
+  * [Software and versions](#CellrangerSoftwareandversions)
+    * [Cellranger command line](#Cellrangercommandline) 
 
 # Single Cell Transcriptome Analysis (10xgenomics)
 
@@ -13,7 +13,7 @@ title: IGF Help Pages - Single Cell Transcriptome
 
 [Cellranger]((https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)) pipeline from 10Xgenomics is used for running primary analysis for the single cell transcriptome samples. A list of the output files from this pipeline can be found [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview).
 
-## Software and versions
+## Cellranger Software and versions
 
 * [Cellranger (2.1.1)](https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)
 
