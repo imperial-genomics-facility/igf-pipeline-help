@@ -95,23 +95,11 @@ adata.obs['percent_mito']=np.sum(adata[:, mt_genes].X, axis=1).A1 / np.sum(adata
 adata.obs['n_counts']=adata.X.sum(axis=1).A1
 
 ## violin plot of the computed quality measures                   
-sc.pl.violin(adata,
-             ['n_genes', 'n_counts', 'percent_mito'],
-             jitter=0.4,
-             multi_panel=True,
-             show=True,
-             save='.png')                                                 
+sc.pl.violin(adata,['n_genes', 'n_counts', 'percent_mito'],jitter=0.4,multi_panel=True,show=True,save='.png')                                                 
 
 ## scatter plots for data quality    
-sc.pl.scatter(adata,
-              x='n_counts',
-              y='percent_mito',
-              show=True,
-              save='.png')                                                    
-sc.pl.scatter(adata,
-              x='n_counts',
-              y='n_genes',
-              save='.png')                                                
+sc.pl.scatter(adata,x='n_counts',y='percent_mito',show=True,save='.png')                                                    
+sc.pl.scatter(adata,x='n_counts',y='n_genes',save='.png')                                                
 
 
 # step 5: Filtering data bases on percent mito
@@ -129,9 +117,7 @@ sc.pp.normalize_per_cell(adata)
 filter_result=sc.pp.filter_genes_dispersion(adata.X,flavor='seurat')
 
 ## plot variable genes            
-sc.pl.filter_genes_dispersion(filter_result,
-                              show=True,
-                              save='.png')                                
+sc.pl.filter_genes_dispersion(filter_result,show=True,save='.png')                                
 
 ## replace data with filtered data
 adata=adata[:, filter_result.gene_subset]                                 
@@ -152,14 +138,10 @@ sc.pp.scale(adata, max_value=10)
 sc.tl.pca(adata)
 
 ## plot pca loading graph                                                          
-sc.pl.pca_loadings(adata,
-                   show=True,
-                   save='.png')                                           
+sc.pl.pca_loadings(adata,show=True,save='.png')                                           
 
 ## run tSNE
-sc.tl.tsne(adata,
-           random_state=2,
-           n_pcs=10)                       
+sc.tl.tsne(adata,random_state=2,n_pcs=10)                       
 
 ## generate neighborhood graph                               
 sc.pp.neighbors(adata, n_neighbors=10)
@@ -168,20 +150,14 @@ sc.pp.neighbors(adata, n_neighbors=10)
 sc.tl.louvain(adata)
 
 ## plot tSNE data                                                  
-sc.pl.tsne(adata,
-           color='louvain',
-           show=True,
-           save='.png')                                                   
+sc.pl.tsne(adata,color='louvain',show=True,save='.png')                                                   
 
 
 # step 8: Finding marker genes
 sc.tl.rank_genes_groups(adata, 'louvain')
 
 ## plot rank gene
-sc.pl.rank_genes_groups(adata,
-                        n_genes=20,
-                        show=True,
-                        save='.png')                                      
+sc.pl.rank_genes_groups(adata,n_genes=20,show=True,save='.png')                                      
 
 result = adata.uns['rank_genes_groups']
 groups = result['names'].dtype.names
@@ -199,14 +175,8 @@ key='{0}_names'.format(group)
 genes=gene_score[key].head(5).to_dict().values()
 
 ## plot data
-sc.pl.violin(adata,
-             genes,
-             groupby='louvain',
-             show=True,
-             save='.png',
-             multi_panel=False,
-             scale='width',
-             multi_panel_figsize=[8.0,16.0])     </code></pre>
+sc.pl.violin(adata,genes,groupby='louvain',show=True,save='.png',multi_panel=False,
+             scale='width',multi_panel_figsize=[8.0,16.0])     </code></pre>
 
 ## List of resources
 
