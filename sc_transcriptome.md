@@ -2,10 +2,10 @@
 layout: sc_transcriptome_template
 title: IGF Help Pages - Single Cell Transcriptome
 ---
-* [Single Cell Transcriptome Analysis (10xgenomics)](# Single Cell Transcriptome Analysis (10xgenomics))
-  * [Overview](## Overview)
-  * [Software and versions](## Software and versions)
-   * [Cellranger command line](### Cellranger command line) 
+* [Single Cell Transcriptome Analysis (10xgenomics)](#Single Cell Transcriptome Analysis (10xgenomics))
+  * [Overview](##Overview)
+  * [Software and versions](##Software and versions)
+    * [Cellranger command line](###Cellranger command line) 
 
 # Single Cell Transcriptome Analysis (10xgenomics)
 
