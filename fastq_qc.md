@@ -2,7 +2,16 @@
 layout: fastq_qc_template
 title: IGF Help Pages - Fastq QC
 ---
-    
+# Table of Contents
+* [Information about Fastq QC Report](#information-about-fastq-qc-report)
+  * [Overview](#overview)
+  * [List of genomes included for FastQ Screen analysis](#list-of-genomes-included-for-fastq-screen-analysis)
+  * [Software and version information](#software-and-version-information)
+   * [FastQC command line](#fastqc-command-line)
+   * [FastQ Screen command line](#fastq-screen-command-line)
+  * [List of resources](#list-of-resources)
+  * [Change logs](#change-logs)
+  
 
 # Information about Fastq QC Report
 
@@ -14,7 +23,7 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * [FastQ Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen) for sample (species) contamination check
 * [MultiQC](http://multiqc.info/) for merging all the reports (for all samples) together and for creating a top-level summary report of each lane (per project)
 
-### List of genomes included for FastQ Screen analysis
+## List of genomes included for FastQ Screen analysis
 
 * Human (HG38)
 * Mouse (mm10)
