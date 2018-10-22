@@ -9,7 +9,7 @@
 #### Project data overview
 
 ##### List of sequencing runs
-<img src="images/sequencing_runs.png" height="40" width="60">
+<img src="images/sequencing_runs.png" height="200" width="600">
 
 ##### Project with single sequencing run (column plot)
 <img src="images/single_run_column_plot.png" >
