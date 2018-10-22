@@ -9,7 +9,8 @@
 #### Project data overview
 
 ##### List of sequencing runs
-![sequencing runs](https://raw.githubusercontent.com/imperial-genomics-facility/igf-pipeline-help/images/sequencing_runs.png "sequencing runs")
+[[https://github.com/imperial-genomics-facility/igf-pipeline-help/images/sequencing_runs.png|alt=sequencing_runs]]
+
 
 #### Project status
 
