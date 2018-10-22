@@ -6,6 +6,19 @@
 
 ### Project data overview
 
+#### Navigate to project data page
+Click on 'Project Home' from the nevigation tab present on the top
+e.g.
+
+<img src="images/project_home_nav.png" >
+
+or
+
+<img src="images/run_home_nav.png" >
+
+Then select specific page from left side menu
+<img src="images/project_data_nav.png" >
+
 #### List of sequencing runs
 <img src="images/sequencing_runs.png" height="140" >
 
@@ -31,6 +44,15 @@
 
 ## Run home
 
+### Nevigate to Run home
+Click on the list of sequencing runs from the Project home
+<img src="images/sequencing_runs.png" height="140" >
+
+or select 'Run Home' tab from top level nav
+
+<img src="images/run_home_nav.png" >
+
+
 ### Lane level qc reports
  <img src="images/run_home.png" height="300" >
  
@@ -38,6 +60,11 @@
  <img src="images/sample_qc_page.png" height="300" >
  
 ### Undetermined reads
+
+#### Nevigate to undetermined read qc page
+Click on the 'Undetermined reads' tab from top level nav
+<img src="images/undetermined_reads_nav.png" >
+
 <img src="images/undetermined_reads.png" height="300" >
 
 ## Change log
