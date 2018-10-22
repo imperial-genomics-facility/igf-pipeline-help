@@ -1,3 +1,8 @@
+---
+layout: default
+title: IGF Help pages - project qc report
+---
+
 # Project QC Report Page
 
 ## About
