@@ -10,7 +10,7 @@
 Click on 'Project Home' from the nevigation tab present on the top
 e.g.
 
-<img src="images/project_home_nav.png" height="35" onclick="window.open(none)" >
+<img src="images/project_home_nav.png" height="35" >
 
 or
 
