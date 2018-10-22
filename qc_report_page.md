@@ -11,10 +11,18 @@
 ##### List of sequencing runs
 <img src="images/sequencing_runs.png" >
 
-##### Data availability plots
+##### Project with single sequencing run (column plot)
 <img src="images/single_run_column_plot.png" >
+
+
+##### Project with single sequencing run (histogram plot)
 <img src="images/single_run_hist_plot.png" >
+
+
+##### Project with multiple sequencing runs (column plot)
 <img src="images/multi_run_column_plot.png" >
+
+##### Project with multiple sequencing runs (histogram plot)
 <img src="images/multi_run_hist_plot.png" >
 
 #### Project status
@@ -25,12 +33,11 @@
 
 ### Run home
 
- 
 #### Lane level qc reports
  <img src="images/run_home.png" >
  
 #### Sample level qc reports
  <img src="images/sample_qc_page.png" >
  
-### Undetermined reads
-<img src="undetermined_reads.png" >
+#### Undetermined reads
+<img src="images/undetermined_reads.png" >
