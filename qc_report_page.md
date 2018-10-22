@@ -64,6 +64,7 @@ or select 'Run Home' tab from top level nav
 
 #### Nevigate to undetermined read qc page
 Click on the 'Undetermined reads' tab from top level nav
+
 <img src="images/undetermined_reads_nav.png" height="35" >
 
 <img src="images/undetermined_reads.png" height="300" >
