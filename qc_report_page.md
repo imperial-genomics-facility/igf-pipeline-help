@@ -2,29 +2,31 @@
 layout: qc_report_page_template
 title: IGF Help pages - project qc report
 ---
-# Table of Contents
-* [Project home](#project-qc-report-page)
-  * [Overview](#overview)
-  * [Project home](#project-home)
-    * [Project data overview](#project-data-overview)
-      * [Navigate to project data page](#navigate-to-project-data-page)
-      * [List of sequencing runs](#list-of-sequencing-runs)
-      * [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot)
-      * [Project with single sequencing run (histogram plot)](#project-with-single-sequencing-run-histogram-plot)
-      * [Project with multiple sequencing runs (column plot)](#project-with-multiple-sequencing-runs-column-plot)
-      * [Project with multiple sequencing runs (histogram plot)](#project-with-multiple-sequencing-runs-histogram-plot)
-    * [Project status](#project-status)
-    * [Analysis reports](#analysis-reports)
-  * [Run home](#run-home)
-    * [Nevigate to Run home](#nevigate-to-run-home)
-    * [Lane level qc reports](#lane-level-qc-reports)
-    * [Sample level qc reports](#sample-level-qc-reports)
-    * [Undetermined reads](#undetermined-reads)
-      * [Nevigate to undetermined read qc page](#nevigate-to-undetermined-read-qc-page)
-      * [Lane level qc for undetermined reads](#lane-level-qc-for-undetermined-reads)
-
 
 # Project QC Report Page
+## Table of Contents
+
+* [Overview](#overview)
+* [Project home](#project-home)
+  * [Project data overview](#project-data-overview)
+    * [Navigate to project data page](#navigate-to-project-data-page)
+    * [List of sequencing runs](#list-of-sequencing-runs)
+    * [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot)
+    * [Project with single sequencing run (histogram plot)](#project-with-single-sequencing-run-histogram-plot)
+    * [Project with multiple sequencing runs (column plot)](#project-with-multiple-sequencing-runs-column-plot)
+    * [Project with multiple sequencing runs (histogram plot)](#project-with-multiple-sequencing-runs-histogram-plot)
+  * [Project status](#project-status)
+  * [Analysis reports](#analysis-reports)
+* [Run home](#run-home)
+  * [Nevigate to Run home](#nevigate-to-run-home)
+  * [Lane level qc reports](#lane-level-qc-reports)
+  * [Sample level qc reports](#sample-level-qc-reports)
+  * [Undetermined reads](#undetermined-reads)
+    * [Nevigate to undetermined read qc page](#nevigate-to-undetermined-read-qc-page)
+    * [Lane level qc for undetermined reads](#lane-level-qc-for-undetermined-reads)
+
+
+
 
 ## Overview
 QC report pages are designed to combine metrices from sequencing raw data as well as primary alignment and analysis runs. Links for the raw data files (fastq and cram) are not available from this page. Please check the [Data access](data_access.html) page for more details about accessing thses qc pages from our ftp site.
