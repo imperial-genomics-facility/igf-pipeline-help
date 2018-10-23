@@ -23,7 +23,7 @@ or
 
 Then select specific page from left side menu
 
-<img src="images/project_data_nav.png" height="100" border="10">
+<img src="images/project_data_nav.png" height="100" style="border:5px solid black">
 
 #### List of sequencing runs
 <img src="images/sequencing_runs.png" height="140" >
