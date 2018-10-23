@@ -24,7 +24,7 @@ title: IGF Help pages - project qc report
   * [Undetermined reads](#undetermined-reads)
     * [Nevigate to undetermined read qc page](#nevigate-to-undetermined-read-qc-page)
     * [Lane level qc for undetermined reads](#lane-level-qc-for-undetermined-reads)
-* [Change log](#change-log)
+* [Change logs](#change-logs)
 
 
 
@@ -133,8 +133,8 @@ Click on the 'Undetermined reads' tab from top level nav
   <img src="images/undetermined_reads.png" height="300" style="border:1px solid black">
 </div>
 
-## Change log
-* Project status and analysis information added on 21st August 2018
-* Histogram plot added to project home on 27th July 2018
-* Project home page added on 16th April 2018
-* New QC report page added on 26th Feb 2018
+## Change logs
+  * Project status and analysis information added on 21st August 2018
+  * Histogram plot added to project home on 27th July 2018
+  * Project home page added on 16th April 2018
+  * New QC report page added on 26th Feb 2018
