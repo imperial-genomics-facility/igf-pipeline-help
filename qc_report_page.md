@@ -21,7 +21,7 @@ e.g.
 
 or
 
-<img src="images/run_home_nav.png" height="35" style="border:1px solid black">
+<img src="images/run_home_nav.png" height="35" style="border:1px solid black" align="middle">
 
 Then select specific page from left side menu
 
