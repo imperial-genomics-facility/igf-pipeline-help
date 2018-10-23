@@ -27,10 +27,11 @@ title: IGF Help pages - project qc report
 # Project QC Report Page
 
 ## Overview
-QC report pages are designed to combine metrices from sequencing raw data as well as primary alignment and analysis runs.
+QC report pages are designed to combine metrices from sequencing raw data as well as primary alignment and analysis runs. Links for the raw data files (fastq and cram) are not available from this page. Please check the [Data access](data_access.html) page for more details about accessing thses qc pages from our ftp site.
+
 
 ## Project home
-This page provides a top level overview of the data availability for the project and required links for individual sequencing runs, project status description and analysis report page.
+This page provides a top level overview of the data availability for the project and lists required links for individual sequencing runs, project status description and analysis report page.
 
 ### Project data overview
 This page describe raw data information for the project.
