@@ -2,18 +2,17 @@
 layout: fastq_qc_template
 title: IGF Help Pages - Fastq QC
 ---
-# Table of Contents
-* [Information about Fastq QC Report](#information-about-fastq-qc-report)
-  * [Overview](#overview)
-  * [List of genomes included for FastQ Screen analysis](#list-of-genomes-included-for-fastq-screen-analysis)
-  * [Software and version information](#software-and-version-information)
-    * [FastQC command line](#fastqc-command-line)
-    * [FastQ Screen command line](#fastq-screen-command-line)
-  * [List of resources](#list-of-resources)
-  * [Change logs](#change-logs)
-  
-
 # Information about Fastq QC Report
+## Table of Contents
+
+* [Overview](#overview)
+* [List of genomes included for FastQ Screen analysis](#list-of-genomes-included-for-fastq-screen-analysis)
+* [Software and version information](#software-and-version-information)
+  * [FastQC command line](#fastqc-command-line)
+  * [FastQ Screen command line](#fastq-screen-command-line)
+* [List of resources](#list-of-resources)
+* [Change logs](#change-logs)
+
 
 ## Overview
 
