@@ -58,17 +58,21 @@ Click on 'Project Home' from the nevigation tab present on the top menu, if you 
   <img src="images/project_home_nav.png" height="35" style="border:1px solid black">
 </div>
 
+</p>
 You can reach the same page from any of the run level or sample level page following the same method.
 
 <div style="position:relative; left:50px">
   <img src="images/run_home_nav.png" height="35" style="border:1px solid black" >
 </div>
 
+</p>
+
 Alternatively, you can select the 'Raw data' option from the left side panel, if you are in the project status or analysis report page. 
 
 <div style="position:relative; left:50px">
   <img src="images/project_data_nav.png" height="100" style="border:1px solid black">
 </div>
+</p>
 
 #### List of sequencing runs
 This section of the project home page provides links to the individual sequencing runs.
