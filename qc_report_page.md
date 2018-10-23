@@ -39,17 +39,17 @@ QC report pages are designed to combine metrices from sequencing raw data as wel
 This page provides a top level overview of the data availability for the project and lists required links for individual sequencing runs, project status description and analysis report page. Project home page has three different sections 
 
 
-  * Raw data: Information about project data overview
-  * Status: Status of project tracking
-  * Analysis: List analysis reports per sample
+  * **Raw data**: Information about project data overview
+  * **Status**: Status of project tracking
+  * **Analysis**: List analysis reports per sample
 
 ### Project data overview
 
 This page describe availability of raw data for the project. This page has following sections
 
 
-  * Sequencing runs: List of flowcell ids (sequencing runs)
-  * Sample stats: Plot for combined data availability (read count per sample)
+  * **Sequencing runs**: List of flowcell ids (sequencing runs)
+  * **Sample stats**: Plot for combined data availability (read count per sample)
 
 #### Navigate to project data page
 Click on 'Project Home' from the nevigation tab present on the top menu, if you are in a different section of the top level page.
@@ -173,10 +173,7 @@ Click on the list of sequencing runs from the 'Project home' to access this page
 <p>
 </p>
 
-Alternatively, select 'Run Home' tab from top level menu to access this page, if you are already in any lane level or sample level qc page. This page has tow sections
-
-  * Project information: Detail about the sequencing run and project
-  * Fastq read qc: A table of lane level qc reports, for the run 
+Alternatively, select 'Run Home' tab from top level menu to access this page, if you are already in any lane level or sample level qc page.
 
 <p>
 </p>
@@ -186,14 +183,19 @@ Alternatively, select 'Run Home' tab from top level menu to access this page, if
 <p>
 </p>
 
+This page has following two sections
+
+  * **Project information**: Detail about the sequencing run and project
+  * **Fastq read qc**: A table of lane level qc reports, for the run 
+
 ### Lane level qc reports
 This table of qc report for a specific run lists following information
 
-  * LaneID: Flowcell lane information
-  * Index_Length: Count of index bases
-  * MultiQC: Link to the MultiQC report page for the lane
-  * SampleQC: Link to the detailed sample level report page for the lane
-  * Demultiplexing_Report: Link to the demultiplexing report page for the lane
+  * **LaneID**: Flowcell lane information
+  * **Index_Length**: Count of index bases
+  * **MultiQC**: Link to the MultiQC report page for the lane
+  * **SampleQC**: Link to the detailed sample level report page for the lane
+  * **Demultiplexing_Report**: Link to the demultiplexing report page for the lane
 
 <p>
 </p>
@@ -206,14 +208,14 @@ This table of qc report for a specific run lists following information
 ### Sample level qc reports
 Click on any of the 'sampleQC.html' links present on the lane level qc report section to access this page. This page lists following information
 
-  * Sample_ID: IGF sample id
-  * Sample_Name: User given sample id
-  * FastqFile: Name of the fastq file
-  * TotalReads: Total read count of the fastq file
-  * index: Index sequence 1
-  * index2: Index sequence 2 (for dual index runs)
-  * Fastqc: Link to the FastQC report page for the fastq file
-  * Fastqscreen: Link to the FastqScreen page for the fastq file
+  * **Sample_ID**: IGF sample id
+  * **Sample_Name**: User given sample id
+  * **FastqFile**: Name of the fastq file
+  * **TotalReads**: Total read count of the fastq file
+  * **index**: Index sequence 1
+  * **index2**: Index sequence 2 (for dual index runs)
+  * **Fastqc**: Link to the FastQC report page for the fastq file
+  * **Fastqscreen**: Link to the FastqScreen page for the fastq file
   
 <p>
 </p>
