@@ -2,19 +2,20 @@
 layout: sc_transcriptome_template
 title: IGF Help Pages - Single Cell Transcriptome
 ---
-# Table of Contents
-* [Single Cell Transcriptome Analysis (10xgenomics)](#single-cell-transcriptome-analysis-10xgenomics)
-  * [Overview](#overview)
-  * [Cellranger software and versions](#cellranger-software-and-versions)
-    * [Cellranger command line](#cellranger-command-line)
-  * [Reference Genome](#reference-genome)
-  * [Alignment summary metrics](#alignment-summary-metrics)
-  * [Singlecell QC check using Scanpy](#singlecell-qc-check-using-scanpy)
-    * [Scanpy software and versions](#scanpy-software-and-versions)
-    * [Scanpy command line](#scanpy-command-line)
 
 # Single Cell Transcriptome Analysis (10xgenomics)
+# Table of Contents
 
+* [Overview](#overview)
+* [Cellranger software and versions](#cellranger-software-and-versions)
+  * [Cellranger command line](#cellranger-command-line)
+* [Reference Genome](#reference-genome)
+* [Alignment summary metrics](#alignment-summary-metrics)
+* [Singlecell QC check using Scanpy](#singlecell-qc-check-using-scanpy)
+  * [Scanpy software and versions](#scanpy-software-and-versions)
+  * [Scanpy command line](#scanpy-command-line)
+    
+  
 ## Overview
 
 [Cellranger]((https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)) pipeline from 10Xgenomics is used for running primary analysis for the single cell transcriptome samples. A list of the output files from this pipeline can be found [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview).
