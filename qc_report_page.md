@@ -34,26 +34,32 @@ QC report pages are designed to combine metrices from sequencing raw data as wel
 
 
 ## Project home
-This page provides a top level overview of the data availability for the project and lists required links for individual sequencing runs, project status description and analysis report page.
+This page provides a top level overview of the data availability for the project and lists required links for individual sequencing runs, project status description and analysis report page. Project home page has three different sections for 
+
+  * Raw data (for project data overview)
+  * Status (for project status tracking)
+  * Analysis (for listing analysis reports)
 
 ### Project data overview
-This page describe raw data information for the project.
+This page describe availability of raw data for the project. This page has following sections
+  
+  * Sequencing runs (list of runs)
+  * Sample stats (plot for combined data availability)
 
 #### Navigate to project data page
-Click on 'Project Home' from the nevigation tab present on the top
-e.g.
+Click on 'Project Home' from the nevigation tab present on the top menu, if you are in a different section of the top level page.
 
 <div style="position:relative; left:50px">
   <img src="images/project_home_nav.png" height="35" style="border:1px solid black">
 </div>
 
-or
+You can reach the same page from any of the run level or sample level page following the same method.
 
 <div style="position:relative; left:50px">
   <img src="images/run_home_nav.png" height="35" style="border:1px solid black" >
 </div>
 
-Then select specific page from left side menu
+Alternatively, you can select the 'Raw data' option from the left side panel, if you are in the project status or analysis report page. 
 
 <div style="position:relative; left:50px">
   <img src="images/project_data_nav.png" height="100" style="border:1px solid black">
