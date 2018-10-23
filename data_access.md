@@ -4,6 +4,16 @@ title: IGF Help pages - data access
 ---
 
 # Data Access
+## Table of Contents
+
+* [Overview](#overview)
+* [Browser based file transfer](#browser-based-file-transfer)
+* [Command line file transfer](#command-line-file-transfer)
+  * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
+  * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
+* [Access QC report pages](#access-qc-report-pages)
+* [List of resources](#list-of-resources)
+* [Change logs](#change-logs)
 
 ## Overview
 
@@ -44,6 +54,12 @@ Users are only allowed to access this server, once they are connected to the col
 * Load irods tool (e.g. `module load irods/4.2.0`)
 * Set up your iRODS account using command `iinit` and specify your password
 * Download data using commandline tool  `iget` (e.g. `iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH`)
+
+## Access QC report pages
+
+QC report pages for the raw and anlysed data files are accessible from our ftp site and accessible via the following url format `http://eliot.med.ic.ac.uk/report/project/PROJECTNAME`. You have to use the same login credentials for accessing these pages. For more details, please check [Project QC Report](qc_report_page.html) section of the help page.
+
+You can access these pages from your mobile device if you are connected to wifi [Imperial-WPA](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/wifi-and-networks/access-wifi/).
 
 ## List of resources
 
