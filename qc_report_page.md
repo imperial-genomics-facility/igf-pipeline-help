@@ -15,7 +15,7 @@ title: IGF Help pages - project qc report
 Click on 'Project Home' from the nevigation tab present on the top
 e.g.
 
-<img src="images/project_home_nav.png" height="35" border="100" >
+<img src="images/project_home_nav.png" alt="Nevigation fro project home" height="35" border="5">
 
 or
 
