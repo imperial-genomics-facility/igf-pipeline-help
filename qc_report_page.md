@@ -39,17 +39,17 @@ QC report pages are designed to combine metrices from sequencing raw data as wel
 This page provides a top level overview of the data availability for the project and lists required links for individual sequencing runs, project status description and analysis report page. Project home page has three different sections 
 
 
-  * Raw data (for project data overview)
-  * Status (for project status tracking)
-  * Analysis (for listing analysis reports)
+  * Raw data: Information about project data overview
+  * Status: Status of project tracking
+  * Analysis: List analysis reports per sample
 
 ### Project data overview
 
 This page describe availability of raw data for the project. This page has following sections
 
 
-  * Sequencing runs (list of runs)
-  * Sample stats (plot for combined data availability)
+  * Sequencing runs: List of flowcell ids (sequencing runs)
+  * Sample stats: Plot for combined data availability (read count per sample)
 
 #### Navigate to project data page
 Click on 'Project Home' from the nevigation tab present on the top menu, if you are in a different section of the top level page.
@@ -83,7 +83,7 @@ Alternatively, you can select the 'Raw data' option from the left side panel, if
 </p>
 
 #### List of sequencing runs
-This section of the project home page provides links to the individual sequencing runs.
+This section of the project home page lists the flowcell barcodes of individual sequencing runs. These ids are linked to the run level pages listing details of specific runs.
 
 
 <p>
@@ -95,10 +95,10 @@ This section of the project home page provides links to the individual sequencin
 </p>
 
 #### Project with single sequencing run (column plot)
+This section of the "Raw data" page shows read counts available for individual samples from a single sequencing run. This plot is useful if you have only few samples and all of them have almost similar number of reads. The default mode for column plot is linear scale. Its possible to change the scale to log using the 'Column plot - Log' button. 
 
 <p>
 </p>
-
 <div style="position:relative; left:50px">
   <img src="images/single_run_column_plot.png" height="400" style="border:1px solid black">
 </div>
@@ -106,6 +106,7 @@ This section of the project home page provides links to the individual sequencin
 </p>
 
 #### Project with single sequencing run (histogram plot)
+Click on the 'Histogram plot' button for generating a histogram plot of sample read counts. This plot is useful for inspection if you have many samples with a range of read count distribution.
 
 <p>
 </p>
@@ -116,6 +117,7 @@ This section of the project home page provides links to the individual sequencin
 </p>
 
 #### Project with multiple sequencing runs (column plot)
+This plot is similar to [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot) with one key difference. This view combines the read counts per samples grouped by individual seqeuencing runs. A separate data point 'Total Reads' is added if any sample is sequenced in more than one flowcell. This plot is useful for checking the raw data, if your project have more than one sequencing runs and very few of the samples are repeated in more than one run.
 
 <p>
 </p>
@@ -126,6 +128,7 @@ This section of the project home page provides links to the individual sequencin
 </p>
 
 #### Project with multiple sequencing runs (histogram plot)
+This is similar to the plot description of [Project with single sequencing run (histogram plot)](#project-with-single-sequencing-run-histogram-plot). Same as the column plot described above, this view combines data for multiple samples for multiple sequencing runs. This plot is designed for projects where all (or majority) of the samples are part of more than one (or all) sequencing runs.
 
 <p>
 </p>
@@ -136,6 +139,7 @@ This section of the project home page provides links to the individual sequencin
 </p>
 
 ### Project status
+Click on the 'Status' link of the left side menu from the 'Project Home' page to track the demultiplexing or primary analysis for a project.
 
 <p>
 </p>
@@ -146,6 +150,7 @@ This section of the project home page provides links to the individual sequencin
 </p>
 
 ### Analysis reports
+Click on the 'Analysis' link of the left side menu from the 'Project Home' page to access this page. Analysis report page lists all the individual sample level qc reports for a project.
 
 <p>
 </p>
@@ -158,7 +163,7 @@ This section of the project home page provides links to the individual sequencin
 ## Run home
 
 ### Nevigate to Run home
-Click on the list of sequencing runs from the Project home
+Click on the list of sequencing runs from the 'Project home' to access this page.
 
 <p>
 </p>
@@ -168,8 +173,10 @@ Click on the list of sequencing runs from the Project home
 <p>
 </p>
 
-or select 'Run Home' tab from top level nav
+Alternatively, select 'Run Home' tab from top level menu to access this page, if you are already in any lane level or sample level qc page. This page has tow sections
 
+  * Project information: Detail about the sequencing run and project
+  * Fastq read qc: A table of lane level qc reports, for the run 
 
 <p>
 </p>
@@ -180,6 +187,13 @@ or select 'Run Home' tab from top level nav
 </p>
 
 ### Lane level qc reports
+This table of qc report for a specific run lists following information
+
+  * LaneID: Flowcell lane information
+  * Index_Length: Count of index bases
+  * MultiQC: Link to the MultiQC report page for the lane
+  * SampleQC: Link to the detailed sample level report page for the lane
+  * Demultiplexing_Report: Link to the demultiplexing report page for the lane
 
 <p>
 </p>
@@ -190,7 +204,17 @@ or select 'Run Home' tab from top level nav
 </p>
 
 ### Sample level qc reports
+Click on any of the 'sampleQC.html' links present on the lane level qc report section to access this page. This page lists following information
 
+  * Sample_ID: IGF sample id
+  * Sample_Name: User given sample id
+  * FastqFile: Name of the fastq file
+  * TotalReads: Total read count of the fastq file
+  * index: Index sequence 1
+  * index2: Index sequence 2 (for dual index runs)
+  * Fastqc: Link to the FastQC report page for the fastq file
+  * Fastqscreen: Link to the FastqScreen page for the fastq file
+  
 <p>
 </p>
 <div style="position:relative; left:50px">
