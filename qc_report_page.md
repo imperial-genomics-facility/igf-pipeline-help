@@ -16,12 +16,14 @@ Click on 'Project Home' from the nevigation tab present on the top
 e.g.
 
 <div>
-<img src="images/project_home_nav.png" height="35" style="border:1px solid black; position:relative; left=10px">
+  <img src="images/project_home_nav.png" height="35" style="border:1px solid black; position:relative; left=10px">
 </div>
 
 or
 
-<img src="images/run_home_nav.png" height="35" style="border:1px solid black" align="middle">
+<div align="middle">
+  <img src="images/run_home_nav.png" height="35" style="border:1px solid black" >
+</div>
 
 Then select specific page from left side menu
 
@@ -55,7 +57,7 @@ Then select specific page from left side menu
 ### Nevigate to Run home
 Click on the list of sequencing runs from the Project home
 <div>
-<img src="images/sequencing_runs.png" height="140" style="border:1px solid black">
+  <img src="images/sequencing_runs.png" height="140" style="border:1px solid black">
 </div>
 or select 'Run Home' tab from top level nav
 
