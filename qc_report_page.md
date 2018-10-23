@@ -58,6 +58,7 @@ Click on 'Project Home' from the nevigation tab present on the top menu, if you 
   <img src="images/project_home_nav.png" height="35" style="border:1px solid black">
 </div>
 
+<p>
 </p>
 You can reach the same page from any of the run level or sample level page following the same method.
 
@@ -65,6 +66,8 @@ You can reach the same page from any of the run level or sample level page follo
   <img src="images/run_home_nav.png" height="35" style="border:1px solid black" >
 </div>
 
+
+<p>
 </p>
 
 Alternatively, you can select the 'Raw data' option from the left side panel, if you are in the project status or analysis report page. 
@@ -72,41 +75,67 @@ Alternatively, you can select the 'Raw data' option from the left side panel, if
 <div style="position:relative; left:50px">
   <img src="images/project_data_nav.png" height="100" style="border:1px solid black">
 </div>
+
+
+<p>
 </p>
 
 #### List of sequencing runs
 This section of the project home page provides links to the individual sequencing runs.
+
+
+<p>
+</p>
 
 <div style="position:relative; left:50px">
   <img src="images/sequencing_runs.png" height="140" style="border:1px solid black">
 </div>
 
 #### Project with single sequencing run (column plot)
+
+<p>
+</p>
+
 <div style="position:relative; left:50px">
   <img src="images/single_run_column_plot.png" height="400" style="border:1px solid black">
 </div>
 
 #### Project with single sequencing run (histogram plot)
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/single_run_hist_plot.png" height="200" style="border:1px solid black">
 </div>
 
 #### Project with multiple sequencing runs (column plot)
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/multi_run_column_plot.png" height="400" style="border:1px solid black">
 </div>
 
 #### Project with multiple sequencing runs (histogram plot)
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/multi_run_hist_plot.png" height="200" style="border:1px solid black">
 </div>
 
 ### Project status
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/project_status.png" height="200" style="border:1px solid black">
 </div>
 
 ### Analysis reports
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/analysis_reports.png" height="300" style="border:1px solid black">
 </div>
@@ -115,21 +144,33 @@ This section of the project home page provides links to the individual sequencin
 
 ### Nevigate to Run home
 Click on the list of sequencing runs from the Project home
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/sequencing_runs.png" height="140" style="border:1px solid black">
 </div>
 or select 'Run Home' tab from top level nav
 
+
+<p>
+</p>
 <div style="position:relative; left:50px">
 <img src="images/run_home_nav.png" height="35" style="border:1px solid black">
 </div>
 
 ### Lane level qc reports
+
+<p>
+</p>
 <div style="position:relative; left:50px">
  <img src="images/run_home.png" height="300" style="border:1px solid black">
 </div>
 
 ### Sample level qc reports
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/sample_qc_page.png" height="300" style="border:1px solid black">
 </div>
@@ -139,11 +180,16 @@ or select 'Run Home' tab from top level nav
 #### Nevigate to undetermined read qc page
 Click on the 'Undetermined reads' tab from top level nav
 
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/undetermined_reads_nav.png" height="35" style="border:1px solid black">
 </div>
 
 #### Lane level qc for undetermined reads
+
+<p>
+</p>
 <div style="position:relative; left:50px">
   <img src="images/undetermined_reads.png" height="300" style="border:1px solid black">
 </div>
