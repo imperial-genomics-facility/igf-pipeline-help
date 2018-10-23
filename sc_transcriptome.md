@@ -14,7 +14,8 @@ title: IGF Help Pages - Single Cell Transcriptome
 * [Singlecell QC check using Scanpy](#singlecell-qc-check-using-scanpy)
   * [Scanpy software and versions](#scanpy-software-and-versions)
   * [Scanpy command line](#scanpy-command-line)
-    
+* [List of resources](#list-of-resources)
+* [Change logs](#change-logs)
   
 ## Overview
 
@@ -201,4 +202,4 @@ Scanpy tool is used for checking an initial qc of the single cell data after cel
 
 ## Change logs
 
-* None
+* Added Scanpy report on 24th August 2018
