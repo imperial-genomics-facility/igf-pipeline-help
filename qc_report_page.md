@@ -240,7 +240,7 @@ Click on the 'Undetermined reads' tab from top level navigation menu, if you are
 </p>
 
 #### Lane level qc for undetermined reads
-This pahe lists following information
+This page lists following information
 
   * **LaneID**: Flowcell lane information
   * **Index_Length**: Index sequence length (reported by Illumina software)
