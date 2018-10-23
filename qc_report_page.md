@@ -52,7 +52,7 @@ This page describe availability of raw data for the project. This page has follo
   * **Sample stats**: Plot for combined data availability (read count per sample)
 
 #### Navigate to project data page
-Click on 'Project Home' from the nevigation tab present on the top menu, if you are in a different section of the top level page.
+Click on '**Project Home**' from the nevigation tab present on the top menu, if you are in a different section of the top level page.
 
 <p>
 </p>
@@ -72,7 +72,7 @@ You can reach the same page from any of the run level or sample level page follo
 <p>
 </p>
 
-Alternatively, you can select the 'Raw data' option from the left side panel, if you are in the project status or analysis report page. 
+Alternatively, you can select the '**Raw data**' option from the left side panel, if you are in the project status or analysis report page. 
 
 <p>
 </p>
@@ -95,7 +95,7 @@ This section of the project home page lists the flowcell barcodes of individual 
 </p>
 
 #### Project with single sequencing run (column plot)
-This section of the "Raw data" page shows read counts available for individual samples from a single sequencing run. This plot is useful if you have only few samples and all of them have almost similar number of reads. The default mode for column plot is linear scale. Its possible to change the scale to log using the 'Column plot - Log' button. 
+This section of the '**Raw data**' page shows read counts available for individual samples from a single sequencing run. This plot is useful if you have only few samples and all of them have almost similar number of reads. The default mode for column plot is linear scale. Its possible to change the scale to log using the '**Column plot - Log**' button. 
 
 <p>
 </p>
@@ -106,7 +106,7 @@ This section of the "Raw data" page shows read counts available for individual s
 </p>
 
 #### Project with single sequencing run (histogram plot)
-Click on the 'Histogram plot' button for generating a histogram plot of sample read counts. This plot is useful for inspection if you have many samples with a range of read count distribution.
+Click on the '**Histogram plot**' button for generating a histogram plot of sample read counts. This plot is useful for inspection if you have many samples with a range of read count distribution.
 
 <p>
 </p>
@@ -117,7 +117,7 @@ Click on the 'Histogram plot' button for generating a histogram plot of sample r
 </p>
 
 #### Project with multiple sequencing runs (column plot)
-This plot is similar to [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot) with one key difference. This view combines the read counts per samples grouped by individual seqeuencing runs. A separate data point 'Total Reads' is added if any sample is sequenced in more than one flowcell. This plot is useful for checking the raw data, if your project have more than one sequencing runs and very few of the samples are repeated in more than one run.
+This plot is similar to [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot) with one key difference. This view combines the read counts per samples grouped by individual seqeuencing runs. A separate data point '**Total Reads**' is added if any sample is sequenced in more than one flowcell. This plot is useful for checking the raw data, if your project have more than one sequencing runs and very few of the samples are repeated in more than one run.
 
 <p>
 </p>
@@ -139,7 +139,7 @@ This is similar to the plot description of [Project with single sequencing run (
 </p>
 
 ### Project status
-Click on the 'Status' link of the left side menu from the 'Project Home' page to track the demultiplexing or primary analysis for a project.
+Click on the '**Status**' link of the left side menu from the '**Project Home**' page to track the demultiplexing or primary analysis for a project.
 
 <p>
 </p>
@@ -150,7 +150,7 @@ Click on the 'Status' link of the left side menu from the 'Project Home' page to
 </p>
 
 ### Analysis reports
-Click on the 'Analysis' link of the left side menu from the 'Project Home' page to access this page. Analysis report page lists all the individual sample level qc reports for a project.
+Click on the '**Analysis**' link of the left side menu from the '**Project Home**' page to access this page. Analysis report page lists all the individual sample level qc reports for a project.
 
 <p>
 </p>
@@ -163,7 +163,7 @@ Click on the 'Analysis' link of the left side menu from the 'Project Home' page 
 ## Run home
 
 ### Nevigate to Run home
-Click on the list of sequencing runs from the 'Project home' to access this page.
+Click on the list of sequencing runs from the '**Project Home**' to access this page.
 
 <p>
 </p>
@@ -173,7 +173,7 @@ Click on the list of sequencing runs from the 'Project home' to access this page
 <p>
 </p>
 
-Alternatively, select 'Run Home' tab from top level menu to access this page, if you are already in any lane level or sample level qc page.
+Alternatively, select '**Run Home**' tab from top level menu to access this page, if you are already in any lane level or sample level qc page.
 
 <p>
 </p>
@@ -206,7 +206,7 @@ This table of qc report for a specific run lists following information
 </p>
 
 ### Sample level qc reports
-Click on any of the 'sampleQC.html' links present on the lane level qc report section to access this page. This page lists following information
+Click on any of the '**sampleQC.html**' links present on the lane level qc report section to access this page. This page lists following information
 
   * **Sample_ID**: IGF sample id
   * **Sample_Name**: User given sample id
@@ -226,9 +226,10 @@ Click on any of the 'sampleQC.html' links present on the lane level qc report se
 </p>
 
 ### Undetermined reads
+Illumina demultiplexing software mark any read as undetermined, if its fails to correctly assign the read to a known samples (known index barcodes). Apart for the qc of the know samples, we also generate the qc of these undetermined reads per lane.
 
 #### Nevigate to undetermined read qc page
-Click on the 'Undetermined reads' tab from top level nav
+Click on the 'Undetermined reads' tab from top level navigation menu, if you are in '**Run Home**'. Alternatively you have to move to '**Run Home**' before you can access this page.
 
 <p>
 </p>
@@ -239,6 +240,11 @@ Click on the 'Undetermined reads' tab from top level nav
 </p>
 
 #### Lane level qc for undetermined reads
+This pahe lists following information
+
+  * **LaneID**: Flowcell lane information
+  * **Index_Length**: Index sequence length (reported by Illumina software)
+  * **Undetermined_MultiQC**: MultiQC report for undetermined reads per lane
 
 <p>
 </p>
