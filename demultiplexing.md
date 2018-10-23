@@ -4,6 +4,20 @@ title: IGF Help pages - demultiplexing fastq
 ---
  
 # Demultiplexing Fastq
+## Table of Contents
+
+* [Overview](#overview)
+* [Software and version information](#software-and-version-information)
+  * [Bcl2Fastq command line](#bcl2fastq-command-line)
+* [Samplesheet Format](#samplesheet-format)
+  * [Data Format](#data-format)
+  * [Adapter trimming setting](#adapter-trimming-setting)
+* [Fastq output](#fastq-output)
+* [Demultiplexing of single cell samples (10xgenomics)](#demultiplexing-of-single-cell-samples-10xgenomics)
+  * [Bcl2Fastq command line for single cell samples](#bcl2fastq-command-line-for-single-cell-samples)
+* [List of resources](#list-of-resources)
+* [Change logs](#change-logs)
+
 
 ## Overview
 
