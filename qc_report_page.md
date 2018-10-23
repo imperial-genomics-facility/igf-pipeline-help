@@ -52,12 +52,14 @@ Then select specific page from left side menu
 
 ### Nevigate to Run home
 Click on the list of sequencing runs from the Project home
+<div>
 <img src="images/sequencing_runs.png" height="140" style="border:2px solid black">
-
+</div>
 or select 'Run Home' tab from top level nav
 
+<div>
 <img src="images/run_home_nav.png" height="35" style="border:2px solid black">
-
+</div>
 
 ### Lane level qc reports
  <img src="images/run_home.png" height="300" style="border:2px solid black">
