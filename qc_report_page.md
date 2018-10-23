@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: qc_report_page_template
 title: IGF Help pages - project qc report
 ---
 # Table of Contents
