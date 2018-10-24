@@ -45,24 +45,15 @@ This page provides a top level overview of the data availability for the project
 
 ### Project data overview
 
-This page describe availability of raw data for the project. This page has following sections
+This page shows availability of raw data for the project. It has following two sections
 
 
   * **Sequencing runs**: List of flowcell ids (sequencing runs)
   * **Sample stats**: Plot for combined data availability (read count per sample)
 
 #### Navigate to project data page
-Click on '**Project Home**' from the nevigation tab present on the top menu, if you are in a different section of the top level page.
 
-<p>
-</p>
-<div style="position:relative; left:50px">
-  <img src="images/project_home_nav.png" height="35" style="border:1px solid black">
-</div>
-<p>
-</p>
-
-You can reach the same page from any of the run level or sample level page following the same method.
+You can reach this page from any of the run level or sample level pages by clicking the '**Project Home**' from top nevigation menu.
 
 <p>
 </p>
@@ -72,7 +63,17 @@ You can reach the same page from any of the run level or sample level page follo
 <p>
 </p>
 
-Alternatively, you can select the '**Raw data**' option from the left side panel, if you are in the project status or analysis report page. 
+Alternatively, you can Click on '**Project Home**' from the top nevigation menu 
+
+<p>
+</p>
+<div style="position:relative; left:50px">
+  <img src="images/project_home_nav.png" height="35" style="border:1px solid black">
+</div>
+<p>
+</p>
+
+or select the '**Raw data**' option from the left side panel, if you are in the project status or analysis report page. 
 
 <p>
 </p>
@@ -81,6 +82,7 @@ Alternatively, you can select the '**Raw data**' option from the left side panel
 </div>
 <p>
 </p>
+
 
 #### List of sequencing runs
 This section of the project home page lists the flowcell barcodes of individual sequencing runs. These ids are linked to the run level pages listing details of specific runs.
