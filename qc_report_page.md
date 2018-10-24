@@ -18,11 +18,11 @@ title: IGF Help pages - project qc report
   * [Project status](#project-status)
   * [Analysis reports](#analysis-reports)
 * [Run home](#run-home)
-  * [Nevigate to Run home](#nevigate-to-run-home)
+  * [Navigate to Run home](#nevigate-to-run-home)
   * [Lane level qc reports](#lane-level-qc-reports)
   * [Sample level qc reports](#sample-level-qc-reports)
   * [Undetermined reads](#undetermined-reads)
-    * [Nevigate to undetermined read qc page](#nevigate-to-undetermined-read-qc-page)
+    * [Navigate to undetermined read qc page](#nevigate-to-undetermined-read-qc-page)
     * [Lane level qc for undetermined reads](#lane-level-qc-for-undetermined-reads)
 * [Change logs](#change-logs)
 
@@ -31,7 +31,7 @@ title: IGF Help pages - project qc report
 
 ## Overview
 
-QC report pages are designed to combine metrices from sequencing raw data as well as primary alignment and analysis runs. Download links of raw data files (fastq and cram) are not available from this page. Please check the [Data access](data_access.html) page for more details about accessing these qc pages from our ftp site.
+QC report pages are designed to combine matrices from sequencing raw data as well as primary alignment and analysis runs. Download links of raw data files (fastq and cram) are not available from this page. Please check the [Data access](data_access.html) page for more details about accessing these QC pages from our ftp site.
 
 
 ## Project home
@@ -53,7 +53,7 @@ This page shows availability of raw data for the project. It has following two s
 
 #### Navigate to project data page
 
-You can reach this page from any of the run level or sample level pages by clicking the '**Project Home**' from top nevigation menu.
+You can reach this page from any of the run level or sample level pages by clicking the '**Project Home**' from top navigation menu.
 
 <p>
 </p>
@@ -63,7 +63,7 @@ You can reach this page from any of the run level or sample level pages by click
 <p>
 </p>
 
-Alternatively, you can Click on '**Project Home**' from the top nevigation menu 
+Alternatively, you can Click on '**Project Home**' from the top navigation menu 
 
 <p>
 </p>
@@ -85,7 +85,7 @@ or select the '**Raw data**' option from the left side panel, if you are in the 
 
 
 #### List of sequencing runs
-This section of the project home page lists the flowcell barcodes of individual sequencing runs. These ids are linked to the run level pages with detailed qc information of each specific runs.
+This section of the project home page lists the flowcell barcodes of individual sequencing runs. These ids are linked to the run level pages with detailed QC information of each specific runs.
 
 
 <p>
@@ -119,7 +119,7 @@ Click on the '**Histogram plot**' button for generating a histogram plot of samp
 </p>
 
 #### Project with multiple sequencing runs (column plot)
-This plot is similar to [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot) with one key difference. This view combines the read counts per samples grouped by individual seqeuencing runs. A separate data point '**Total Reads**' is added if any sample is sequenced in more than one flowcell. This plot is useful for checking the raw data, if your project have more than one sequencing runs and very few of the samples are repeated in more than one run.
+This plot is similar to [Project with single sequencing run (column plot)](#project-with-single-sequencing-run-column-plot) with one key difference. This view combines the read counts per samples grouped by individual sequencing runs. A separate data point '**Total Reads**' is added if any sample is sequenced in more than one flowcell. This plot is useful for checking the raw data, if your project have more than one sequencing runs and very few of the samples are repeated in more than one run.
 
 <p>
 </p>
@@ -152,7 +152,7 @@ Click on the '**Status**' link of the left side menu from the '**Project Home**'
 </p>
 
 ### Analysis reports
-Click on the '**Analysis**' link of the left side menu from the '**Project Home**' page to access this page. Analysis report page lists all the individual sample level qc reports for a project.
+Click on the '**Analysis**' link of the left side menu from the '**Project Home**' page to access this page. Analysis report page lists all the individual sample level QC reports for a project.
 
 <p>
 </p>
@@ -164,7 +164,7 @@ Click on the '**Analysis**' link of the left side menu from the '**Project Home*
 
 ## Run home
 
-### Nevigate to Run home
+### Navigate to Run home
 Click on the list of sequencing runs from the '**Project Home**' to access this page.
 
 <p>
@@ -175,7 +175,7 @@ Click on the list of sequencing runs from the '**Project Home**' to access this 
 <p>
 </p>
 
-Alternatively, select '**Run Home**' tab from top level menu to access this page, if you are already in any lane level or sample level qc page.
+Alternatively, select '**Run Home**' tab from top level menu to access this page, if you are already in any lane level or sample level QC page.
 
 <p>
 </p>
@@ -188,10 +188,10 @@ Alternatively, select '**Run Home**' tab from top level menu to access this page
 This page has following two sections
 
   * **Project information**: Detail about the sequencing run and project
-  * **Fastq read qc**: A table of lane level qc reports, for the run 
+  * **Fastq read QC**: A table of lane level qc reports, for the run 
 
-### Lane level qc reports
-This table of qc report for a specific run lists following information
+### Lane level QC reports
+This table of QC report for a specific run lists following information
 
   * **LaneID**: Flowcell lane information
   * **Index_Length**: Count of index bases
@@ -207,8 +207,8 @@ This table of qc report for a specific run lists following information
 <p>
 </p>
 
-### Sample level qc reports
-Click on any of the '**sampleQC.html**' links present on the lane level qc report section to access this page. This page lists following information
+### Sample level QC reports
+Click on any of the '**sampleQC.html**' links present on the lane level QC report section to access this page. This page lists following information
 
   * **Sample_ID**: IGF sample id
   * **Sample_Name**: User given sample id
@@ -228,9 +228,9 @@ Click on any of the '**sampleQC.html**' links present on the lane level qc repor
 </p>
 
 ### Undetermined reads
-Illumina demultiplexing software mark any read as undetermined, if its fails to correctly assign the read to a known samples (known index barcodes). Apart for the qc of the know samples, we also generate the qc of these undetermined reads per lane.
+Illumina demultiplexing software mark any read as undetermined, if its fails to correctly assign the read to a known samples (known index barcodes). Apart for the QC of the know samples, we also generate the qc of these undetermined reads per lane.
 
-#### Nevigate to undetermined read qc page
+#### Navigate to undetermined read qc page
 Click on the 'Undetermined reads' tab from top level navigation menu, if you are in '**Run Home**'. Alternatively you have to move to '**Run Home**' before you can access this page.
 
 <p>
