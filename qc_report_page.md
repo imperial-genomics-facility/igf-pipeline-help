@@ -85,7 +85,7 @@ or select the '**Raw data**' option from the left side panel, if you are in the 
 
 
 #### List of sequencing runs
-This section of the project home page lists the flowcell barcodes of individual sequencing runs. These ids are linked to the run level pages listing details of specific runs.
+This section of the project home page lists the flowcell barcodes of individual sequencing runs. These ids are linked to the run level pages with detailed qc information of each specific runs.
 
 
 <p>
