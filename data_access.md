@@ -30,7 +30,7 @@ Users are only allowed to access this server, once they are connected to the col
 ### Steps for setting up iRODS client in HPC CX1 
 
 * Create directory `.irods` under home (e.g. `mkdir -p ~/.irods`)
-* Create iRODS environment file .irods/irods_environment.json
+* Create iRODS environment file `.irods/irods_environment.json`
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username)
 
 <pre><code>
@@ -48,6 +48,7 @@ Users are only allowed to access this server, once they are connected to the col
 
 </code></pre>
 
+* Validate `.irods/irods_environment.json` file format using [JSONLint](https://jsonlint.com/)
 
 ### Steps for command line transfer in HPC CX1
 
