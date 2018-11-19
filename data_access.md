@@ -43,7 +43,7 @@ Users are only allowed to access this server, once they are connected to the col
       "irods_ssl_ca_certificate_file": "/apps/irods/certs/igf-chain.pem", # Skip if your authentication Type is Standard
       "irods_ssl_ca_certificate_path": "/apps/irods/certs",               # Skip if your authentication Type is Standard    
       "irods_ssl_verify_server": "cert",                                  # Skip if your authentication Type is Standard
-      "irods_authentication_scheme": "PAM",                               # Skip if your authentication Type is Standard
+      "irods_authentication_scheme": "PAM"                                # Skip if your authentication Type is Standard
 }
 
 </code></pre>
