@@ -1,4 +1,10 @@
+---
+layout: alignment_qc_template
+title: IGF Help pages - data access
+---
+
 # Alignment QC
+## Table of Contents
 
 * [Adapter trimming](#adapter-trimming)
   * [Fastp](#fastp)
