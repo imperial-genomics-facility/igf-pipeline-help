@@ -1,5 +1,23 @@
 # Alignment QC
 
+* [Adapter trimming](#adapter-trimming)
+  * [Fastp](#fastp)
+* [RNA-Seq Alignment](#rna-seq-alignment)
+  * [STAR](#star)
+* [DNA-Seq Alignment](#dna-seq-alignment)
+  * [BWA](#bwa)
+* [Post alignment processing](#post-alignment-processing)
+  * [Add RG tag](#add-rg-tag)
+    * [Picard RG tag](#picard-rg-tag)
+  * [Mark duplicate reads](#mark-duplicate-reads)
+    * [Picard Mark duplicates](#picard-mark-duplicates)
+* [RNA-Seq signal](#rna-seq-signal)
+  * [STAR bigwig](#star-bigwig)
+* [RNA-Seq gene count](#rna-seq-gene-count)
+  * [FeatureCounts](#featurecounts)
+  * [RSEM](#rsem)
+* [MultiQC](#multiqc)
+
 ## Adapter trimming
 
 
@@ -95,7 +113,7 @@ O=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
 
 ### Mark duplicate reads
 
-#### Picard Mark Duplicates
+#### Picard Mark duplicates
 
 https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates
 
