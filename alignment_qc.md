@@ -31,13 +31,14 @@ title: IGF Help pages - data access
 
 https://github.com/OpenGene/fastp
 
-<pre><code>fastp
+<pre><code>
+fastp
 --in1 /path/input/sample.R1.fastq.gz
 --out1 /path/trimmed/sample.R1.fastq.gz
 --html /path/trimmed/sample.report.html
 --json /path/trimmed/sample.report.json
 --report_title sample
---thread 4
+--thread threads
 --in2 /path/input/sample.R2.fastq.gz
 --out2 /path/trimmed/sample.R2.fastq.gz
 --qualified_quality_phred=15
@@ -51,8 +52,9 @@ https://github.com/OpenGene/fastp
 
 https://github.com/alexdobin/STAR
 
-<pre><code>STAR
---runThreadN 8
+<pre><code>
+STAR
+--runThreadN threads
 --outFileNamePrefix /path/mapped/sample
 --outSAMattributes NH HI AS NM MD
 --runMode alignReads
@@ -82,7 +84,8 @@ https://github.com/alexdobin/STAR
 
 ### BWA
 
-<pre><code>bwa
+<pre><code>
+bwa
 mem
 -t threads 
 -M
@@ -95,7 +98,8 @@ mem
 
 #### Picard RG tag
 
-<pre><code>java
+<pre><code>
+java
 -XX:ParallelGCThreads=1
 -Xmx4g
 -Djava.io.tmpdir=/path/temp
@@ -119,7 +123,8 @@ O=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
 
 https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates
 
-<pre><code>java
+<pre><code>
+java
 -XX:ParallelGCThreads=1
 -Xmx4g
 -Djava.io.tmpdir=/path/temp
@@ -136,8 +141,9 @@ I=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
 
 ### STAR bigwig
 
-<pre><code>STAR
---runThreadN 8
+<pre><code>
+STAR
+--runThreadN threads
 --runMode inputAlignmentsFromBAM
 --outFileNamePrefix /path/signal/sample
 --genomeLoad NoSharedMemory
@@ -150,21 +156,23 @@ I=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
 
 ### FeatureCounts
 
-<pre><code>featureCounts
+<pre><code>
+featureCounts
 -a gencode.v28.primary_assembly.annotation.gtf
 -o /path/output
--T 4
+-T threads
 /path/mapped/sample.genome.MarkDuplicates.bam
 </code></pre>
 
 ### RSEM
 
-<pre><code>rsem-calculate-expression
+<pre><code>
+rsem-calculate-expression
 --quiet
 --no-bam-output
 --alignments
 --strandedness reverse
---num-threads 8
+--num-threads threads
 --ci-memory 4000
 --estimate-rspd
 --paired-end 
