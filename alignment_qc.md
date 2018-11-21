@@ -66,7 +66,7 @@ mem
 -t threads 
 -M
 /path/refgenome/fasta
-/path/R1.fastq.gz /path/R2.fastq.gz
+/path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
 </code></pre>
 ## Post alignment processing
 
@@ -156,4 +156,6 @@ rsem-calculate-expression
 RSEM_REF
 /path/rsem/sample
 </code></pre>
+
+## MultiQC
 
