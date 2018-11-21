@@ -23,13 +23,13 @@ title: IGF Help pages - data access
   * [FeatureCounts](#featurecounts)
   * [RSEM](#rsem)
 * [MultiQC](#multiqc)
+* [List of resources](#list-of-resources)
 
 ## Adapter trimming
 
 
 ### Fastp
 
-https://github.com/OpenGene/fastp
 
 <pre><code>
   fastp
@@ -50,7 +50,6 @@ https://github.com/OpenGene/fastp
 
 ### STAR
 
-https://github.com/alexdobin/STAR
 
 <pre><code>
   STAR
@@ -120,8 +119,6 @@ https://github.com/alexdobin/STAR
 ### Mark duplicate reads
 
 #### Picard Mark duplicates
-
-https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates
 
 <pre><code>
   java
@@ -197,3 +194,12 @@ A multiqc report for the alignment bam is produced (per sample) combining metric
 * Samtools flagstat
 * Samtools stats
 * FeatureCounts (RNA-Seq)
+
+## List of resources
+  * [Fastp](https://github.com/OpenGene/fastp)
+  * [STAR](https://github.com/alexdobin/STAR)
+  * [Picard](https://broadinstitute.github.io/picard/command-line-overview.html)
+  * [BWA](http://bio-bwa.sourceforge.net/bwa.shtml)
+  * [FeatureCounts](http://bioinf.wehi.edu.au/featureCounts/)
+  * [RSEM](https://deweylab.github.io/RSEM/)
+  
