@@ -1,7 +1,13 @@
-Fastp
+# Alignment QC
+
+## Adapter trimming
+
+
+### Fastp
 
 https://github.com/OpenGene/fastp
 
+<pre><code>
 fastp
 --in1 /path/input/sample.R1.fastq.gz
 --out1 /path/trimmed/sample.R1.fastq.gz
@@ -14,12 +20,15 @@ fastp
 --qualified_quality_phred=15
 --length_required=15
 --trim_poly_g [for NEXTSEQ]
+</code></pre>
 
+## RNA-Seq Alignment
 
-STAR
+### STAR
 
 https://github.com/alexdobin/STAR
 
+<pre><code>
 STAR
 --runThreadN 8
 --outFileNamePrefix /path/mapped/sample
@@ -44,13 +53,28 @@ STAR
 --twopassMode Basic
 --readFilesCommand zcat
 --readFilesIn /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
+</code></pre>
 
 
+## DNA-Seq Alignment
 
+### BWA
 
-Picard RG tag
+<pre><code>
+bwa
+mem
+-t threads 
+-M
+/path/refgenome/fasta
+/path/R1.fastq.gz /path/R2.fastq.gz
+</code></pre>
+## Post alignment processing
 
+### Add RG tag
 
+#### Picard RG tag
+
+<pre><code>
 /apps/java/jdk-8u144/bin/java
 -XX:ParallelGCThreads=1
 -Xmx4g
@@ -66,29 +90,16 @@ RGCN=CENTER_NAME
 RGID=UNIQUE_RG_ID
 I=/path/mapped/sampleAligned.sortedByCoord.out.bam
 O=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
+</code></pre>
 
 
-/apps/java/jdk-8u144/bin/java
--XX:ParallelGCThreads=1
--Xmx4g
--Djava.io.tmpdir=/path/temp
--jar picard.jar
-AddOrReplaceReadGroups
-RGPL=ILLUMINA
-RGPU=UNIQUE_RG_PU
-RGLB=LIBRARY_ID
-SORT_ORDER=unsorted
-RGSM=SAMPLE_ID
-RGCN=CENTER_NAME
-RGID=UNIQUE_RG_ID
-I=/path/mapped/sampleAligned.toTranscriptome.out.bam
-O=/path/mapped/sampleAligned.toTranscriptome.out.AddOrReplaceReadGroups.bam
+### Mark duplicate reads
 
-
-Mark Duplicates
+#### Picard Mark Duplicates
 
 https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates
 
+<pre><code>
 /apps/java/jdk-8u144/bin/java
 -XX:ParallelGCThreads=1
 -Xmx4g
@@ -98,20 +109,15 @@ O=/path/mapped/sample.genome.MarkDuplicates.bam
 M=/path/mapped/sample.genome.MarkDuplicates.summary.txt
 OPTICAL_DUPLICATE_PIXEL_DISTANCE=2500 [for HISEQ 4000 and NextSeq]
 I=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
-
-
-Samtools merge
-
-/project/tgu/software/samtools/samtools, merge
---output-fmt BAM
---threads 4
--b /path/mapped/sample.bam_chunk.txt
--n /path/mapped/sample.merged.transcriptome.bam
+</code></pre>
 
 
 
-STAR bigwig
+## RNA-Seq signal
 
+### STAR bigwig
+
+<pre><code>
 STAR
 --runThreadN 8
 --runMode inputAlignmentsFromBAM
@@ -120,10 +126,23 @@ STAR
 --outWigType bedGraph
 --outWigStrand Stranded
 --inputBAMfile /path/mapped/sample.genome.MarkDuplicates.bam
+</code></pre>
 
+## RNA-Seq gene count
 
-RSEM
+### FeatureCounts
 
+<pre><code>
+featureCounts
+-a gencode.v28.primary_assembly.annotation.gtf
+-o /path/output
+-T 4
+/path/mapped/sample.genome.MarkDuplicates.bam
+</code></pre>
+
+### RSEM
+
+<pre><code>
 rsem-calculate-expression
 --quiet
 --no-bam-output
@@ -136,3 +155,5 @@ rsem-calculate-expression
 /path/mapped/sample.merged.transcriptome.bam
 RSEM_REF
 /path/rsem/sample
+</code></pre>
+
