@@ -25,8 +25,7 @@
 
 https://github.com/OpenGene/fastp
 
-<pre><code>
-fastp
+<pre><code>fastp
 --in1 /path/input/sample.R1.fastq.gz
 --out1 /path/trimmed/sample.R1.fastq.gz
 --html /path/trimmed/sample.report.html
@@ -46,8 +45,7 @@ fastp
 
 https://github.com/alexdobin/STAR
 
-<pre><code>
-STAR
+<pre><code>STAR
 --runThreadN 8
 --outFileNamePrefix /path/mapped/sample
 --outSAMattributes NH HI AS NM MD
@@ -78,8 +76,7 @@ STAR
 
 ### BWA
 
-<pre><code>
-bwa
+<pre><code>bwa
 mem
 -t threads 
 -M
@@ -92,8 +89,7 @@ mem
 
 #### Picard RG tag
 
-<pre><code>
-/apps/java/jdk-8u144/bin/java
+<pre><code>java
 -XX:ParallelGCThreads=1
 -Xmx4g
 -Djava.io.tmpdir=/path/temp
@@ -117,8 +113,7 @@ O=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
 
 https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates
 
-<pre><code>
-/apps/java/jdk-8u144/bin/java
+<pre><code>java
 -XX:ParallelGCThreads=1
 -Xmx4g
 -Djava.io.tmpdir=/path/temp
@@ -135,8 +130,7 @@ I=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
 
 ### STAR bigwig
 
-<pre><code>
-STAR
+<pre><code>STAR
 --runThreadN 8
 --runMode inputAlignmentsFromBAM
 --outFileNamePrefix /path/signal/sample
@@ -150,8 +144,7 @@ STAR
 
 ### FeatureCounts
 
-<pre><code>
-featureCounts
+<pre><code>featureCounts
 -a gencode.v28.primary_assembly.annotation.gtf
 -o /path/output
 -T 4
@@ -160,8 +153,7 @@ featureCounts
 
 ### RSEM
 
-<pre><code>
-rsem-calculate-expression
+<pre><code>rsem-calculate-expression
 --quiet
 --no-bam-output
 --alignments
