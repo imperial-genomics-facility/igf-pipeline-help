@@ -159,3 +159,16 @@ RSEM_REF
 
 ## MultiQC
 
+A multiqc report for the alignment bam is produced (per sample) combining metrics from the following tools
+
+* Fastp
+* STAR (RNA-Seq)
+* Picard Mark Duplicates
+* Picard CollectAlignmentSummaryMetrics
+* Picard CollectBaseDistributionByCycle
+* Picard CollectGcBiasMetrics
+* Picard QualityScoreDistribution
+* Picard CollectRnaSeqMetrics (RNA-Seq)
+* Samtools flagstat
+* Samtools stats
+* FeatureCounts (RNA-Seq)
