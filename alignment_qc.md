@@ -31,7 +31,7 @@ title: IGF Help pages - data access
 <p>
 </p>
 <div style="position:relative; left:50px">
-  <img src="images/transcriptome.svg" height="100" style="border:1px solid black" >
+  <img src="images/transcriptome.svg" height="200" >
 </div>
 <p>
 </p>
