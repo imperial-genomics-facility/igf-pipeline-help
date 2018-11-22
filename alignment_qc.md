@@ -37,6 +37,13 @@ title: IGF Help pages - data access
 </p>
 
 ## QC of genomic data
+<p>
+</p>
+<div style="position:relative; left:50px">
+  <img src="images/genome.svg" height="200" >
+</div>
+<p>
+</p>
 
 ## Software and version information
   * Fastp
