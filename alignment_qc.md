@@ -40,7 +40,7 @@ title: IGF Help pages - data access
 <p>
 </p>
 <div style="position:relative; left:50px">
-  <img src="images/genome.svg" height="200" >
+  <img src="images/genome.svg" height="160" >
 </div>
 <p>
 </p>
