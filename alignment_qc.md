@@ -27,8 +27,13 @@ title: IGF Help pages - data access
 
 
 ## Overview
+Quality of the sequencing data for a variety of assay types are validated once we process them through them through our alignment QC pipeline and generate alignment statistics. Presently this option is only available for the following species
+
+* Human (HG38)
 
 ## QC of transcriptomic data
+Sequencing data from transcriptomic samples are mapped against reference genome using splice aware aligner STAR. We follow the protocol _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) for this process and generate a genomic as well as a transcriptomic bam per lane. Individual lane level bams (tagged with RG tags) are merged to a library level bam (separate for both types) which are processed further for downstream analysis.
+
 <p>
 </p>
 <div style="position:relative; left:50px">
