@@ -28,7 +28,13 @@ title: IGF Help pages - data access
 ## Overview
 
 ## QC of transcriptomic data
-
+<p>
+</p>
+<div style="position:relative; left:50px">
+  <img src="images/transcriptome.svg" height="100" style="border:1px solid black" >
+</div>
+<p>
+</p>
 ## QC of genomic data
 
 ## Software and version information
