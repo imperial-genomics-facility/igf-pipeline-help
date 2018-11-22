@@ -7,6 +7,7 @@ title: IGF Help pages - data access
 ## Table of Contents
 * [Overview](#overview)
 * [QC of transcriptomic data](#qc-of-transcriptomic-data)
+* [QC of genomic data](#qc-of-genomic-data)
 * [Software and version information](#software-and-version-information)
   * [Command line](#command-line)
     * [Adapter trimming](#adapter-trimming)
