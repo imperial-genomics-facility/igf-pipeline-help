@@ -32,7 +32,9 @@ Quality of the sequencing data for a variety of assay types are validated once w
 * Human (HG38)
 
 ## QC of transcriptomic data
-Sequencing data from transcriptomic samples are mapped against reference genome using splice aware aligner STAR. We follow the protocol _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) for this process and generate a genomic as well as a transcriptomic bam per lane. Individual lane level bams (tagged with RG tags) are merged to a library level bam (separate for both types) which are processed further for downstream analysis.
+Sequencing data for RNA-Seq samples are mapped against a reference transcriptome using splice aware aligner STAR. We follow the protocol _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate a genomic bam and a transcriptomic bam after mapping fastp files for each separate lanes or flowcells. Each lane level bams are tagged with relevant read group information and they are merged together to create a library level bam, once all the alignment jobs are finished.  
+
+for this process and generate a genomic as well as a transcriptomic bam per lane. Individual lane level bams (tagged with RG tags) are merged to a library level bam (separate for both types) which are processed further for downstream analysis.
 
 <p>
 </p>
