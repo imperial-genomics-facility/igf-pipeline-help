@@ -30,7 +30,7 @@ title: IGF Help pages - data access
 We process sequencing data through our QC pipeline and generate alignment quality report for a variety of assay types. Presently this option is available only for the Human samples.
 
 ## QC of transcriptomic data
-Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped against a reference transcriptome using splice aware aligner STAR. We follow the _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate both genomic and transcriptomic bam files after aligning fastq files from different lanes and flowcells. Each lane level bams are tagged with relevant read group information before they are merged together to create a library level bam followed by marking the duplicate reads (without removal) using Picard tool. We generate raw counts per gene using the FeatureCounts tool from the merged genomic bam. Also, normalised counts are generated using RSEM tool from the merged transcriptome bam. A bigwig signal file is generated from the genomic bam file using STAR following the _Alternate Protocols 4_ from the above mentioned publication. All the Picard and Samtools metrics are merged using MultiQC for a library level report.
+Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped against a reference transcriptome using splice aware aligner STAR. We follow the _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate both genomic and transcriptomic bam files after aligning fastq files from different lanes and flowcells. Each lane level bams are tagged with relevant read group information before they are merged together to create a library level bam followed by marking the duplicate reads (without removal) using Picard tool. We generate raw counts per gene using the FeatureCounts tool from the merged genomic bam. Also, normalised counts are generated using RSEM tool from the merged transcriptome bam. A bigwig signal file is generated from the genomic bam file using STAR, following the _Alternate Protocols 4_ from the above mentioned publication. All the Picard and Samtools metrics are merged using MultiQC for a library level report.
 
 <p>
 </p>
@@ -41,7 +41,7 @@ Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped a
 </p>
 
 ## QC of genomic data
-Sequencing data for genomic samples are adapter trimmed using Fastp and mapped against a reference genome using alignment tool BWA. We follow GATK's [Data pre-processing for variant discovery](https://software.broadinstitute.org/gatk/best-practices/workflow?id=11165)  document and post process the aligned bam. Each lane level bams are tagged with relevant read group information before they are merged to a library level bam and duplicate reads are marked. We generate Picard and Samtools metrics for the library level bam and combine them using MultiQC.
+Sequencing data for genomic samples are adapter trimmed using Fastp and mapped against a reference genome using alignment tool BWA. We follow GATK's [Data pre-processing for variant discovery](https://software.broadinstitute.org/gatk/best-practices/workflow?id=11165)  document and post process the raw alignment. Each lane level bams are tagged with relevant read group information before they are merged to a library level bam, after which duplicate reads are marked. We generate Picard and Samtools metrics for the library level bam and combine them using MultiQC.
 
 <p>
 </p>
