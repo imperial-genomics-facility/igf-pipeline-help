@@ -32,8 +32,7 @@ Quality of the sequencing data for a variety of assay types are validated once w
 * Human (HG38)
 
 ## QC of transcriptomic data
-Sequencing data for RNA-Seq samples are mapped against a reference transcriptome using splice aware aligner STAR. We follow the protocol _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate a genomic bam and another transcriptomic bam after separately aligning fastq files from different lanes and flowcells. Each lane level bams are tagged with relevant read group information before they are merged together to create a library level bam followed by marking the duplicate reads (using Picard).
-
+Sequencing data for RNA-Seq samples are mapped against a reference transcriptome using splice aware aligner STAR. We follow the protocol _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate a genomic bam and another transcriptomic bam after separately aligning fastq files from different lanes and flowcells. Each lane level bams are tagged with relevant read group information before they are merged together to create a library level bam followed by marking the duplicate reads (without removal) using Picard tool. We generate raw counts per gene using the FeatureCounts tool from the merged genomic bam and also normalised counts using RSEM tool utilising the merged transcriptome bam. A bigwig signal file is generated from the genomic bam file using STAR following the _Alternate Protocols 4_ from the above mentioned publication.
 
 <p>
 </p>
@@ -44,6 +43,7 @@ Sequencing data for RNA-Seq samples are mapped against a reference transcriptome
 </p>
 
 ## QC of genomic data
+
 <p>
 </p>
 <div style="position:relative; left:50px">
