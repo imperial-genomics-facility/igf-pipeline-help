@@ -33,7 +33,8 @@ Users are only allowed to access this server, once they are connected to the col
 * Create iRODS environment file `.irods/irods_environment.json`
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username)
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
 {
       "irods_host": "eliot.med.ic.ac.uk",
       "irods_port":1247,
@@ -46,7 +47,8 @@ Users are only allowed to access this server, once they are connected to the col
       "irods_authentication_scheme": "PAM"                                # Skip if your authentication Type is Standard
 }
 
-</code></pre>
+  </code></pre>
+</div>
 
 * Validate `.irods/irods_environment.json` file format using [JSONLint](https://jsonlint.com/)
 
