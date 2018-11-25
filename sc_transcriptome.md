@@ -194,7 +194,7 @@ Scanpy tool is used for checking an initial qc of the single cell data after cel
   sc.pl.violin(adata,genes,groupby='louvain',show=True,save='.png',multi_panel=False,
                scale='width',multi_panel_figsize=[8.0,16.0])     
   </code></pre>
-<div style="background-color:#E8E8E8">
+</div>
  
 ## List of resources
 
