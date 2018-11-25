@@ -41,7 +41,7 @@ Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped a
 </p>
 
 ## QC of genomic data
-Sequencing data for genomic samples are adapter trimmed using Fastp and mapped against a reference genome using alignment tool BWA. We follow GATK's [Data pre-processing for variant discovery](https://software.broadinstitute.org/gatk/best-practices/workflow?id=11165)  document and post process the aligned bam. Each lane level bams are merged to a library level bam and duplicate reads are marked followed by generation of Picard and Samtools metrics for MultiQC report.
+Sequencing data for genomic samples are adapter trimmed using Fastp and mapped against a reference genome using alignment tool BWA. We follow GATK's [Data pre-processing for variant discovery](https://software.broadinstitute.org/gatk/best-practices/workflow?id=11165)  document and post process the aligned bam. Each lane level bams are tagged with relevant read group information before they are merged to a library level bam and duplicate reads are marked. We generate Picard and Samtools metrics and combine them using MultiQC for the library level bam.
 
 <p>
 </p>
