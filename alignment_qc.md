@@ -87,7 +87,8 @@ Tool name: __Fastp__
 
 Tool name: __STAR__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   STAR
     --runThreadN threads
     --outFileNamePrefix /path/mapped/sample
@@ -112,21 +113,23 @@ Tool name: __STAR__
     --twopassMode Basic
     --readFilesCommand zcat
     --readFilesIn /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
-</code></pre>
-
+  </code></pre>
+</div>
 
 #### DNA-Seq alignment
 
 Tool name:  __BWA__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   bwa
     mem
     -t threads 
     -M
     /path/bwa_ref_genome
     /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
-</code></pre>
+  </code></pre>
+ </div>
 
 #### Post alignment processing
 
@@ -134,7 +137,8 @@ Tool name:  __BWA__
 
 Tool name: __Picard AddOrReplaceReadGroups__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   java
     -XX:ParallelGCThreads=threads
     -XmxMg
@@ -150,14 +154,15 @@ Tool name: __Picard AddOrReplaceReadGroups__
     RGID=UNIQUE_RG_ID
     I=/path/mapped/sampleAligned.sortedByCoord.out.bam
     O=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
-</code></pre>
-
+  </code></pre>
+</div>
 
 ##### Mark duplicate reads
 
 Tool name: __Picard Mark duplicates__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   java
     -XX:ParallelGCThreads=thread
     -XmxMg
@@ -168,14 +173,15 @@ Tool name: __Picard Mark duplicates__
     M=/path/mapped/sample.genome.MarkDuplicates.summary.txt
     OPTICAL_DUPLICATE_PIXEL_DISTANCE=2500                   # for HISEQ 4000 and NextSeq
     I=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
-</code></pre>
-
+  </code></pre>
+</div>
 
 #### RNA-Seq signal
 
 Tool name: __STAR bigwig__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   STAR
     --runThreadN threads
     --runMode inputAlignmentsFromBAM
@@ -184,23 +190,27 @@ Tool name: __STAR bigwig__
     --outWigType bedGraph
     --outWigStrand Stranded
     --inputBAMfile /path/mapped/sample.genome.MarkDuplicates.bam
-</code></pre>
+  </code></pre>
+</div>
 
 #### RNA-Seq gene count
 
 Tool name: __FeatureCounts__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   featureCounts
     -a genes.gtf
     -o /path/output
     -T threads
     /path/mapped/sample.genome.MarkDuplicates.bam
-</code></pre>
+  </code></pre>
+</div>
 
 Tool name: __RSEM__
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   rsem-calculate-expression
     --quiet
     --no-bam-output
@@ -213,7 +223,8 @@ Tool name: __RSEM__
     /path/mapped/sample.merged.transcriptome.bam
     RSEM_REF
     /path/rsem/sample
-</code></pre>
+  </code></pre>
+</div>
 
 ## Output format
 
