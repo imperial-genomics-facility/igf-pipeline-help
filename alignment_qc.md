@@ -66,7 +66,7 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 
 Tool name: __Fastp__
 
-<div style="background-color:lightgrey">
+<div style="background-color:#E8E8E8">
   <pre><code>
   fastp
     --in1 /path/input/sample.R1.fastq.gz
