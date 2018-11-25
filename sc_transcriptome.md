@@ -28,7 +28,8 @@ title: IGF Help Pages - Single Cell Transcriptome
 ### Cellranger command line
 Example cellranger count command.
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   cellranger count 
     --fastqs=/fastq_directory_path 
     --id=ID 
@@ -41,7 +42,8 @@ Example cellranger count command.
     --localcores=1 
     --localmem=4
     
-</code></pre>
+  </code></pre>
+</div>
 
 
 ## Reference Genome
@@ -78,7 +80,8 @@ Scanpy tool is used for checking an initial qc of the single cell data after cel
 
 ### Scanpy command line
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   # step 1: read cellranger output matrix
   adata=sc.read(self.matrix_file,
                 cache=True).T
@@ -190,8 +193,9 @@ Scanpy tool is used for checking an initial qc of the single cell data after cel
   ## plot data
   sc.pl.violin(adata,genes,groupby='louvain',show=True,save='.png',multi_panel=False,
                scale='width',multi_panel_figsize=[8.0,16.0])     
-</code></pre>
-
+  </code></pre>
+<div style="background-color:#E8E8E8">
+ 
 ## List of resources
 
 * [Custom reference genome building](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references)
