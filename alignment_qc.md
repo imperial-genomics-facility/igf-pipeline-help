@@ -66,7 +66,8 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 
 Tool name: __Fastp__
 
-<pre><code>
+<div style="background-color:lightgrey">
+  <pre><code>
   fastp
     --in1 /path/input/sample.R1.fastq.gz
     --out1 /path/trimmed/sample.R1.fastq.gz
@@ -79,7 +80,8 @@ Tool name: __Fastp__
     --qualified_quality_phred=15
     --length_required=15
     --trim_poly_g         # for NEXTSEQ
-</code></pre>
+  </code></pre>
+</div>
 
 #### RNA-Seq alignment
 
