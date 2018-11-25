@@ -46,7 +46,8 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 ### FastQC command line
 Example FastQC command.
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   fastqc 
     -q
     --noextract
@@ -57,12 +58,14 @@ Example FastQC command.
     -d /path/temp_work_dir 
     /path/fastq_file
     
-</code></pre>
+  </code></pre>
+</div>
 
 ### FastQ Screen command line
 Example FastQ Screen command.
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   fastqscreen
     --conf fastqscreen_conf
     --outdir /path/fastqscreen_output
@@ -72,8 +75,9 @@ Example FastQ Screen command.
     --subset 100000
     --threads 1
     /path/fastq_file
-    
-</code></pre>
+   
+  </code></pre>
+</div>
 
 ## List of resources
 
