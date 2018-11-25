@@ -30,7 +30,8 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 ### Bcl2Fastq command line
 Example Bcl2Fastq command.
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   bcl2fastq 
     --runfolder-dir /path/input 
     --sample-sheet /path/SampleSheet.csv 
@@ -45,7 +46,8 @@ Example Bcl2Fastq command.
     -r 1 
     --auto-set-to-zero-barcode-mismatches
   
-</code></pre>
+  </code></pre>
+</div>
 
 ## Samplesheet Format
 
@@ -172,7 +174,8 @@ Demultiplexing of single cell samples are done using the specific set of [single
 ### Bcl2Fastq command line for single cell samples
 Example Bcl2Fastq command.
 
-<pre><code>
+<div style="background-color:#E8E8E8">
+  <pre><code>
   bcl2fastq 
     --runfolder-dir /path/input 
     --sample-sheet /path/SampleSheet.csv 
@@ -189,7 +192,8 @@ Example Bcl2Fastq command.
     --mask-short-adapter-reads=8
     --minimum-trimmed-read-length=8
   
-</code></pre>
+  </code></pre>
+</div>
 
 ## List of resources
 
