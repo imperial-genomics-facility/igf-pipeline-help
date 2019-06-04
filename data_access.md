@@ -11,6 +11,8 @@ title: IGF Help pages - data access
 * [Command line file transfer](#command-line-file-transfer)
   * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
   * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
+* [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-equence-hub-based-file-transfer)
+* [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
 * [Access QC report pages](#access-qc-report-pages)
 * [List of resources](#list-of-resources)
 * [Change logs](#change-logs)
@@ -31,9 +33,9 @@ Users are only allowed to access this server, once they are connected to the col
 
 * Create directory `.irods` under home (e.g. `mkdir -p ~/.irods`)
 * Create iRODS environment file `.irods/irods_environment.json`
-* Copy following configuration to the above mentioned file (replace USERNAME with your actual username, and remove comments)
+* Copy following configuration to the above mentioned file (replace USERNAME with your actual username and remove comments)
 
-<div style="background-color:#E8E8E8">
+<div>
   <pre><code>
 {
       "irods_host": "eliot.med.ic.ac.uk",
@@ -57,6 +59,19 @@ Users are only allowed to access this server, once they are connected to the col
 * Load irods tool (e.g. `module load irods/4.2.0`)
 * Set up your iRODS account using command `iinit` and specify your password
 * Download data using commandline tool  `iget` (e.g. `iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH`)
+
+## Illumina Basespace Sequence Hub based file transfer
+Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are needed for this specific mode of data transfer:
+
+* Your basespace account email (existion or a new account with free basic subscription)
+* Confirmation regarding the sample consent type
+
+## Imperial College Research Data Store based transfer
+Imperial College now offers a new central service for storing large volume of research data
+* Follow the documentation about [Research Data Store](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) and setup a new allocation for your peoject
+* Add **Imperial BRC Genomics Facility** as the the member of new research data storage, once its available
+* Data will be copied to the top level of the storage using the layout `RDS/PROJECT_NAME`
+* IGF user can be removed from the RDS allocation when all the sequencing runs are finished
 
 ## Access QC report pages
 
