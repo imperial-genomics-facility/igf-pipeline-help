@@ -11,7 +11,7 @@ title: IGF Help pages - data access
 * [Command line file transfer](#command-line-file-transfer)
   * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
   * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
-* [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-equence-hub-based-file-transfer)
+* [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
 * [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
 * [Access QC report pages](#access-qc-report-pages)
 * [List of resources](#list-of-resources)
