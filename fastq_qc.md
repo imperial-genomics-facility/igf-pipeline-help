@@ -46,7 +46,7 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 ### FastQC command line
 Example FastQC command.
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   fastqc 
     -q
@@ -64,7 +64,7 @@ Example FastQC command.
 ### FastQ Screen command line
 Example FastQ Screen command.
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   fastqscreen
     --conf fastqscreen_conf

@@ -35,7 +35,7 @@ Users are only allowed to access this server, once they are connected to the col
 * Create iRODS environment file `.irods/irods_environment.json`
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username and remove comments)
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
 {
       "irods_host": "eliot.med.ic.ac.uk",

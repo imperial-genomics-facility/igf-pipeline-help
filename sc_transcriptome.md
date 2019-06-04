@@ -27,7 +27,7 @@ title: IGF Help Pages - Single Cell Transcriptome
 ### Cellranger command line
 Example cellranger count command.
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   cellranger count
     --fastqs=/fastq_directory_path

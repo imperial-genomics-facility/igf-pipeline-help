@@ -66,7 +66,7 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 
 Tool name: __Fastp__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   fastp
     --in1 /path/input/sample.R1.fastq.gz
@@ -87,7 +87,7 @@ Tool name: __Fastp__
 
 Tool name: __STAR__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   STAR
     --runThreadN threads
@@ -120,7 +120,7 @@ Tool name: __STAR__
 
 Tool name:  __BWA__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   bwa
     mem
@@ -137,7 +137,7 @@ Tool name:  __BWA__
 
 Tool name: __Picard AddOrReplaceReadGroups__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   java
     -XX:ParallelGCThreads=threads
@@ -161,7 +161,7 @@ Tool name: __Picard AddOrReplaceReadGroups__
 
 Tool name: __Picard Mark duplicates__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   java
     -XX:ParallelGCThreads=thread
@@ -180,7 +180,7 @@ Tool name: __Picard Mark duplicates__
 
 Tool name: __STAR bigwig__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   STAR
     --runThreadN threads
@@ -197,7 +197,7 @@ Tool name: __STAR bigwig__
 
 Tool name: __FeatureCounts__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   featureCounts
     -a genes.gtf
@@ -209,7 +209,7 @@ Tool name: __FeatureCounts__
 
 Tool name: __RSEM__
 
-<div>
+<div style="background-color:#E8E8E8">
   <pre><code>
   rsem-calculate-expression
     --quiet
