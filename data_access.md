@@ -31,7 +31,7 @@ Users are only allowed to access this server, once they are connected to the col
 
 * Create directory `.irods` under home (e.g. `mkdir -p ~/.irods`)
 * Create iRODS environment file `.irods/irods_environment.json`
-* Copy following configuration to the above mentioned file (replace USERNAME with your actual username)
+* Copy following configuration to the above mentioned file (replace USERNAME with your actual username, and remove comments)
 
 <div style="background-color:#E8E8E8">
   <pre><code>
