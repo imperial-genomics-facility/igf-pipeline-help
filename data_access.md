@@ -63,7 +63,7 @@ Users are only allowed to access this server, once they are connected to the col
 ## Illumina Basespace Sequence Hub based file transfer
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are needed for this specific mode of data transfer:
 
-* Your basespace account email (existion or a new account with free basic subscription)
+* Your basespace account email (existing account or a new free basic subscription account)
 * Confirmation regarding the sample consent type
 
 ## Imperial College Research Data Store based transfer
