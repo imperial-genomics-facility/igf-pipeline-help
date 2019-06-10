@@ -11,8 +11,8 @@ title: IGF Help pages - data access
   * [Command line file transfer](#command-line-file-transfer)
     * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
     * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
-* [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
 * [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
+* [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
 * [Access QC report pages](#access-qc-report-pages)
 * [List of resources](#list-of-resources)
 * [Change logs](#change-logs)
@@ -56,19 +56,19 @@ Users are only allowed to access this server, once they are connected to the col
 
 #### Steps for command line transfer in HPC CX1
 
-* Load irods tool (e.g. `module load irods/4.2.0`)
-* Set up your iRODS account using command `iinit` and specify your password
-* Download data using commandline tool  `iget` (e.g. `iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH`)
+<p style="text-indent: 15px"><b>Step 1:</b> Load irods tool (e.g. <code>module load irods/4.2.0</code>)</p>
+<p style="text-indent: 15px"><b>Step 2:</b> Set up your iRODS account using command <code>iinit</code> and specify your password</p>
+<p style="text-indent: 15px"><b>Step 3:</b> Download data using commandline tool  <code>iget</code> (e.g. <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH</code>)</p>
 
 
 ## Imperial College Research Data Store based transfer
-Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new RDS for your project:
+Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new storage volume for your sequencing project:
 
-  <p>**Step 1:** Check the documentation about [Research Data Store](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) and setup a new allocation for your peoject</p>
-  <p>**Step 2:** Add **Imperial BRC Genomics Facility** as the the member of new research data storage, once its available</p>
-  <p>**Step 3:** Update IGF regarding your new RDS storage path in HPC</p>
-  <p>**Step 4:** Data will be copied to the top level of the storage using the layout `RDS_PATH/PROJECT_NAME`</p>
-  <p>**Step 5:** Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over</p>
+<p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/">Research Data Store</a> and setup a new allocation for your peoject</p>
+<p style="text-indent: 15px"><b>Step 2:</b> Add <b>Imperial BRC Genomics Facility</b> as the the member of new research data storage, once its available</p>
+<p style="text-indent: 15px"><b>Step 3:</b> Update IGF regarding your new RDS storage path in HPC</p>
+<p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/PROJECT_NAME</code></p>
+<p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over</p>
 
 ## Illumina Basespace Sequence Hub based file transfer
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
@@ -86,6 +86,7 @@ You can access these pages from your mobile device if you are connected to wifi 
 
 * [iRODS](https://irods.org/)
 * [iRODS server for genomic facility](http://eliot.med.ic.ac.uk:8080/idrop-web)
+* [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html)
 
 ## Change logs
 
