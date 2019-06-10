@@ -6,30 +6,30 @@ title: IGF Help pages - data access
 # Data Access
 ## Table of Contents
 
-* [Overview](#overview)
-* [Browser based file transfer](#browser-based-file-transfer)
-* [Command line file transfer](#command-line-file-transfer)
-  * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
-  * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
+* [Data access via iRODS server](#data-access-via-irods-server)
+  * [Browser based file transfer](#browser-based-file-transfer)
+  * [Command line file transfer](#command-line-file-transfer)
+    * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
+    * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
 * [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
 * [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
 * [Access QC report pages](#access-qc-report-pages)
 * [List of resources](#list-of-resources)
 * [Change logs](#change-logs)
 
-## Overview
+## Data access via iRODS server
 
-A local installation of [iRODS server](http://eliot.med.ic.ac.uk:8080/idrop-web) is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall.
+A local installation of [iRODS server](http://eliot.med.ic.ac.uk:8080/idrop-web) is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall. 
 Users are only allowed to access this server, once they are connected to the college's network (either direct or VPN access).
 
-## Browser based file transfer
+### Browser based file transfer
 
 * Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/method/set-up-vpn/))
 * Go to [http://eliot.med.ic.ac.uk:8080/idrop-web](http://eliot.med.ic.ac.uk:8080/idrop-web) and log in using your login credentials
 
-## Command line file transfer
+### Command line file transfer
 
-### Steps for setting up iRODS client in HPC CX1 
+#### Steps for setting up iRODS client in HPC CX1 
 
 * Create directory `.irods` under home (e.g. `mkdir -p ~/.irods`)
 * Create iRODS environment file `.irods/irods_environment.json`
@@ -54,24 +54,27 @@ Users are only allowed to access this server, once they are connected to the col
 
 * Validate `.irods/irods_environment.json` file format using [JSONLint](https://jsonlint.com/)
 
-### Steps for command line transfer in HPC CX1
+#### Steps for command line transfer in HPC CX1
 
 * Load irods tool (e.g. `module load irods/4.2.0`)
 * Set up your iRODS account using command `iinit` and specify your password
 * Download data using commandline tool  `iget` (e.g. `iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH`)
 
+
+## Imperial College Research Data Store based transfer
+Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new RDS for your project:
+
+  **Step 1:** Check the documentation about [Research Data Store](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) and setup a new allocation for your peoject
+  **Step 2:** Add **Imperial BRC Genomics Facility** as the the member of new research data storage, once its available
+  **Step 3:** Update IGF regarding your new RDS storage path in HPC
+  **Step 4:** Data will be copied to the top level of the storage using the layout `RDS_PATH/PROJECT_NAME`
+  **Step 5:** Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over
+
 ## Illumina Basespace Sequence Hub based file transfer
-Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are needed for this specific mode of data transfer:
+Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
 
 * Your basespace account email (existing account or a new free basic subscription account)
 * Confirmation regarding the sample consent type
-
-## Imperial College Research Data Store based transfer
-Imperial College now offers a new central service for storing large volume of research data
-* Follow the documentation about [Research Data Store](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) and setup a new allocation for your peoject
-* Add **Imperial BRC Genomics Facility** as the the member of new research data storage, once its available
-* Data will be copied to the top level of the storage using the layout `RDS/PROJECT_NAME`
-* IGF user can be removed from the RDS allocation when all the sequencing runs are finished
 
 ## Access QC report pages
 
