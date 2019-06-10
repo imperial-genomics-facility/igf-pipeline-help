@@ -64,11 +64,11 @@ Users are only allowed to access this server, once they are connected to the col
 ## Imperial College Research Data Store based transfer
 Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new RDS for your project:
 
-  **Step 1:** Check the documentation about [Research Data Store](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) and setup a new allocation for your peoject
-  **Step 2:** Add **Imperial BRC Genomics Facility** as the the member of new research data storage, once its available
-  **Step 3:** Update IGF regarding your new RDS storage path in HPC
-  **Step 4:** Data will be copied to the top level of the storage using the layout `RDS_PATH/PROJECT_NAME`
-  **Step 5:** Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over
+  <p>**Step 1:** Check the documentation about [Research Data Store](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) and setup a new allocation for your peoject</p>
+  <p>**Step 2:** Add **Imperial BRC Genomics Facility** as the the member of new research data storage, once its available</p>
+  <p>**Step 3:** Update IGF regarding your new RDS storage path in HPC</p>
+  <p>**Step 4:** Data will be copied to the top level of the storage using the layout `RDS_PATH/PROJECT_NAME`</p>
+  <p>**Step 5:** Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over</p>
 
 ## Illumina Basespace Sequence Hub based file transfer
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
