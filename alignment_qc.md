@@ -9,15 +9,24 @@ title: IGF Help pages - data access
 * [QC of transcriptomic data](#qc-of-transcriptomic-data)
 * [QC of genomic data](#qc-of-genomic-data)
 * [Software and version information](#software-and-version-information)
-  * [Command line](#command-line)
+* [Command line](#command-line)
+  * [Read preprocessing](#read-preprocessing)
     * [Adapter trimming](#adapter-trimming)
+  * [Read alignment](#read-alignment)
+    * [Genomic DNA alignment](#genomic-dna-alignment)
     * [RNA-Seq alignment](#rna-seq-alignment)
-    * [DNA-Seq alignment](#dna-seq-alignment)
-    * [Post alignment processing](#post-alignment-processing)
-      * [Add RG tags](#add-rg-tags)
+  * [Post-alignment processing](#post-alignment-processing)
+      * [Add Read Group tags](#add-read-group-tags)
       * [Mark duplicate reads](#mark-duplicate-reads)
-    * [RNA-Seq signal](#rna-seq-signal)
-    * [RNA-Seq gene count](#rna-seq-gene-count)
+  * [Signal bigwig](#signal-bigwig)
+    * [Epigenome signal bigwig](#epigenome-signal-bigwig)
+    * [Transcriptome signal bigwig](#transcriptome-signal-bigwig)
+  * [Transcriptome specific analysis](#transcriptome-specific-analysis)
+    * [Expression quantification](#expression-quantification)
+  * [Epigenome quality check](#epigenome-quality-check)
+    * [Strand cross-correlation metrics](#strand-cross-correlation-metrics)
+    * [Sequence coverage](#sequence-coverage)
+    * [Epigenome quality fingerprint](#epigenome-quality-fingerprint)
 * [Output format](#output-format)
   * [Alignment file](#alignment-file)
   * [Gene count files](#gene-count-files)
@@ -46,7 +55,7 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 <p>
 </p>
 <div style="position:relative; left:50px">
-  <img src="images/genome.svg" height="160" >
+  <img src="images/genome.svg" height="300" >
 </div>
 <p>
 </p>
@@ -61,7 +70,10 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
   * [Samtools vX](http://www.htslib.org/)
   * [MultiQC v1.6](https://multiqc.info/)
 
-### Command line
+## Command line
+
+### Read preprocessing
+
 #### Adapter trimming
 
 Tool name: __Fastp__
@@ -69,6 +81,7 @@ Tool name: __Fastp__
 <div style="background-color:#E8E8E8">
   <pre><code>
   fastp
+    -a auto
     --in1 /path/input/sample.R1.fastq.gz
     --out1 /path/trimmed/sample.R1.fastq.gz
     --html /path/trimmed/sample.report.html
@@ -82,6 +95,23 @@ Tool name: __Fastp__
     --trim_poly_g         # for NEXTSEQ
   </code></pre>
 </div>
+
+### Read alignment
+
+#### Genomic DNA alignment
+
+Tool name:  __BWA__
+
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  bwa
+    mem
+    -t threads 
+    -M
+    /path/bwa_ref_genome
+    /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
+  </code></pre>
+ </div>
 
 #### RNA-Seq alignment
 
@@ -116,24 +146,9 @@ Tool name: __STAR__
   </code></pre>
 </div>
 
-#### DNA-Seq alignment
+### Post-alignment processing
 
-Tool name:  __BWA__
-
-<div style="background-color:#E8E8E8">
-  <pre><code>
-  bwa
-    mem
-    -t threads 
-    -M
-    /path/bwa_ref_genome
-    /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
-  </code></pre>
- </div>
-
-#### Post alignment processing
-
-##### Add RG tags
+#### Add Read Group tags
 
 Tool name: __Picard AddOrReplaceReadGroups__
 
@@ -157,7 +172,7 @@ Tool name: __Picard AddOrReplaceReadGroups__
   </code></pre>
 </div>
 
-##### Mark duplicate reads
+#### Mark duplicate reads
 
 Tool name: __Picard Mark duplicates__
 
@@ -176,7 +191,24 @@ Tool name: __Picard Mark duplicates__
   </code></pre>
 </div>
 
-#### RNA-Seq signal
+### Signal bigwig
+
+#### Epigenome signal bigwig
+
+Tool name: __deepTools bamCoverage__
+
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  bamCoverage
+    --bam filtered.bam
+    --outFileFormat bigwig
+    --outFileName bam_cov.bw
+    --blackListFileName /ENCODE/ENCFF419RSJ.bed
+    --numberOfProcessors threads
+  </code></pre>
+</div>
+
+#### Transcriptome signal bigwig
 
 Tool name: __STAR bigwig__
 
@@ -193,7 +225,10 @@ Tool name: __STAR bigwig__
   </code></pre>
 </div>
 
-#### RNA-Seq gene count
+
+### Transcriptome specific analysis
+
+#### Expression quantification
 
 Tool name: __FeatureCounts__
 
@@ -226,6 +261,53 @@ Tool name: __RSEM__
   </code></pre>
 </div>
 
+### Epigenome quality check
+
+#### Strand cross-correlation metrics
+
+Tool name: __Phantompeakqualtools__
+
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  Rscript phantompeakqualtools/run_spp.R
+   -c=filtered.bam
+   -rf
+   -p=threads
+   -savp=PPQT.spp.pdf
+   -out=PPQT.spp.out
+   -odir=/path/output
+  </code></pre>
+</div>
+
+#### Sequence coverage
+
+Tool name: __deepTools plotCoverage__
+
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  plotCoverage
+    -b filtered.bam
+    -p threads
+    --blackListFileName /ENCODE/ENCFF419RSJ.bed
+    --outRawCounts coverage.tab > plot_cov.out
+  </code></pre>
+</div>
+
+#### Epigenome quality fingerprint
+
+Tool name: __deepTools plotFingerprint__
+
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  plotFingerprint
+  --bamfiles filtered.bam
+  --outQualityMetrics fingerprint.m
+  -p 4
+  --blackListFileName /ENCODE/ENCFF419RSJ.bed
+  --outRawCounts fingerprint.tab
+  </code></pre>
+</div>
+
 ## Output format
 
 ### Alignment file
@@ -253,6 +335,8 @@ A multiqc report for the alignment bam is produced (per sample) combining metric
 * Samtools flagstat
 * Samtools stats
 * FeatureCounts (RNA-Seq)
+* Phantompeakqualtools (Epigenome)
+* deepTools (Epigenome)
 
 ## List of resources
   * [Fastp](https://github.com/OpenGene/fastp)
