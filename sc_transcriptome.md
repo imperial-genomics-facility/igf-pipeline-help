@@ -10,6 +10,7 @@ title: IGF Help Pages - Single Cell Transcriptome
 * [Cellranger software and versions](#cellranger-software-and-versions)
   * [Cellranger command line](#cellranger-command-line)
 * [Reference Genome](#reference-genome)
+* [Information about cellranger run configuration](#information-about-cellranger-run-configuration)
 * [Alignment summary metrics](#alignment-summary-metrics)
 * [Singlecell QC check using Scanpy](#singlecell-qc-check-using-scanpy)
   * [Scanpy software and versions](#scanpy-software-and-versions)
@@ -49,20 +50,34 @@ Example cellranger count command.
 
 Following reference genomes are used for running Cellranger data analysis pipeline:
 
-* Human: A [custom reference genome](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) using the hg38 genome build and Gencode (v28) gene sets
+* __Human__: A [custom reference genome](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) using the hg38 genome build and Gencode (v30) gene sets
+
+* __Human (pre-mRNA)__: A [pre-mRNA reference genome](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) using the hg38 genome build and Gencode (v30) gene sets
+
+## Information about cellranger run configuration
+Check the __Sample__ information section of the Cellranger html report for more information regarding the reference genome build, Single cell chemistry version and Cellranger version information.
+
+
+<p>
+</p>
+<div style="position:relative; left:50px">
+  <img src="images/cellranger_sample_info.jpeg" height="150" style="border:1px solid black" >
+</div>
+<p>
+</p>
 
 
 ## Alignment summary metrics
 
 A multiqc report for the alignment bam is produced (per sample) combining the following Picard and Samtools metrics.
 
-* Picard CollectAlignmentSummaryMetrics
-* Picard CollectBaseDistributionByCycle
-* Picard CollectGcBiasMetrics
-* Picard QualityScoreDistribution
-* Picard CollectRnaSeqMetrics
-* Samtools flagstat
-* Samtools idxstats
+* __Picard CollectAlignmentSummaryMetrics__
+* __Picard CollectBaseDistributionByCycle__
+* __Picard CollectGcBiasMetrics__
+* __Picard QualityScoreDistribution__
+* __Picard CollectRnaSeqMetrics__
+* __Samtools stats__
+* __Samtools idxstats__
 
 ## Singlecell QC check using Scanpy
 
@@ -84,6 +99,10 @@ Scanpy tool is used for checking an initial qc of the single cell data after cel
 
 ## Change logs
 
+* 25th June 2019
+  * Added 3D UMAP plot
+  * Added pre-mRNA reference transcriptome option for Cellranger
+  * Moved to Gencode v30 build from v28
 * 24th April 2019
   * Changed Cellranger version from 2.2.0 to 3.0.2
   * Changed Scanpy version from 1.2.2 to 1.4
