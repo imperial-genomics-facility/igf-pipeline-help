@@ -49,6 +49,8 @@ Example Bcl2Fastq command.
   </code></pre>
 </div>
 
+Additionally, for the short read cycles (less than 22 bp for R1 or R2), default value for bcl2fastq param **--mask-short-adapter-reads** is modified with the length of the read cycle.
+
 ## Samplesheet Format
 
 Samplesheets are plain text files, separated by commas, with name `SampleSheet.csv`. It is divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
