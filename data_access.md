@@ -10,6 +10,8 @@ title: IGF Help pages - data access
   * [Browser based file transfer](#browser-based-file-transfer)
   * [Command line file transfer](#command-line-file-transfer)
     * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
+      * [Authentication Type: Standard](#authentication-type-standard)
+      * [Authentication Type: PAM](#authentication-type-pam)
     * [Steps for command line transfer in HPC CX1](#steps-for-command-line-transfer-in-hpc-cx1)
 * [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
 * [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
@@ -35,6 +37,23 @@ Users are only allowed to access this server, once they are connected to the col
 * Create iRODS environment file `.irods/irods_environment.json`
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username and remove comments)
 
+##### Authentication Type: Standard
+Use your IGF login password for setting up iRODS account in HPC, if the authentication type is Standard
+<div style="background-color:#E8E8E8">
+  <pre><code>
+{
+      "irods_host": "eliot.med.ic.ac.uk",
+      "irods_port":1247,
+      "irods_default_resource": "woolfResc",
+      "irods_user_name": USERNAME,
+      "irods_zone_name": "igfZone"
+}
+
+  </code></pre>
+</div>
+
+##### Authentication Type: PAM
+Use your Imperial login credential for setting up iRODS account in HPC, if the authentication type is PAM
 <div style="background-color:#E8E8E8">
   <pre><code>
 {
@@ -43,10 +62,10 @@ Users are only allowed to access this server, once they are connected to the col
       "irods_default_resource": "woolfResc",
       "irods_user_name": USERNAME,
       "irods_zone_name": "igfZone", 
-      "irods_ssl_ca_certificate_file": "/apps/irods/certs/igf-chain.pem", # Skip if your authentication Type is Standard
-      "irods_ssl_ca_certificate_path": "/apps/irods/certs",               # Skip if your authentication Type is Standard    
-      "irods_ssl_verify_server": "cert",                                  # Skip if your authentication Type is Standard
-      "irods_authentication_scheme": "PAM"                                # Skip if your authentication Type is Standard
+      "irods_ssl_ca_certificate_file": "/apps/irods/certs/igf-chain.pem",
+      "irods_ssl_ca_certificate_path": "/apps/irods/certs",
+      "irods_ssl_verify_server": "cert",
+      "irods_authentication_scheme": "PAM"
 }
 
   </code></pre>
