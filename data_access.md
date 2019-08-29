@@ -33,6 +33,8 @@ Users are only allowed to access this server, once they are connected to the col
 
 #### Steps for setting up iRODS client in HPC CX1 
 
+Please follow these steps to set up the iRODS clients in hpc for the first time
+
 * Create directory `.irods` under home (e.g. `mkdir -p ~/.irods`)
 * Create iRODS environment file `.irods/irods_environment.json`
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username) and validate file format using [JSONLint](https://jsonlint.com/)
