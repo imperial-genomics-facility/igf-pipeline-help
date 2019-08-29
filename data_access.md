@@ -38,7 +38,8 @@ Users are only allowed to access this server, once they are connected to the col
 * Copy following configuration to the above mentioned file (replace USERNAME with your actual username) and validate file format using [JSONLint](https://jsonlint.com/)
 
 ##### Authentication Type: Standard
-Use your IGF login password for setting up iRODS account in HPC, if the authentication type is Standard
+Use your IGF login password for setting up iRODS account in HPC, if the authentication type is Standard. You should be receiving the account credentials in a separate email from IGF.
+
 <div style="background-color:#E8E8E8">
   <pre><code>
 {
