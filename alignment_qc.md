@@ -46,7 +46,7 @@ We process sequencing data through our QC pipeline and generate alignment qualit
 
 <div class="table-responsive">
   <table class="table table-hover">
-    <thead>
+    <thead style="font-weight:bold;">
       <tr class="table-light">
         <td scope="col">Library type</td>
         <td scope="col">Species</td>
