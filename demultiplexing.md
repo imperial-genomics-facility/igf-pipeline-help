@@ -61,7 +61,7 @@ Following are the required columns for `[Data]` section of the samplesheet files
 
 <div class="table-responsive">
   <table class="table table-hover">
-    <thead style="font-weight:bold;>
+    <thead style="font-weight:bold;">
       <tr class="table-light">
         <td scope="col">Column Name</td>
         <td scope="col">Allowed characters</td>
@@ -137,7 +137,7 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
 
 <div class="table-responsive">
   <table class="table table-hover">
-    <thead style="font-weight:bold;>
+    <thead style="font-weight:bold;">
       <tr class="table-light">
         <td scope="col">Adapter name</td>
         <td scope="col">Adapter Sequence</td>
