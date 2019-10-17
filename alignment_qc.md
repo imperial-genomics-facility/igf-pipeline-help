@@ -6,8 +6,10 @@ title: IGF Help pages - data access
 # Alignment QC
 ## Table of Contents
 * [Overview](#overview)
+  * [List of supported library type and species](#list-of-supported-library-type-and-species)
 * [QC of transcriptomic data](#qc-of-transcriptomic-data)
 * [QC of genomic data](#qc-of-genomic-data)
+* [QC of single cell transcriptomic data](#qc-of-single-cell-transcriptomic-data)
 * [Software and version information](#software-and-version-information)
 * [Command line](#command-line)
   * [Read preprocessing](#read-preprocessing)
@@ -38,7 +40,38 @@ title: IGF Help pages - data access
 
 
 ## Overview
-We process sequencing data through our QC pipeline and generate alignment quality report for a variety of assay types. Presently this option is available only for the Human samples.
+We process sequencing data through our QC pipeline and generate alignment quality report for a variety of assay types. A list of supported library types and species information can be found below.
+
+### List of supported library type and species
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-light">
+        <td scope="col">Library type</td>
+        <td scope="col">Species</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PolyA-RNA / Total-RNA</td>
+        <td>Human</td>
+      </tr>
+      <tr>
+        <td>ChIP-Seq</td>
+        <td>Human</td>
+      </tr>
+      <tr>
+        <td>ATAC-Seq</td>
+        <td>Human</td>
+      </tr>
+      <tr>
+        <td>Single cell 3' RNA (10X Genomics)</td>
+        <td>Human</td>
+      </tr>
+       </tbody>
+  </table>
+</div>
 
 ## QC of transcriptomic data
 Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped against a reference transcriptome using splice aware aligner STAR. We follow the _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate both genomic and transcriptomic bam files after aligning fastq files from different lanes and flowcells. Each lane level bams are tagged with relevant read group information before they are merged together to create a library level bam followed by marking the duplicate reads (without removal) using Picard tool. We generate raw counts per gene using the FeatureCounts tool from the merged genomic bam. Also, normalised counts are generated using RSEM tool from the merged transcriptome bam. A bigwig signal file is generated from the genomic bam file using STAR, following the _Alternate Protocols 4_ from the above mentioned publication. All the Picard and Samtools metrics are merged using MultiQC for a library level report.
@@ -61,6 +94,9 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 </div>
 <p>
 </p>
+
+## QC of single cell transcriptomic data
+Please check the [Single Cell Transcriptome Analysis](sc_transcriptome.html) page for more details.
 
 ## Software and version information
   * [Fastp v0.19.8](https://github.com/OpenGene/fastp)
