@@ -24,10 +24,14 @@ title: IGF Help pages - data access
 A local installation of [iRODS server](http://eliot.med.ic.ac.uk:8080/idrop-web) is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall. 
 Users are only allowed to access this server, once they are connected to the college's network (either direct or VPN access).
 
+
 ### Browser based file transfer
 
 * Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/method/set-up-vpn/))
 * Go to [http://eliot.med.ic.ac.uk:8080/idrop-web](http://eliot.med.ic.ac.uk:8080/idrop-web) and log in using your login credentials
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 ### Command line file transfer
 
@@ -79,6 +83,10 @@ Use your Imperial login credential for setting up iRODS account in HPC, if the a
 <p style="text-indent: 15px"><b>Step 1:</b> Load irods tool (e.g. <code>module load irods/4.2.0</code>)</p>
 <p style="text-indent: 15px"><b>Step 2:</b> Set up your iRODS account using command <code>iinit</code> and specify your password</p>
 <p style="text-indent: 15px"><b>Step 3:</b> Download data using commandline tool  <code>iget</code> (e.g. <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH</code>)</p>
+<p style="text-indent: 30px"><b>Step 3.1:</b> Download fastq data using commandline tool: <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/fastq</code>
+<p style="text-indent: 30px"><b>Step 3.2:</b> Download analysis data using commandline tool: <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/analysis</code>
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 
 ## Imperial College Research Data Store based transfer
@@ -90,11 +98,16 @@ Imperial College now offers a new central service for storing large volume of re
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
 <p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over</p>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## Illumina Basespace Sequence Hub based file transfer
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
 
 * Your basespace account email (existing account or a new free basic subscription account)
 * Confirmation regarding the sample consent type
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 ## Access QC report pages
 
@@ -102,11 +115,15 @@ QC report pages for the raw and anlysed data files are accessible from our ftp s
 
 You can access these pages from your mobile device if you are connected to wifi network [Imperial-WPA](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/wifi-and-networks/access-wifi/).
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## List of resources
 
 * [iRODS](https://irods.org/)
 * [iRODS server for genomic facility](http://eliot.med.ic.ac.uk:8080/idrop-web)
 * [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html)
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Change logs
 

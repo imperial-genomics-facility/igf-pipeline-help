@@ -22,6 +22,8 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * [FastQ Screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen) for sample (species) contamination check
 * [MultiQC](http://multiqc.info/) for merging all the reports (for all samples) together and for creating a top-level summary report of each lane (per project)
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## List of genomes included for FastQ Screen analysis
 
 * Human (HG38)
@@ -35,6 +37,8 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * Mycoplasma (GCF_000027345.1_ASM2734v1)
 * Rhodococcus
 * Paenibacillus
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 
 ## Software and version information
@@ -61,6 +65,9 @@ Example FastQC command.
   </code></pre>
 </div>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
+
 ### FastQ Screen command line
 Example FastQ Screen command.
 
@@ -79,6 +86,8 @@ Example FastQ Screen command.
   </code></pre>
 </div>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## List of resources
 
 * [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc)
@@ -88,7 +97,11 @@ Example FastQ Screen command.
 * [FastQ screen](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/)
 * [MultiQC](http://multiqc.info/)
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## Change logs
 
+* 24th April 2019
+  - Updated MultiQC from v 1.6 to v 1.7
 * 2018 July 01
   - Updated MultiQC from v1.2

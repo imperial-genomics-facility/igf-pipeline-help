@@ -23,6 +23,9 @@ title: IGF Help pages - demultiplexing fastq
 
 Illumina sequencing platforms generate binary BCL files for each run. These raw data files are picked up by genomic facility pipelines and processed for fastq file generation using software Bcl2Fastq. A samplesheet file containing correct index barcode information is essential for this "demultiplexing" process, in order to allocate fastq reads to the individual samples and filtering the artifacts present in the raw data.
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
+
 ## Software and version information
 
 * [Bcl2Fastq (v2.20)](https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html)
@@ -50,6 +53,9 @@ Example Bcl2Fastq command.
 </div>
 
 Additionally, for the short read cycles (less than 22 bp for R1 or R2), default value for bcl2fastq param **--mask-short-adapter-reads** is modified with the length of the read cycle.
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 ## Samplesheet Format
 
@@ -130,6 +136,8 @@ Following are the required columns for `[Data]` section of the samplesheet files
 
 
 
+</p><div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ### Adapter trimming setting
 
 Demultiplexing pipeline is configured to trim Illumina generic adapters from the reads, with the default run settings.
@@ -156,6 +164,7 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
   </table>
 </div>
 
+</p><div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Fastq output
 
@@ -168,6 +177,7 @@ Fastq files can be accessed from our iRODS data distribution server. Please chec
 * Manifest file containing the md5 checksum of the fastq files
 * Samplesheet file (for the lane)
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Demultiplexing of single cell samples (10xgenomics)
 
@@ -197,6 +207,8 @@ Example Bcl2Fastq command.
   </code></pre>
 </div>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## List of resources
 
 * [Bcl2Fastq download page](https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html)
@@ -204,6 +216,8 @@ Example Bcl2Fastq command.
 * [Samplesheet Format Specifications](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf)
 * [List of single cell barcodes](https://support.10xgenomics.com/single-cell-gene-expression/sequencing/doc/specifications-sample-index-sets-for-single-cell-3)
 * [Samplesheet validation schema](https://github.com/imperial-genomics-facility/data-management-python/tree/master/data/validation_schema#samplesheet-validation)
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Change logs
 
