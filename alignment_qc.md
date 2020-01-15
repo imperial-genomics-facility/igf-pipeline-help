@@ -29,11 +29,17 @@ title: IGF Help pages - data access
     * [Strand cross-correlation metrics](#strand-cross-correlation-metrics)
     * [Sequence coverage](#sequence-coverage)
     * [Epigenome quality fingerprint](#epigenome-quality-fingerprint)
+  * [WGS post alignment processing](#wgs-post-alignment-processing)
+    * [GATK BaseRecalibrator](#gatk-baserecalibrator)
+    * [GATK ApplyBQSR](#gatk-applybqsr)
+    * [GATK BaseRecalibrator post ApplyBQSR](#gatk-baserecalibrator-post-applybqsr)
+    * [GATK HaplotypeCaller GVCF](#gatk-haplotypecaller-gvcf)
 * [Output format](#output-format)
   * [Alignment file](#alignment-file)
   * [Gene count files](#gene-count-files)
   * [Signal files](#signal-files)
   * [Strand cross-correlation pdf](#strand-cross-correlation-pdf)
+  * [GVCF](#gvcf)
   * [MultiQC report](#multiqc-report)
 * [List of resources](#list-of-resources)
 * [Change logs](#change-logs)
@@ -69,9 +75,14 @@ We process sequencing data through our QC pipeline and generate alignment qualit
         <td>Single cell 3' RNA (10X Genomics)</td>
         <td>Human</td>
       </tr>
+      <tr>
+        <td>WGS</td>
+        <td>Human</td>
+      </tr>
        </tbody>
   </table>
 </div>
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## QC of transcriptomic data
 Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped against a reference transcriptome using splice aware aligner STAR. We follow the _Alternate Protocol 7_ from [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/) and generate both genomic and transcriptomic bam files after aligning fastq files from different lanes and flowcells. Each lane level bams are tagged with relevant read group information before they are merged together to create a library level bam followed by marking the duplicate reads (without removal) using Picard tool. We generate raw counts per gene using the FeatureCounts tool from the merged genomic bam. Also, normalised counts are generated using RSEM tool from the merged transcriptome bam. A bigwig signal file is generated from the genomic bam file using STAR, following the _Alternate Protocols 4_ from the above mentioned publication. All the Picard and Samtools metrics are merged using MultiQC for a library level report.
@@ -83,9 +94,10 @@ Sequencing data for RNA-Seq samples are adapter trimmed using Fastp and mapped a
 </div>
 <p>
 </p>
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## QC of genomic data
-Sequencing data for genomic samples are adapter trimmed using Fastp and mapped against a reference genome using alignment tool BWA. We follow GATK's [Data pre-processing for variant discovery](https://software.broadinstitute.org/gatk/best-practices/workflow?id=11165)  document and post process the raw alignment. Each lane level bams are tagged with relevant read group information before they are merged to a library level bam, after which duplicate reads are marked. We generate Picard and Samtools metrics for the library level bam and combine them using MultiQC. For the epigenome assays, we generate few additional metrics using [Phantompeakqualtools](https://www.encodeproject.org/software/phantompeakqualtools/) and [deepTools](https://deeptools.readthedocs.io/en/develop/) and add them to the same MultiQC report.
+Sequencing data for genomic samples are adapter trimmed using Fastp and mapped against a reference genome using alignment tool BWA. We follow GATK's [Data pre-processing for variant discovery](https://software.broadinstitute.org/gatk/best-practices/workflow?id=11165)  document and post process the raw alignment. Each lane level bams are tagged with relevant read group information before they are merged to a library level bam, after which duplicate reads are marked. We generate Picard and Samtools metrics for the library level bam and combine them using MultiQC. For the epigenome assays (<span style="color:#800080">purple arrow</span>), we generate few additional metrics using [Phantompeakqualtools](https://www.encodeproject.org/software/phantompeakqualtools/) and [deepTools](https://deeptools.readthedocs.io/en/develop/) and add them to the same MultiQC report. For WGS samples (<span style="color:#E59400">orange arrow</span>), we process the duplicate marked bams with [GATK](https://gatk.broadinstitute.org/) BaseRecalibrator and ApplyBQSR before generating per sample GVCF files using HaplotypeCaller tool.
 
 <p>
 </p>
@@ -94,6 +106,7 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 </div>
 <p>
 </p>
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## QC of single cell transcriptomic data
 Please check the [Single Cell Transcriptome Analysis](sc_transcriptome.html) page for more details.
@@ -101,14 +114,17 @@ Please check the [Single Cell Transcriptome Analysis](sc_transcriptome.html) pag
 ## Software and version information
   * [Fastp v0.19.8](https://github.com/OpenGene/fastp)
   * [STAR v2.6.0a](https://github.com/alexdobin/STAR) 
-  * [BWA v 0.7.17](http://bio-bwa.sourceforge.net/)
-  * [RSEM v 1.3.1](https://deweylab.github.io/RSEM/)
-  * [FeatureCounts v 1.6.4](http://bioinf.wehi.edu.au/featureCounts/)
-  * [Picard v 2.19](https://broadinstitute.github.io/picard/command-line-overview.html)
-  * [Samtools v 1.9](http://www.htslib.org/)
-  * [MultiQC v 1.7](https://multiqc.info/)
-  * [Phantompeakqualtools v 1.2.0](https://www.encodeproject.org/software/phantompeakqualtools/)
-  * [deepTools v 3.2.1](https://deeptools.readthedocs.io/en/develop/)
+  * [BWA v0.7.17](http://bio-bwa.sourceforge.net/)
+  * [RSEM v1.3.1](https://deweylab.github.io/RSEM/)
+  * [FeatureCounts v1.6.4](http://bioinf.wehi.edu.au/featureCounts/)
+  * [Picard v2.19](https://broadinstitute.github.io/picard/command-line-overview.html)
+  * [Samtools v1.9](http://www.htslib.org/)
+  * [MultiQC v1.7](https://multiqc.info/)
+  * [Phantompeakqualtools v1.2.0](https://www.encodeproject.org/software/phantompeakqualtools/)
+  * [deepTools v3.2.1](https://deeptools.readthedocs.io/en/develop/)
+  * [GATK v4.1.4.1](https://gatk.broadinstitute.org/)
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Command line
 
@@ -135,6 +151,8 @@ Tool name: __Fastp__
     --trim_poly_g         # for NEXTSEQ
   </code></pre>
 </div>
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ### Read alignment
 
@@ -186,6 +204,8 @@ Tool name: __STAR__
   </code></pre>
 </div>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ### Post-alignment processing
 
 #### Add Read Group tags
@@ -230,6 +250,7 @@ Tool name: __Picard Mark duplicates__
     I=/path/mapped/sampleAligned.sortedByCoord.out.AddOrReplaceReadGroups.bam
   </code></pre>
 </div>
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ### Signal bigwig
 
@@ -265,6 +286,7 @@ Tool name: __STAR bigwig__
   </code></pre>
 </div>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ### Transcriptome specific analysis
 
@@ -300,6 +322,8 @@ Tool name: __RSEM__
     /path/rsem/sample
   </code></pre>
 </div>
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ### Epigenome quality check
 
@@ -362,6 +386,69 @@ Tool name: __deepTools plotFingerprint__
   </code></pre>
 </div>
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
+### WGS post alignment processing
+
+#### GATK BaseRecalibrator
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  gatk 
+    BaseRecalibrator 
+      -I /path/sample.MarkDuplicates.bam 
+      -O /path/sample.MarkDuplicates.bam_BaseRecalibrator.table 
+      --reference /path/fasta
+      --java-options '-XX:ParallelGCThreads=1 -Xmx8g -Djava.io.tmpdir=/tmpdir'
+      --known-sites /path/dbsnp.vcf 
+      --known-sites /path/known_indels.vcf.gz
+  </code></pre>
+</div>
+
+#### GATK ApplyBQSR
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  gatk
+    ApplyBQSR
+      --bqsr-recal-file /path/sample.MarkDuplicates.bam_BaseRecalibrator.table
+      --create-output-bam-index
+      --emit-original-quals
+      -I /path/sample.MarkDuplicates.bam 
+      -O /path/sample.MarkDuplicates_ApplyBQSR.bam 
+      --reference /path/fasta 
+      --java-options '-XX:ParallelGCThreads=1 -Xmx8g -Djava.io.tmpdir=/tmpdir'
+  </code></pre>
+</div>
+
+#### GATK BaseRecalibrator (post ApplyBQSR)
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  gatk
+    BaseRecalibrator
+      -I /path/sample.MarkDuplicates_ApplyBQSR.bam
+      -O /path/sample.MarkDuplicates_ApplyBQSR.bam_BaseRecalibrator.table
+      --reference /path/fasta
+      --java-options '-XX:ParallelGCThreads=1 -Xmx8g -Djava.io.tmpdir=/tmpdir'
+      --known-sites /path/dnsnp.vcf
+      --known-sites /path/known_indels.vcf.gz
+  </code></pre>
+</div>
+
+#### GATK HaplotypeCaller GVCF
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  gatk
+    HaplotypeCaller
+    -I /path/sample.MarkDuplicates_ApplyBQSR.bam
+    -O /path/sample.MarkDuplicates_ApplyBQSR_HaplotypeCaller.g.vcf.gz
+    --reference /path/fasta
+    --dbsnp /path/dbsnp.vcf
+    --java-options '-XX:ParallelGCThreads=1 -Xmx8g -Djava.io.tmpdir=/tmpdir'
+    --emit-ref-confidence GVCF
+  </code></pre>
+</div>
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## Output format
 
 ### Alignment file
@@ -377,6 +464,9 @@ Tool name: __deepTools plotFingerprint__
 
 ### Strand cross-correlation pdf
   * __Phantompeakqualtools pdf__: Strand cross-correlation plot with NSC and RSC metrics
+
+### GVCF
+  * __GATK HaplotypeCaller GVCF__: Per sample GVCF file produced by GATK HaplotypeCaller
 
 ### MultiQC report
 
@@ -395,6 +485,9 @@ A multiqc report for the alignment bam is produced (per sample) combining metric
 * __FeatureCounts__ (RNA-Seq)
 * __Phantompeakqualtools__ (Epigenome)
 * __deepTools__ (Epigenome)
+* __GATK BQSR (pre and post ApplyBQSR)__ (WGS)
+
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## List of resources
   * [Fastp](https://github.com/OpenGene/fastp)
@@ -405,10 +498,15 @@ A multiqc report for the alignment bam is produced (per sample) combining metric
   * [RSEM](https://deweylab.github.io/RSEM/)
   * [Phantompeakqualtools](https://www.encodeproject.org/software/phantompeakqualtools/)
   * [deepTools](https://deeptools.readthedocs.io/en/develop/)
+  * [GATK](https://gatk.broadinstitute.org/)
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Change logs
 
+* 03 January 2020
+  * Added WGS post alignment processing by GATK
+  * Added GATK HaplotypeCaller GVCF generation for WGS samples
 * 25th June 2019
   * Added epigenome specific metrics
   * Added "-a auto" flag to Fastp command
