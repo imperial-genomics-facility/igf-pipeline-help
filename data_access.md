@@ -83,10 +83,11 @@ Use your Imperial login credential for setting up iRODS account in HPC, if the a
 <p style="text-indent: 15px"><b>Step 1:</b> Load irods tool (e.g. <code>module load irods/4.2.0</code>)</p>
 <p style="text-indent: 15px"><b>Step 2:</b> Set up your iRODS account using command <code>iinit</code> and specify your password</p>
 <p style="text-indent: 15px"><b>Step 3:</b> Download data using commandline tool  <code>iget</code> (e.g. <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/PATH</code>)</p>
-<p style="text-indent: 30px"><b>Step 3.1:</b> Download fastq data using commandline tool: <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/fastq</code>
-<p style="text-indent: 30px"><b>Step 3.2:</b> Download analysis data using commandline tool: <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/analysis</code>
+<p style="text-indent: 30px"><b>Step 3.1:</b> Download fastq data using commandline tool: <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/fastq</code></p>
+<p style="text-indent: 30px"><b>Step 3.2:</b> Download analysis data using commandline tool: <code>iget -Pr /igfZone/home/USERNAME/PROJECT_NAME/analysis</code></p>
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 
 ## Imperial College Research Data Store based transfer
@@ -100,6 +101,7 @@ Imperial College now offers a new central service for storing large volume of re
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
+
 ## Illumina Basespace Sequence Hub based file transfer
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
 
@@ -107,6 +109,7 @@ Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequ
 * Confirmation regarding the sample consent type
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 
 ## Access QC report pages
@@ -117,6 +120,7 @@ You can access these pages from your mobile device if you are connected to wifi 
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
+
 ## List of resources
 
 * [iRODS](https://irods.org/)
@@ -124,6 +128,7 @@ You can access these pages from your mobile device if you are connected to wifi 
 * [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html)
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 ## Change logs
 
