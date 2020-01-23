@@ -16,8 +16,8 @@ A list of all the notebooks used by IGF for generating QC plots and analysis can
         <td scope="col">Github repo</td>
         <td scope="col">Docker image</td>
         <td scope="col">Launch binder</td>
-        <td scope="col">Templates</td>
         <td scope="col">Examples</td>
+        <td scope="col">Templates</td>
       </tr>
     </thead>
     <tbody>
