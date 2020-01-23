@@ -1,6 +1,6 @@
 ---
 layout: demultiplexing_template
-title: IGF Help pages - demultiplexing fastq
+title: IGF help pages - De-multiplexing Fastq
 ---
  
 # Demultiplexing Fastq

@@ -1,6 +1,6 @@
 ---
 layout: alignment_qc_template
-title: IGF Help pages - data access
+title: IGF help pages - Alignment QC
 ---
 
 # Alignment QC

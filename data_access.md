@@ -1,6 +1,6 @@
 ---
 layout: data_access_template
-title: IGF Help pages - data access
+title: IGF help pages - Data Access
 ---
 
 # Data Access

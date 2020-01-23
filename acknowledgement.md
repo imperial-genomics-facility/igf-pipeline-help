@@ -1,6 +1,6 @@
 ---
 layout: acknowledgement_template
-title: IGF Help Pages - Acknowledgement
+title: IGF help pages - Acknowledgement
 ---
 
 # Acknowledgement

@@ -1,6 +1,6 @@
 ---
 layout: qc_report_page_template
-title: IGF Help pages - project qc report
+title: IGF help pages - Project QC Report
 ---
 
 # Project QC Report Page

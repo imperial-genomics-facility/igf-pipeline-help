@@ -1,6 +1,6 @@
 ---
 layout: fastq_qc_template
-title: IGF Help Pages - Fastq QC
+title: IGF help pages - Fastq QC
 ---
 # Information about Fastq QC Report
 ## Table of Contents
