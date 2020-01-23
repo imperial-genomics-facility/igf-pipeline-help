@@ -1,5 +1,5 @@
 ---
-layout: notebook_resources_template
+layout: notebook_resource_template
 title: IGF help pages - Notebook Resources
 ---
 
