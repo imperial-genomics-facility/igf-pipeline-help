@@ -52,7 +52,7 @@ Use your IGF login password for setting up iRODS account in HPC, if the authenti
       "irods_host": "eliot.med.ic.ac.uk",
       "irods_port":1247,
       "irods_default_resource": "woolfResc",
-      "irods_user_name": USERNAME,
+      "irods_user_name": "YOUR_IGF_USERNAME",
       "irods_zone_name": "igfZone"
 }
 
@@ -67,7 +67,7 @@ Use your Imperial login credential for setting up iRODS account in HPC, if the a
       "irods_host": "eliot.med.ic.ac.uk",
       "irods_port":1247,
       "irods_default_resource": "woolfResc",
-      "irods_user_name": USERNAME,
+      "irods_user_name": "YOUR_HPC_USERNAME",
       "irods_zone_name": "igfZone", 
       "irods_ssl_ca_certificate_file": "/apps/irods/certs/igf-chain.pem",
       "irods_ssl_ca_certificate_path": "/apps/irods/certs",
