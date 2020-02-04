@@ -20,7 +20,7 @@ title: IGF help pages - Single Cell Transcriptome
   
 ## Overview
 
-[Cellranger]((https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)) pipeline from 10Xgenomics is used for running primary analysis for the single cell transcriptome samples. A list of the output files from this pipeline can be found [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview).
+[Cellranger]((https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)) pipeline from 10Xgenomics is used for running primary analysis for the single cell transcriptome samples (currently, only the `3' single cell RNA-Seq data` is supported). A list of the output files from this pipeline can be found [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview).
 
 ## Cellranger software and versions
 
