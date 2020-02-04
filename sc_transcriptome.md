@@ -13,7 +13,8 @@ title: IGF help pages - Single Cell Transcriptome
 * [Information about cellranger run configuration](#information-about-cellranger-run-configuration)
 * [Alignment summary metrics](#alignment-summary-metrics)
 * [Singlecell QC check using Scanpy](#singlecell-qc-check-using-scanpy)
-  * [Scanpy software and versions](#scanpy-software-and-versions)
+* [UCSC Cell Browser](#ucsc-cell-browser)
+* [Software and versions](#software-and-versions)
 * [List of resources](#list-of-resources)
 * [Change logs](#change-logs)
   
@@ -35,12 +36,9 @@ Example cellranger count command.
     --id=ID
     --transcriptome=/path/transcriptome
     --nopreflight
-    --maxjobs=20
-    --mempercore=4
     --disable-ui
-    --jobmode=pbspro
-    --localcores=1
-    --localmem=4
+    --localcores=14
+    --localmem=64
     
   </code></pre>
 </div>
@@ -81,14 +79,19 @@ A multiqc report for the alignment bam is produced (per sample) combining the fo
 
 ## Singlecell QC check using Scanpy
 
-Scanpy tool is used for checking an initial qc of the single cell data after cellranger count run. This analysis is based on the following Scanpy tutorials
+We use [Scanpy](https://scanpy.readthedocs.io/en/latest/) to generate per sample QC report for the single cell data following this tutorial: [Clustering 3K PBMCs](https://scanpy-tutorials.readthedocs.io/en/latest/pbmc3k.html). We have implemented a Jupyter notebook based QC report which can be run within a Docker or Singularity container. We execute this notebook based implementation for each of the single cell samples and store a html version of the report with all the codes and plots. These notebook resources can be accessed from the 'Analysis' tab of the 'IGF QC Report' page.
 
-  * [Clustering 3K PBMCs](https://scanpy-tutorials.readthedocs.io/en/latest/pbmc3k.html)
+Please feel free to check our implementation of the QC report on Github [scanpy-notebook-image](https://github.com/imperial-genomics-facility/scanpy-notebook-image) for further detail or to try out the example notebooks on binder. A list of all our notebook based resources can be found this this page: [Notebook resources](notebook_resources.html).
+ 
 
+## UCSC Cell Browser
 
-### Scanpy software and versions
+We have implemented an offline version of [UCSC Cell Browser](https://cells.ucsc.edu/) and generate the server resources for individual samples. Similar to the Scanpy report pagess, these browser directories can be accessed from the 'Analysis' tab of the 'IGF QC Report' page.
 
-* [Scanpy (1.4)](https://scanpy.readthedocs.io/en/latest/)
+## Software and versions
+
+* [Scanpy v1.4.5](https://scanpy.readthedocs.io/en/latest/)
+* [UCSC Cell Browser v 0.7.7](https://cells.ucsc.edu/)
 
 ## List of resources
 
@@ -96,9 +99,16 @@ Scanpy tool is used for checking an initial qc of the single cell data after cel
 * [Reference genome for hg19 and mm10](http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-and-mm10-2.1.0.tar.gz)
 * [Cellranger output files](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/overview)
 * [Scanpy](https://scanpy.readthedocs.io/en/latest/)
+* [UCSC Cell Browser](https://cells.ucsc.edu/)
+* [Github: scanpy-notebook-image](https://github.com/imperial-genomics-facility/scanpy-notebook-image)
+* [Notebook resources](notebook_resources.html)
 
 ## Change logs
 
+* 3rd Feb 2020
+  * Moved to notebook based Scanpy QC report
+  * Updated Scanpy to v1.4 to v1.4.5
+  * Added UCSC Cell Browser
 * 25th June 2019
   * Added 3D UMAP plot
   * Added pre-mRNA reference transcriptome option for Cellranger
