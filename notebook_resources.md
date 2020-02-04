@@ -7,7 +7,7 @@ title: IGF help pages - Notebook Resources
 
 ## List of notebook resources
 
-A list of all the notebooks used by IGF for generating QC plots and analysis can be found here
+A list of all the notebooks used by IGF for generating QC plots and analysis results can be found here.
 
 <div class="table-responsive">
   <table class="table table-hover">
