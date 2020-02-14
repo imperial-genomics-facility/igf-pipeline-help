@@ -19,14 +19,28 @@
   <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#"><img style='height:30px' src='images/igf.png' /> IGF Help Pages</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Help pages<span class="sr-only">(current)</span></a>
-           </li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Pages</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="qc_report_page.html">Project QC Report</a>
+                <a class="dropdown-item" href="demultiplexing.html">Demultiplexing of the raw bcl files</a>
+                <a class="dropdown-item" href="fastq_qc.html"> Running QC check for raw fastq data</a>
+                <a class="dropdown-item" href="alignment_qc.html">Alignment QC</a>
+                <a class="dropdown-item" href="sc_transcriptome.html">Running data analysis for single cell samples</a>
+                <a class="dropdown-item" href="ref_genome.html">Reference genome datasets</a>
+                <a class="dropdown-item" href="notebook_resources.html">Notebook resources</a>
+                <a class="dropdown-item" href="data_access.html">Data access</a>
+                <a class="dropdown-item" href="acknowledgement.html">How should I acknowledge your facility?</a>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="http://www.imperial.ac.uk/medicine/research-and-impact/facilities/genomics-facility/about/">About</a>
             </li>
