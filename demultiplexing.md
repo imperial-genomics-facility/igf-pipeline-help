@@ -186,8 +186,10 @@ Steps:
 * In Mac/Linux
   * Open a terminal and `cd` to the current location
   * Run md5sum for file validation 
+  
   e.g 
-  ```bash
+  
+  ```Shell
   awk '{print $2"  " $1}' file_manifest.csv |grep -v file|md5sum -c
   ```
 
