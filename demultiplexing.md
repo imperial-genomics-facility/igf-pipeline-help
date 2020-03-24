@@ -136,7 +136,7 @@ Following are the required columns for `[Data]` section of the samplesheet files
 
 
 
-</p><div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 ### Adapter trimming setting
 
@@ -164,7 +164,7 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
   </table>
 </div>
 
-</p><div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 
 ## Fastq output
 
