@@ -13,6 +13,7 @@ title: IGF help pages - De-multiplexing Fastq
   * [Data Format](#data-format)
   * [Adapter trimming setting](#adapter-trimming-setting)
 * [Fastq output](#fastq-output)
+  * [Validate fastq file after downloading](#validate-fastq-file-after-downloading)
 * [Demultiplexing of single cell samples (10xgenomics)](#demultiplexing-of-single-cell-samples-10xgenomics)
   * [Bcl2Fastq command line for single cell samples](#bcl2fastq-command-line-for-single-cell-samples)
 * [List of resources](#list-of-resources)
@@ -176,6 +177,15 @@ Fastq files can be accessed from our iRODS data distribution server. Please chec
 * Demuliplexing html report
 * Manifest file containing the md5 checksum of the fastq files
 * Samplesheet file (for the lane)
+
+### Validate fastq file after downloading
+
+Steps:
+
+* Download tar files from iRODS server and extract (use 7zip for windows)
+* In Mac/Linux
+  * Open a terminal anc 'cd' to the current location
+  * Run md5sum for file validation  (e.g. `awk '{print $2"  " $1}' file_manifest.csv |head|grep -v file|md5sum -c`)
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
