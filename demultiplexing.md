@@ -185,7 +185,11 @@ Steps:
 * Download tar files from iRODS server and extract (use 7zip for windows)
 * In Mac/Linux
   * Open a terminal and `cd` to the current location
-  * Run md5sum for file validation  (e.g. `awk '{print $2"  " $1}' file_manifest.csv |grep -v file|md5sum -c` )
+  * Run md5sum for file validation 
+  e.g 
+  ```bash
+  awk '{print $2"  " $1}' file_manifest.csv |grep -v file|md5sum -c
+  ```
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
