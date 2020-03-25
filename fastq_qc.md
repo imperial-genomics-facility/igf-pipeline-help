@@ -103,6 +103,8 @@ Example FastQ Screen command.
 
 ## Change logs
 
+* 25th March 2020
+  - Added Human coronavirus references to fastq_screen
 * 24th April 2019
   - Updated MultiQC from v 1.6 to v 1.7
 * 2018 July 01
