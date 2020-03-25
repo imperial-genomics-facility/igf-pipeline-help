@@ -184,14 +184,12 @@ Steps:
 
 * Download tar files from iRODS server and extract (use 7zip for windows)
 * In Mac/Linux
-  * Open a terminal and `cd` to the current location
+  * Open a terminal and `cd` to the top level dir (look for `PROJECT_NAME_file_manifest.csv`)
   * Run md5sum for file validation 
   
   e.g 
   
-  ```Shell
-  awk '{print $2"  " $1}' file_manifest.csv |grep -v file|md5sum -c
-  ```
+  `awk '{print $2"  " $1}' PROJECT_NAME_file_manifest.csv |grep -v file|md5sum -c`
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
