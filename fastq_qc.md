@@ -37,6 +37,8 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * Mycoplasma (GCF_000027345.1_ASM2734v1)
 * Rhodococcus
 * Paenibacillus
+* Human coronavirus 229E (NC_002645.1)
+* Human coronavirus OC43 (AY391777.1)
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
