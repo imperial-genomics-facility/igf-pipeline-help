@@ -39,6 +39,7 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 * Paenibacillus
 * Human coronavirus 229E (NC_002645.1)
 * Human coronavirus OC43 (AY391777.1)
+* Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1 (NC_045512.2)
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
