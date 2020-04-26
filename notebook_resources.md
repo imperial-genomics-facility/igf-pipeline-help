@@ -15,7 +15,7 @@ A list of all the notebooks used by IGF for generating QC plots and analysis res
     <tr style="text-align: center;">
       <th scope="col">Analysis name</th>
       <th scope="col">Documentation</th>
-      <th scope="col">Notebooks</th>
+      <th scope="col">Example notebooks</th>
       <th scope="col">Binder</th>
     </tr>
   </thead>
