@@ -35,8 +35,8 @@ A list of all the notebooks used by IGF for generating QC plots and analysis res
     <tr>
       <td>RNA-Seq data analysis (dev)</td>
       <td><a href="https://rnaseq-notebook-image.readthedocs.io/en/latest/">Help docs</a></td>
-      <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/rnaseq-notebook-image/blob/master/examples/rnaseq_example_1_v0.0.1.ipynb">RNA-Seq data using STAR and DESeq2</a></li></ul></td>
-      <td><ul><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/rnaseq-notebook-image/blob/master/examples/rnaseq_example_1_v0.0.1.ipynb">RNA-Seq data using STAR and DESeq2</a></li><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/rnaseq-notebook-image/blob/master/examples/rnaseq_example_dask_1_v0.0.1.ipynb">RNA-Seq data using STAR and DESeq2 (using Dask)</a></li></ul></td>
+      <td><ul><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_dask_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
     <tr>
       <td>GWAS data analysis using Hail (dev)</td>
