@@ -70,7 +70,7 @@ You can run these notebooks on
 * __Imperial College HPC__: You have to install all the tools on a conda environment and then you can copy and run these notebooks on the HPC. More details on how to set up conda environment can be found here: [https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/support/applications/jupyter/](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/support/applications/jupyter/)
 
 
-__Note__: Installing Docker will require root (admin) access on your laptop or server and you may need to contact the ICT (or IT department) to complete this step.
+__Note__: Installing Docker will require root (admin) access on your laptop or server and you may need to contact the IT admin to complete this step.
 
 __Warning__: Docker images downloaded from unknown sources can have malicious codes which can damage your laptop or server.
 
