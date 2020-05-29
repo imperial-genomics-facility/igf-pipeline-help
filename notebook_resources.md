@@ -64,8 +64,8 @@ __Note:__
 
 You can run these notebooks on
 
-* __Binder__: Load these example notebooks using limited, free computational resource
-* __Docker__ (on your Laptop/Desktop): Using Docker [(https://docs.docker.com/get-docker/)](https://docs.docker.com/get-docker/) to set up a local notebook server
+* __Binder__: Load these example notebooks using limited, free computational resource (using example data)
+* __Docker__ (on your Laptop/Desktop): You will have to install Docker [(https://docs.docker.com/get-docker/)](https://docs.docker.com/get-docker/) on your own laptop or server, if you prefer to check your own data
 * __Imperial College HPC__: You have to install all the tools on a conda environment and then you can copy and run these notebooks on the HPC. More details on how to set up conda environment can be found here: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/support/applications/jupyter/
 
 
