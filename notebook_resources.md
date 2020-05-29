@@ -55,6 +55,7 @@ A list of all the notebooks used by IGF for generating QC plots and analysis res
 </div>
 
 __Note:__ 
+* You will need a laptop / desktop with any modern web browser to explore these resources
 * Binder provides a temporary environment for running these example notebooks and any changes to the notebook will get deleted after a while
 * Start up time may vary for these notebooks as Binder needs to build a new environment once there are any new changes in these repositories
 * Repositories with tag `dev` are still under active development and the notebook runs may fail occasionally 
