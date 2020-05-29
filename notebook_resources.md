@@ -58,6 +58,20 @@ __Note:__
 * Binder provides a temporary environment for running these example notebooks and any changes to the notebook will get deleted after a while
 * Start up time may vary for these notebooks as Binder needs to build a new environment once there are any new changes in these repositories
 * Repositories with tag `dev` are still under active development and the notebook runs may fail occasionally 
+* All these notebooks will have `Python`/`R`/`bash` scripts. Although you can run these notebooks without knowing any of these programming languages, its recommended to have some basic knowledge, if you are planning to edit the code
+
+### Where to run?
+
+You can run these notebooks on
+
+* __Binder__: Load these example notebooks using limited, free computational resource
+* __Docker__ (on your Laptop/Desktop): Using Docker to set up a local notebook server
+* __Imperial College HPC__: You have to install all the tools on a conda environment and then you can copy and run these notebooks on the HPC. More details on how to set up conda environment can be found here: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/support/applications/jupyter/
+
+
+__Note__: Installing Docker will require root (admin) access on your laptop or server and you may need to contact the ICT (or IT department) to complete this step.
+
+__Warning__: Docker images downloaded from unknown sources can have malicious codes which can damage your laptop or server.
 
 ## Change logs
 * None
