@@ -13,6 +13,7 @@ title: IGF help pages - De-multiplexing Fastq
   * [Data Format](#data-format)
   * [Adapter trimming setting](#adapter-trimming-setting)
 * [Fastq output](#fastq-output)
+  * [File name](#file-name)
   * [Validate fastq file after downloading](#validate-fastq-file-after-downloading)
 * [Demultiplexing of single cell samples (10xgenomics)](#demultiplexing-of-single-cell-samples-10xgenomics)
   * [Bcl2Fastq command line for single cell samples](#bcl2fastq-command-line-for-single-cell-samples)
@@ -167,7 +168,7 @@ Demultiplexing pipeline is configured to trim Illumina generic adapters from the
 
 
 
-## Fastq output
+### Fastq output
 
 Fastq files can be accessed from our iRODS data distribution server. Please check the [Data access](data_access.html) page for more details on this topic. Following files are present in each of the lane level tar files
 
@@ -177,6 +178,21 @@ Fastq files can be accessed from our iRODS data distribution server. Please chec
 * Demuliplexing html report
 * Manifest file containing the md5 checksum of the fastq files
 * Samplesheet file (for the lane)
+
+## File name
+
+Illumina uses the follwing file name convension for the output fastq files
+
+For example: `samplename_S1_L001_R1_001.fastq.gz`
+
+* __samplename__ : Name of the sample provided in the samplesheet
+* __S1__ : Number of sample based on the sample order on the samplesheet
+* __L001__ : Lane number of the flowcell
+* __R1__ : The read. For e.g. R1 indicates Read 1 and R2 indicates Read 2 of a paired-end run
+* __001__ : Its always 001
+* __.fastq.gz__ : File extension. Its a gzipped fastq file
+
+Please check the [Illumina BCL2Fastq documentation](https://emea.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html) for more information.
 
 ### Validate fastq file after downloading
 
