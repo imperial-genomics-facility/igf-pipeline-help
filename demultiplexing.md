@@ -39,7 +39,7 @@ Example Bcl2Fastq command.
   <pre><code>
 </code></pre>
 </div>
-'''bash
+```bash
   bcl2fastq 
     --runfolder-dir /path/input 
     --sample-sheet /path/SampleSheet.csv 
@@ -53,7 +53,7 @@ Example Bcl2Fastq command.
     --barcode-mismatches 1 
     -r 1 
     --auto-set-to-zero-barcode-mismatches
- '''
+ ```
   
   
 
