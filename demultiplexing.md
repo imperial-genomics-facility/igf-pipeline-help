@@ -36,19 +36,18 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
 Example Bcl2Fastq command.
 
 <div style="background-color:#E8E8E8">
-  <pre><code>
-  bcl2fastq \
-    --runfolder-dir /path/input \
-    --sample-sheet /path/SampleSheet.csv \
-    --output-dir /path/output \
-    --reports-dir /path/Reports \
-    --use-bases-mask BASES_MASK \
-    --stats-dir /path/Stats \
-    -p 2 \
-    --create-fastq-for-index-reads \
-    -w 1 \
-    --barcode-mismatches 1 \
-    -r 1 \
+  <pre><code>  bcl2fastq
+    --runfolder-dir /path/input 
+    --sample-sheet /path/SampleSheet.csv 
+    --output-dir /path/output 
+    --reports-dir /path/Reports 
+    --use-bases-mask BASES_MASK 
+    --stats-dir /path/Stats 
+    -p 2 
+    --create-fastq-for-index-reads 
+    -w 1 
+    --barcode-mismatches 1 
+    -r 1 
     --auto-set-to-zero-barcode-mismatches
 </code></pre>
 </div>
