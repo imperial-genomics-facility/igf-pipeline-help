@@ -112,7 +112,7 @@ Sequencing data for genomic samples are adapter trimmed using Fastp and mapped a
 Please check the [Single Cell Transcriptome Analysis](sc_transcriptome.html) page for more details.
 
 ## Software and version information
-  * [Fastp v0.19.8](https://github.com/OpenGene/fastp)
+  * [Fastp v0.20.1](https://github.com/OpenGene/fastp)
   * [STAR v2.6.0a](https://github.com/alexdobin/STAR) 
   * [BWA v0.7.17](http://bio-bwa.sourceforge.net/)
   * [RSEM v1.3.1](https://deweylab.github.io/RSEM/)
@@ -506,6 +506,7 @@ A multiqc report for the alignment bam is produced (per sample) combining metric
 
 * 29 January 2021
   * Moved to Gencode v36 build from v30
+  * Updated Fastp from v0.19.8 to v0.20.1
 * 20 December 2020
   * Updated MultiQC from v 1.7 to v 1.9
 * 03 January 2020
