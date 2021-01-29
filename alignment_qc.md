@@ -119,7 +119,7 @@ Please check the [Single Cell Transcriptome Analysis](sc_transcriptome.html) pag
   * [FeatureCounts v1.6.4](http://bioinf.wehi.edu.au/featureCounts/)
   * [Picard v2.19](https://broadinstitute.github.io/picard/command-line-overview.html)
   * [Samtools v1.9](http://www.htslib.org/)
-  * [MultiQC v1.7](https://multiqc.info/)
+  * [MultiQC v1.9](https://multiqc.info/)
   * [Phantompeakqualtools v1.2.0](https://www.encodeproject.org/software/phantompeakqualtools/)
   * [deepTools v3.2.1](https://deeptools.readthedocs.io/en/develop/)
   * [GATK v4.1.4.1](https://gatk.broadinstitute.org/)
@@ -504,6 +504,10 @@ A multiqc report for the alignment bam is produced (per sample) combining metric
 
 ## Change logs
 
+* 29 January 2021
+  * Moved to Gencode v36 build from v30
+* 20 December 2020
+  * Updated MultiQC from v 1.7 to v 1.9
 * 03 January 2020
   * Added WGS post alignment processing by GATK
   * Added GATK HaplotypeCaller GVCF generation for WGS samples
