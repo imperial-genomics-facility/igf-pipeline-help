@@ -48,7 +48,7 @@ Raw data processing pipeline also generate basic quality reports for the fastq f
 
 * [FastQC (v0.11.5)](http://www.bioinformatics.babraham.ac.uk/projects/fastqc)
 * [FastQ screen (v0.11.1)](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/)
-* [MultiQC (v1.5)](http://multiqc.info/)
+* [MultiQC (v1.9)](http://multiqc.info/)
 
 ### FastQC command line
 Example FastQC command.
@@ -104,6 +104,8 @@ Example FastQ Screen command.
 
 ## Change logs
 
+* 20 December 2020
+  * Updated MultiQC from v 1.7 to v 1.9
 * 25th March 2020
   - Added Human coronavirus references to fastq_screen
 * 24th April 2019
