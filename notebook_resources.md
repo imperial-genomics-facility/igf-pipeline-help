@@ -24,37 +24,37 @@ A list of all the notebooks used by IGF for generating QC plots and analysis res
       <td>Singlecell data analysis using Scanpy</td>
       <td><a href="https://github.com/imperial-genomics-facility/scanpy-notebook-image">Github docs</a></td>
       <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/blob/master/examples/Clustering_3K_PBMCs_v0.0.4.1.ipynb">Scanpy - Clustering of 3K PBMC cells</a></li></ul></td>
-      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2FClustering_3K_PBMCs_v0.0.4.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2FClustering_3K_PBMCs_v0.0.4.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
     <tr>
       <td>Singlecell data analysis using Seurat (dev)</td>
       <td><a href="https://seurat-notebook-image.readthedocs.io/en/latest/">Help docs</a></td>
       <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/seurat-notebook-image/blob/master/examples/seurat_basic_v0.0.1.ipynb">Seurat - Clustering of 3k PBMC cells</a></li></ul></td>
-      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/seurat-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Fseurat_basic_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/seurat-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Fseurat_basic_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
     <tr>
       <td>RNA-Seq data analysis (dev)</td>
       <td><a href="https://rnaseq-notebook-image.readthedocs.io/en/latest/">Help docs</a></td>
       <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/rnaseq-notebook-image/blob/master/examples/rnaseq_example_1_v0.0.1.ipynb">RNA-Seq data using STAR and DESeq2</a></li><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/rnaseq-notebook-image/blob/master/examples/rnaseq_example_dask_1_v0.0.1.ipynb">RNA-Seq data using STAR and DESeq2 (using Dask)</a></li></ul></td>
-      <td><ul><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_dask_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://notebooks.gesis.org/binder/v2/gh/imperial-genomics-facility/rnaseq-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Frnaseq_example_dask_1_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
     <tr>
       <td>Single cell TCR/RNA-seq data analysis using Scirpy (dev)</td>
       <td><a href="https://github.com/imperial-genomics-facility/scirpy-notebook-image">Github docs</a></td>
       <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/scirpy-notebook-image/blob/main/examples/Scirpy_tutorial_3k_tcr.ipynb">Analysis of 3k T cells from cancer</a></li></ul></td>
-      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/scirpy-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2FScirpy_tutorial_3k_tcr.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/scirpy-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2FScirpy_tutorial_3k_tcr.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
     <tr>
       <td>GWAS data analysis using Hail (dev)</td>
       <td><a href="https://hail-notebook-image.readthedocs.io/en/latest">Help docs</a></td>
       <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/hail-notebook-image/blob/master/examples/hail_GWAS_v0.0.1.ipynb">Hail - GWAS Tutorial</a></li></ul></td>
-      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/hail-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Fhail_GWAS_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/hail-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Fhail_GWAS_v0.0.1.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
     <tr>
       <td>Viral genome analysis (dev)</td>
       <td><a href="https://viral-genome-notebook-image.readthedocs.io/en/latest/">Help docs</a></td>
       <td><ul><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/viral-genome-notebook-image/blob/master/examples/coronavirus_analysis_build_consensus_fasta.ipynb">Viral genome - building consensus genome</a></li><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/viral-genome-notebook-image/blob/master/examples/coronavirus_analysis_multiple_sequence_alignment_and_tree_building.ipynb">Viral genome - MSA and phylogenetic tree</a></li><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/viral-genome-notebook-image/blob/master/examples/coronavirus_analysis_Tree_building_for_153_Coronavirus_genomes.ipynb">Coronavirus - Phylogenetic tree of 153 genomes</a></li><li><a href="https://nbviewer.jupyter.org/github/imperial-genomics-facility/viral-genome-notebook-image/blob/master/examples/coronavirus_analysis_alignment_and_tree_building_using_Nextstrain.ipynb">Viral genome analysis using Nextstrain</a></li></ul></td>
-      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_build_consensus_fasta.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_multiple_sequence_alignment_and_tree_building.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_Tree_building_for_153_Coronavirus_genomes.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_alignment_and_tree_building_using_Nextstrain.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
+      <td><ul><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_build_consensus_fasta.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_multiple_sequence_alignment_and_tree_building.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_Tree_building_for_153_Coronavirus_genomes.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li><li><a href="https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/main?urlpath=lab%2Ftree%2Fexamples%2Fcoronavirus_analysis_alignment_and_tree_building_using_Nextstrain.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></li></ul></td>
     </tr>
   </tbody>
 </table>
