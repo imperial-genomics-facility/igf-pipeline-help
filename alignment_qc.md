@@ -167,7 +167,7 @@ Tool name:  __BWA__
     -t threads 
     -M
     /path/bwa_ref_genome
-    /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz
+    /path/trimmed/sample.R1.fastq.gz /path/trimmed/sample.R2.fastq.gz | samtools view -bo aligned.bam -
   </code></pre>
  </div>
 
@@ -223,7 +223,7 @@ Tool name: __Picard AddOrReplaceReadGroups__
     RGPL=PLATFORM
     RGPU=UNIQUE_RG_PU
     RGLB=LIBRARY_ID
-    SORT_ORDER=unsorted
+    SORT_ORDER=coordinate # or unsorted for STAR transcriptome BAM
     RGSM=SAMPLE_ID
     RGCN=CENTER_NAME
     RGID=UNIQUE_RG_ID
