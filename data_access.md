@@ -97,7 +97,7 @@ Imperial College now offers a new central service for storing large volume of re
 <p style="text-indent: 15px"><b>Step 2:</b> Add <b>Imperial BRC Genomics Facility</b> (username: <b>igf</b>) as a new member of the research data storage, once its available</p>
 <p style="text-indent: 15px"><b>Step 3:</b> Update IGF regarding your new RDS storage path in HPC</p>
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
-<p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over <span color="red">(IMPORTANT)</span></p>
+<p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over <a color="red">(<b>IMPORTANT</b>)</a></p>
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
