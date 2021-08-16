@@ -93,7 +93,7 @@ Use your Imperial login credential for setting up iRODS account in HPC, if the a
 ## Imperial College Research Data Store based transfer
 Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new storage volume for your sequencing project:
 
-<p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/">Research Data Store</a> and setup a new allocation for your peoject</p>
+<p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/">Research Data Store</a> and setup a new allocation for your peoject. Also, we have few slides regarding <a href="slide_htmls/setting_up_rds_project.html">setting-up RDS project allocation</a></p>
 <p style="text-indent: 15px"><b>Step 2:</b> Add <b>Imperial BRC Genomics Facility</b> (username: <b>igf</b>) as a new member of the research data storage, once its available</p>
 <p style="text-indent: 15px"><b>Step 3:</b> Update IGF regarding your new RDS storage path in HPC</p>
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
