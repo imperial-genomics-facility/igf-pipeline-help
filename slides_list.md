@@ -7,4 +7,4 @@ title: IGF help Pages - Slides list
 
 |Topic | Slide|
 |------|------|
-| Setting-up RDS project allocation | [setting_up_rds_project.html](slides_htmls/setting_up_rds_project.html) |
+| Setting-up RDS project allocation | [setting_up_rds_project.html](slide_htmls/setting_up_rds_project.html) |
