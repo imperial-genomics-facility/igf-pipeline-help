@@ -6,6 +6,7 @@ title: IGF help pages - Data Access
 # Data Access
 ## Table of Contents
 
+* [Data access guide](#data-access-guide)
 * [Data access via iRODS server](#data-access-via-irods-server)
   * [Browser based file transfer](#browser-based-file-transfer)
   * [Command line file transfer](#command-line-file-transfer)
@@ -18,6 +19,10 @@ title: IGF help pages - Data Access
 * [Access QC report pages](#access-qc-report-pages)
 * [List of resources](#list-of-resources)
 * [Change logs](#change-logs)
+
+## Data access guide
+
+Check our new data access guide: [Accessing data from IGF](slide_htmls/accessing_data_files.html)
 
 ## Data access via iRODS server
 
