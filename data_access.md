@@ -32,7 +32,7 @@ Users are only allowed to access this server, once they are connected to the col
 
 ### Browser based file transfer
 
-* Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/method/set-up-vpn/))
+* Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/))
 * Go to [http://eliot.med.ic.ac.uk:8080/idrop-web](http://eliot.med.ic.ac.uk:8080/idrop-web) and log in using your login credentials
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
