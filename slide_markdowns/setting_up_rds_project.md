@@ -9,7 +9,7 @@
 * [Add or remove user IGF](#/11)
 
 #### Research Data Store (RDS)
-* Central service for storing large volumes of research data
+* Imperial College's central service for storing large volumes of research data
 * Each separate funded research project is eligible for 2TB of online storage free of charge
 
 #### Quick links
