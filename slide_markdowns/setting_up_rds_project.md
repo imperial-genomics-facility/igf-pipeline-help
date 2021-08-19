@@ -4,9 +4,10 @@
 * [Research Data Store (RDS)](#/2)
 * [Quick links](#/3)
 * [What you need ?](#/4)
-* [Steps for setting up RDS storage (for PIs)](#/5)
-* [Optional steps](#/10)
-* [Add or remove user IGF](#/11)
+* [Set-up VPN](#/5)
+* [Steps for setting up RDS storage (for PIs)](#/6)
+* [Optional steps](#/11)
+* [Add or remove user IGF](#/12)
 
 #### Research Data Store (RDS)
 * Imperial College's central service for storing large volumes of research data
@@ -20,6 +21,10 @@
 #### What you need ?
 A unique entry from the college's grant management system
 i.e., a project account with a P or PS code (or non-project GL accounts)
+
+#### Set-up VPN
+<p align="left">You have to set-up <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/">Virtual private network (VPN)</a> if you are trying to connect or configure RDS from outside Imperial College's network.</p>
+<img src="../slide_images/rds_configure_vpn.png" style="border:1px solid black" width="650px">
 
 #### Steps for setting up RDS storage (for PIs)
 * Register for an [HPC account](https://selfservice.rcs.imperial.ac.uk/registration/hpc)
