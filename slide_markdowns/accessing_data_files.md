@@ -59,7 +59,7 @@ touch ~/.irods/irods_environment.json
 <p style="font-size:25px">Don't forget to replace "YOUR_HPC_USERNAME"</p>
 
 #### Command line file transfer on HPC CX1
-```bash [1-3|1,4-5]
+```bash [1-3|1,4-5|1,6-7]
 module load irods/4.2.0
 ## configure iRODS account
 iinit
