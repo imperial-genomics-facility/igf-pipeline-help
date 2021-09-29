@@ -61,6 +61,8 @@ touch ~/.irods/irods_environment.json
 #### Command line file transfer on HPC CX1
 ```bash [1-3|1,4-5]
 module load irods/4.2.0
+## configure iRODS account
+iinit
 ## download fastq files
 iget -r /igfZone/home/USERNAME/PROJECT_NAME/fastq
 ## or for downloading analysis files
