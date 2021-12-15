@@ -8,7 +8,6 @@ title: IGF help pages - Data Access
 
 * [Data access guide](#data-access-guide)
 * [Data access via iRODS server](#data-access-via-irods-server)
-  * [Browser based file transfer](#browser-based-file-transfer)
   * [Command line file transfer](#command-line-file-transfer)
     * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
       * [Authentication Type: Standard](#authentication-type-standard)
@@ -26,16 +25,8 @@ Check our new data access guide: [Accessing data from IGF](slide_htmls/accessing
 
 ## Data access via iRODS server
 
-A local installation of [iRODS server](http://eliot.med.ic.ac.uk:8080/idrop-web) is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall. 
-Users are only allowed to access this server, once they are connected to the college's network (either direct or VPN access).
-
-
-### Browser based file transfer
-
-* Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/))
-* Go to [http://eliot.med.ic.ac.uk:8080/idrop-web](http://eliot.med.ic.ac.uk:8080/idrop-web) and log in using your login credentials
-
-<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+A local installation of iRODS server is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall. 
+Users are only allowed to access this server, once they are connected to the college's network (either direct or [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/) access).
 
 
 ### Command line file transfer
