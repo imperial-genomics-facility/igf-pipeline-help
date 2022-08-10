@@ -2,18 +2,19 @@
 
 #### Table of contents
 * [Data Sharing via Globus](#/2)
-* [Data upload to Research Data store (RDS)](#/3)
-* [Basespace upload](#/4)
-* [Data upload to iRODS server](#/5)
-* [Custom data upload](#/11)
-* [Understanding fastq output](#/12)
-* [Validation of the fastq files](#/13)
+* [Data upload to Research Data store (RDS)](#/4)
+* [Basespace upload](#/5)
+* [Data upload to iRODS server](#/6)
+* [Custom data upload](#/12)
+* [Understanding fastq output](#/13)
+* [Validation of the fastq files](#/14)
 
 #### Data Sharing via Globus
 * [Globus](https://www.globus.org/) allowes the following options:
   * __Transfer__ large volumes of data between the [RDS](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/), your personal computer and Globus-accessible storage at other institutions
   * __Share__ [RDS](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/) project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
-* Requirements
+
+#### Data Sharing via Globus requirements
   * We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing.
   * For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/globus/)
 
