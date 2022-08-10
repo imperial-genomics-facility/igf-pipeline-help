@@ -58,6 +58,7 @@ Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequ
 
 * We use [Basespace London region](https://euw2.sh.basespace.illumina.com) for data upload and share
   * API server: <pre><code>https://api.euw2.sh.basespace.illumina.com</code></pre>
+
 * Data can be download via [Basespace cli](https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview) or via [browser](https://euw2.sh.basespace.illumina.com)
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
