@@ -10,6 +10,7 @@
 * [Validation of the fastq files](#/13)
 
 ### Data Sharing via Globus
+<p>
 Imperial College's Research Data Store is now linked to [Globus](https://www.globus.org/) which allowes the following options
 
 * __Transfer__ large volumes of data between the RDS, your personal computer and Globus-accessible storage at other institutions
@@ -18,6 +19,7 @@ Imperial College's Research Data Store is now linked to [Globus](https://www.glo
 We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing.
 
 For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/globus/)
+</p>
 
 #### Data upload to Research Data store (RDS)
 * Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/))
