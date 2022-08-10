@@ -1,12 +1,23 @@
 ## Accessing data files from IGF
 
 #### Table of contents
-* [Data upload to Research Data store (RDS)](#/2)
-* [Data upload to iRODS server](#/3)
-* [Basespace upload](#/8)
-* [Custom data upload](#/9)
-* [Understanding fastq output](#/10)
-* [Validation of the fastq files](#/11)
+* [Data Sharing via Globus](#/2)
+* [Data upload to Research Data store (RDS)](#/3)
+* [Basespace upload](#/4)
+* [Data upload to iRODS server](#/5)
+* [Custom data upload](#/11)
+* [Understanding fastq output](#/12)
+* [Validation of the fastq files](#/13)
+
+### Data Sharing via Globus
+Imperial College's Research Data Store is now linked to [Globus](https://www.globus.org/) which allowes the following options
+
+* __Transfer__ large volumes of data between the RDS, your personal computer and Globus-accessible storage at other institutions
+* __Share__ RDS project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
+
+We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing.
+
+For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/globus/)
 
 #### Data upload to Research Data store (RDS)
 * Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/))
@@ -16,7 +27,14 @@
 * Remove user '__igf__' from allocation
 * Validate fastq files
 
+#### Basespace upload
+* Fastq files can be shared via Basespace sequence hub (Illumina)
+  * We use [Basespace London region](https://euw2.sh.basespace.illumina.com) for data upload and share
+* Data can be download via [Basespace cli](https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview) or via [browser](https://euw2.sh.basespace.illumina.com)
+  * API server: <a style="font-size:35px"><code>https://api.euw2.sh.basespace.illumina.com</code></a>
+
 #### iRODS based transfer - using command line
+<span style="color:crimson"><b>Update:</b> We will stop using iRODS server for data distribution from <b>October 2022</b>.</span>
 * Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/))
 * Set up iRODS on HPC cluster CX1
 * Use iRODS command for transferring data
@@ -33,7 +51,7 @@ touch ~/.irods/irods_environment.json
 {
     "irods_host": "eliot.med.ic.ac.uk",
     "irods_port": 1247,
-    "irods_default_resource": "woolfResc",             
+    "irods_default_resource": "woolfResc",
     "irods_user_name": "YOUR_IGF_USERNAME",
     "irods_zone_name": "igfZone"
 }
@@ -50,7 +68,7 @@ touch ~/.irods/irods_environment.json
     "irods_default_resource": "woolfResc",
     "irods_user_name": "YOUR_HPC_USERNAME",
     "irods_zone_name": "igfZone", 
-    "irods_ssl_ca_certificate_file": "/apps/irods/certs/igf-chain.pem",             
+    "irods_ssl_ca_certificate_file": "/apps/irods/certs/igf-chain.pem",
     "irods_ssl_ca_certificate_path": "/apps/irods/certs",
     "irods_ssl_verify_server": "cert",
     "irods_authentication_scheme": "PAM"
@@ -71,12 +89,6 @@ iget -r /igfZone/home/USERNAME/PROJECT_NAME/analysis
 <span><p align="left">Use following iRODS paths:</p></span>
 *  __fastq__: To download all fastq files
 *  __analysis__: To download all primary analysis files
-
-#### Basespace upload
-* Fastq files can be shared via Basespace sequence hub (Illumina)
-  * We use [Basespace London region](https://euw2.sh.basespace.illumina.com) for data upload and share
-* Data can be download via [Basespace cli](https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview) or via [browser](https://euw2.sh.basespace.illumina.com)
-  * API server: <a style="font-size:35px"><code>https://api.euw2.sh.basespace.illumina.com</code></a>
 
 #### Custom data upload
 * Raw data can be shared via external FTP server

@@ -34,6 +34,8 @@ We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode
 
 For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/globus/)
 
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+
 ## Imperial College Research Data Store based transfer
 Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new storage volume for your sequencing project:
 
@@ -51,6 +53,12 @@ Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequ
 
 * Your basespace account email (existing account or a new free basic subscription account)
 * Confirmation regarding the sample consent type
+
+<b>BaseSpace configuration:</b>
+
+* We use [Basespace London region](https://euw2.sh.basespace.illumina.com) for data upload and share
+  * API server: <pre><code>https://api.euw2.sh.basespace.illumina.com</code></pre>
+* Data can be download via [Basespace cli](https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview) or via [browser](https://euw2.sh.basespace.illumina.com)
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
