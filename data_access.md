@@ -10,7 +10,7 @@ title: IGF help pages - Data Access
 * [Globus based transfer](#globus-based-transfer)
 * [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
 * [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
-* [Data access via iRODS server](#data-access-via-irods-server)
+* [Data access via iRODS server (Discontinued)](#data-access-via-irods-server-discontinued)
   * [Command line file transfer](#command-line-file-transfer)
     * [Steps for setting up iRODS client in HPC CX1](#steps-for-setting-up-irods-client-in-hpc-cx1)
       * [Authentication Type: Standard](#authentication-type-standard)
@@ -63,7 +63,7 @@ Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequ
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 
-## Data access via iRODS server (Legacy)
+## Data access via iRODS server (Discontinued)
 
 A local installation of iRODS server is used for the data handover to the users. A copy of the data is kept in this server only for a limited time and then automatically removed after the data transfer deadline. Access to this server is restricted by the Imperial College's firewall. 
 Users are only allowed to access this server, once they are connected to the college's network (either direct or [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/) access).
