@@ -5,9 +5,9 @@
 * [Data upload to Research Data store (RDS)](#/4)
 * [Basespace upload](#/5)
 * [Data upload to iRODS server](#/6)
-* [Custom data upload](#/12)
-* [Understanding fastq output](#/13)
-* [Validation of the fastq files](#/14)
+* [Custom data upload](#/11)
+* [Understanding fastq output](#/12)
+* [Validation of the fastq files](#/13)
 
 #### Data Sharing via Globus
 * [Globus](https://www.globus.org/) allowes the following options:
