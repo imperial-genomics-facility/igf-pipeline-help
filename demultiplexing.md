@@ -11,14 +11,14 @@ title: IGF help pages - De-multiplexing Fastq
   * [Software versions](#software-versions)
 * [De-multiplexing of Illumina sequencing runs using BCLConvert](#de-multiplexing-of-illumina-sequencing-runs-using-bclconvert)
   * [BCLConvert process summary](#bclconvert-process-summary)
-  * [BCLConvert Command line](#bclconvert-command-line)
-  * [BCLConvert samplesheet Format](#bclconvert-samplesheet-format)
+  * [BCLConvert command line](#bclconvert-command-line)
+  * [BCLConvert samplesheet format](#bclconvert-samplesheet-format)
   * [BCLConvert output directory structure](#bclconvert-output-directory-structure)
     * [BCLConvert fastq file validation](#bclconvert-fastq-file-validation)
 * [De-multiplexing of Illumina sequencing runs using Bcl2Fastq](#de-multiplexing-of-illumina-sequencing-runs-using-bcl2fastq)
   * [Bcl2Fastq process summary](#bcl2fastq-process-summary)
   * [Bcl2Fastq command line](#bcl2fastq-command-line)
-  * [Bcl2Fastq samplesheet Format](#bcl2fastq-samplesheet-format)
+  * [Bcl2Fastq samplesheet format](#bcl2fastq-samplesheet-format)
     * [Bcl2Fastq adapter trimming setting](#bcl2fastq-adapter-trimming-setting)
     * [Bcl2Fastq fastq output](#bcl2fastq-fastq-output)
       * [Bcl2Fastq fastq file name](#bcl2fastq-fastq-file-name)
@@ -122,14 +122,14 @@ Sequencing runs are processed using BCLConvert tool using the following steps:
   * _MaskShortReads,8_
   * _TrimUMI,0_ (Optional for samples with UMI barcodes)
 * Configure and run BCLConvert tool for each sample group separately using the edited __SampleSheet.csv__ file
-* Merge multiple fastq files to one set of fastqs, if there are more than one set of index barcodes present for single cell samples (mostly for single index 10X Genomics samples)
-* Generate HTML version of De-multiplexing report
-* Generate FastQC, Fastq Screen and MultiQC report
+* Merge multiple fastq files to one set of fastqs, if there are more than one set of index barcodes present for any single cell sample (mostly for single index 10X Genomics samples)
+* Generate HTML version of de-multiplexing report
+* Generate FastQC, Fastq Screen and MultiQC reports
 
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
-### BCLConvert Command line
+### BCLConvert command line
 <div style="background-color:#E8E8E8">
   <pre><code>  bcl-convert
     --bcl-input-directory /path/sequencing_run
@@ -146,7 +146,7 @@ Sequencing runs are processed using BCLConvert tool using the following steps:
 </div>
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
-### BCLConvert samplesheet Format
+### BCLConvert samplesheet format
 
 SampleSheet file should have the following info:
 
@@ -187,7 +187,7 @@ Fastq files from the BCLConvert run are organized using the following directory 
 * __INDEX GROUP__: Sample barcode length and tag information
 * __SAMPLE ID__: IGF sample id
 
-Illumina uses the follwing file name convension for the output fastq files. For example: `sample-id_S1_L001_R1_001.fastq.gz`
+Illumina uses the follwing file name convension for the output fastq files. For example: __`sample-id_S1_L001_R1_001.fastq.gz`__
 
 * __sample-id__ : Sample ID provided in the samplesheet
 * __S1__ : Number of sample based on the sample order on the samplesheet
@@ -197,22 +197,22 @@ Illumina uses the follwing file name convension for the output fastq files. For 
 * __.fastq.gz__ : File extension. Its a gzipped fastq file
 
 Each __SAMPLE ID__ level dir should contain the following fastq reads
-  * R1 and R2 are the read 1 and read 2 (check more information about [Illumina paired-end](https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html) sequencing reads)
-  * I1 and I2 are the index reads
+  * __R1__ and __R2__ are the read 1 and read 2 (check more information about [Illumina paired-end](https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html) sequencing reads)
+  * __I1__ and __I2__ are the index reads
 
 Each __INDEX GROUP__ level dir can optionally contain these following files
 
-* De-muliplexing html report dir (`/Reports`) with samplesheet file (for the lane)
-* Manifest file (`md5_manifest.tsv`) containing the md5 checksum of the fastq files
+* De-muliplexing html report dir (__`/Reports`__) with samplesheet file (for the lane)
+* Manifest file (__`md5_manifest.tsv`__) containing the md5 checksum of the fastq files
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 #### BCLConvert fastq file validation
 Steps:
 
-* Download tar files from Globus
+* Download fastq files from Globus (if you are using Globus based transfer)
 * In Mac/Linux
-  * Open a terminal and `cd` to __INDEX GROUP__ level dir
-  * Run md5sum for file validation (On Mac/Linux), for e.g.,
+  * Open a terminal and `cd` to __INDEX GROUP__ level directory
+  * Run md5sum for file validation, e.g.
 
   ```
   grep -v file_path md5_manifest.tsv |md5sum -c
@@ -255,9 +255,9 @@ Example Bcl2Fastq command.
 Additionally, for the short read cycles (less than 22 bp for R1 or R2), default value for bcl2fastq param **--mask-short-adapter-reads** is modified with the length of the read cycle.
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
-### Bcl2Fastq samplesheet Format
+### Bcl2Fastq samplesheet format
 
-Samplesheets are plain text files, separated by commas, with name `SampleSheet.csv`. It is divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
+Samplesheets are plain text files, separated by commas, with name __`SampleSheet.csv`__. It is divided into multiple sections, which are marked by a line starting with a section label. Please check [Illumina documentation](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf) for more details about the samplesheet file format specification.
 
 * SampleSheet should contains the following __Data__ columns
   * _Lane_ (optional)
@@ -304,8 +304,8 @@ De-multiplexing pipeline is configured to trim Illumina generic adapters from th
 Fastq files can be accessed from our iRODS data distribution server. Please check the [Data access](data_access.html) page for more details on this topic. Following files are present in each of the lane level tar files
 
 * Fastq reads
-  - R1 and R2 are the read 1 and read 2 (check more information about [Illumina paired-end](https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html) sequencing reads)
-  - I1 and I2 are the index reads
+  - __R1__ and __R2__ are the read 1 and read 2 (check more information about [Illumina paired-end](https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html) sequencing reads)
+  - __I1__ and __I2__ are the index reads
 * Demuliplexing html report
 * Manifest file containing the md5 checksum of the fastq files
 * Samplesheet file (for the lane)
@@ -315,9 +315,9 @@ Fastq files can be accessed from our iRODS data distribution server. Please chec
 
 Illumina uses the follwing file name convension for the output fastq files
 
-For example: `samplename_S1_L001_R1_001.fastq.gz`
+For example: __`sample-name_S1_L001_R1_001.fastq.gz`__
 
-* __samplename__ : Name of the sample provided in the samplesheet
+* __sample-name__ : Name of the sample provided in the samplesheet
 * __S1__ : Number of sample based on the sample order on the samplesheet
 * __L001__ : Lane number of the flowcell
 * __R1__ : The read. For e.g. R1 indicates Read 1 and R2 indicates Read 2 of a paired-end run
