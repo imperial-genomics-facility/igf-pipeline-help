@@ -176,9 +176,7 @@ SampleSheet file should have the following info:
 ### BCLConvert output directory structure
 Fastq files from the BCLConvert run are organized using the following directory structure
 
-```
-<ROOT>/<SEQRUN DATE>/<FLOWCELL ID>/<LANE ID>/<INDEX GROUP>/<SAMPLE ID>/
-```
+`<ROOT>/<SEQRUN DATE>/<FLOWCELL ID>/<LANE ID>/<INDEX GROUP>/<SAMPLE ID>/`
 
 * __ROOT__: It can be `PROJECT_NAME/fastq` or only `PROJECT_NAME`
 * __SEQRUN DATE__: Sequencing run date
@@ -187,7 +185,7 @@ Fastq files from the BCLConvert run are organized using the following directory 
 * __INDEX GROUP__: Sample barcode length and tag information
 * __SAMPLE ID__: IGF sample id
 
-Illumina uses the follwing file name convension for the output fastq files. For example: __`sample-id_S1_L001_R1_001.fastq.gz`__
+Illumina uses the follwing file name convension for output fastq files. For example: __`sample-id_S1_L001_R1_001.fastq.gz`__
 
 * __sample-id__ : Sample ID provided in the samplesheet
 * __S1__ : Number of sample based on the sample order on the samplesheet
