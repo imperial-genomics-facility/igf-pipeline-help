@@ -176,10 +176,10 @@ SampleSheet file should have the following info:
 ### BCLConvert output directory structure
 Fastq files from the BCLConvert run are organized using the following directory structure
 
-`<ROOT>/<SEQRUN DATE>/<FLOWCELL ID>/<LANE ID>/<INDEX GROUP>/<SAMPLE ID>/`
+`<ROOT DIR>/<SEQRUN DATE>/<FLOWCELL ID>/<LANE ID>/<INDEX GROUP>/<SAMPLE ID>/`
 
-* __ROOT__: It can be `PROJECT_NAME/fastq` or only `PROJECT_NAME`
-* __SEQRUN DATE__: Sequencing run date
+* __ROOT DIR__: It can be `PROJECT_NAME/fastq` or only `PROJECT_NAME`
+* __SEQRUN DATE__: Sequencing run date or `PROJECT_NAME_FLOWCELL-ID_SEQRUN-DATE`
 * __FLOWCELL ID__: Flowcell id from sequencing run
 * __LANE ID__: Lane id information for fastq files
 * __INDEX GROUP__: Sample barcode length and tag information
@@ -212,9 +212,20 @@ Steps:
   * Open a terminal and `cd` to __INDEX GROUP__ level directory
   * Run md5sum for file validation, e.g.
 
-  ```
-  grep -v file_path md5_manifest.tsv |md5sum -c
-  ```
+  `grep -v file_path md5_manifest.tsv |md5sum -c`
+
+  * Alternatively, use the following command for checking md5sum of fastqs file from all the flowcells
+<div style="background-color:#E8E8E8">
+  <pre><code>
+  cd ROOT_DIR
+  for i in `find . -name md5_manifest.tsv|xargs dirname`; \
+    do \
+      cd $i; \
+      grep -v md5 md5_manifest.tsv |md5sum -c|grep -v OK; \
+      cd -; \
+    done
+  </code></pre>
+</div>
 
 ## De-multiplexing of Illumina sequencing runs using Bcl2Fastq
 BCLConvert tool is used for de-multiplexing data from the following sequening platforms
