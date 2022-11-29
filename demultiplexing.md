@@ -49,6 +49,24 @@ Illumina sequencing platforms generate binary BCL files for each run. These raw 
       <tr>
         <td>NextSeq 2000</td>
         <td>BCLConvert</td>
+        <td>v4.0.3</td>
+        <td>Nov 2022</td>
+      </tr>
+      <tr>
+        <td>NovaSeq 6000</td>
+        <td>BCLConvert</td>
+        <td>v4.0.3</td>
+        <td>Nov 2022</td>
+      </tr>
+      <tr>
+        <td>MiSeq</td>
+        <td>BCLConvert</td>
+        <td>v4.0.3</td>
+        <td>Nov 2022</td>
+      </tr>
+      <tr>
+        <td>NextSeq 2000</td>
+        <td>BCLConvert</td>
         <td>v3.9.3</td>
         <td>March 2022</td>
       </tr>
