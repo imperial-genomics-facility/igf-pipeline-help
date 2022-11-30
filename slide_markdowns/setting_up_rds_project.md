@@ -14,7 +14,7 @@
 * Each separate funded research project is eligible for 2TB of online storage free of charge
 
 #### Quick links
-* [RCS website](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/rds/)
+* [RCS website](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/)
 * [RDS config page](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/)
 * [IGF help page](https://imperial-genomics-facility.github.io/igf-pipeline-help/data_access.html)
 
@@ -28,7 +28,7 @@ i.e., a project account with a P or PS code (or non-project GL accounts)
 
 #### Steps for setting up RDS storage (for PIs)
 * Register for an [HPC account](https://selfservice.rcs.imperial.ac.uk/registration/hpc)
-  * Check [RCS website](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/support/getting-started/) for more details
+  * Check [RCS website](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/get-access/) for more details
 * Add members to your [HPC group](https://selfservice.rcs.imperial.ac.uk/groups/manage/hpc-access/)
 * Register for a [RDS project allocation](https://selfservice.rcs.imperial.ac.uk/rds)
 * Add your [group member](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/) to the RDS project
