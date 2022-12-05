@@ -24,7 +24,7 @@ title: IGF help pages - Data Access
 <span style="color:crimson"><b>Update:</b> We have stopped using iRODS server for data distribution from <b>October 2022</b>.</span>
 Check our new data access guide: [Accessing data from IGF](slide_htmls/accessing_data_files.html)
 
-<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/accessing_data_files.html" width="600" height="400" title="Accessing data from IGF"></iframe>
+<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/accessing_data_files.html" width="600px" height="400px" title="Accessing data from IGF"></iframe>
 
 ## Globus based transfer
 Imperial College's Research Data Store is now linked to [Globus](https://www.globus.org/) which allowes the following options
@@ -42,7 +42,7 @@ For more details, please have a look at Imperial College's guideline for Globus 
 Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new storage volume for your sequencing project:
 
 <p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/">Research Data Store</a> (and <a href="https://wiki.imperial.ac.uk/display/HPC/Research+Data+Store">wiki page</a>) and setup a new allocation for your peoject. Also, we have few slides regarding <a href="slide_htmls/setting_up_rds_project.html">setting-up RDS project allocation</a></p>
-<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/setting_up_rds_project.html" title="setting-up RDS project allocation" width="600" height="400"></iframe>
+<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/setting_up_rds_project.html" title="setting-up RDS project allocation" width="600px" height="400px"></iframe>
 <p style="text-indent: 15px"><b>Step 2:</b> Add <b>Imperial BRC Genomics Facility</b> (username: <b>igf</b>) as a new member of the research data storage, once its available</p>
 <p style="text-indent: 15px"><b>Step 3:</b> Update IGF regarding your new RDS storage path in HPC</p>
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
