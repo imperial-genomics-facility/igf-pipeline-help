@@ -113,6 +113,7 @@ Use your IGF login password for setting up iRODS account in HPC, if the authenti
   </code></pre>
 </div>
 </details>
+<p/>
 ##### Authentication Type: PAM
 Use your Imperial login credential for setting up iRODS account in HPC, if the authentication type is PAM
 
@@ -135,7 +136,7 @@ Use your Imperial login credential for setting up iRODS account in HPC, if the a
   </code></pre>
 </div>
 </details>
-
+<p/>
 #### Steps for command line transfer in HPC CX1
 
 <p style="text-indent: 15px"><b>Step 1:</b> Load irods tool (e.g. <code>module load irods/4.2.0</code>)</p>
