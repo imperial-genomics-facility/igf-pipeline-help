@@ -36,9 +36,23 @@ Imperial College's Research Data Store is now linked to [Globus](https://www.glo
 * __Transfer__ large volumes of data between the RDS, your personal computer and Globus-accessible storage at other institutions
 * __Share__ RDS project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
 
-We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` )
+### Requirements
+#### For users from Imperial College London
+We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` ). For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
 
-For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
+
+#### For users without Imperial College account
+Please send us the email id linked to your [Globus](https://www.globus.org/) account.
+
+### Globus transfer process
+* We will create a new Globus collection after receiving the user’s request and copy existing data to it.
+* The new collection will be shared with the user’s Globus account (i.e., email id or username). We can add more than one user to the same Globus collection.
+* User needs to follow [Globus](https://www.globus.org/) or [Imperial College’s documentation](https://wiki.imperial.ac.uk/display/HPC/Globus) and transfer data (to any preferred storage location).
+* Files from any new sequencing run or analysis will get added to the existing Globus collection directory.
+* User needs to transfer any new batch of data separately after receiving email notification from us.
+* Each file on the Globus collection directory will be removed after 30 days of file creation.
+* We may remove old Globus collections without any prior notice, once all the files are removed from the collection directory.
+
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
@@ -57,6 +71,8 @@ Imperial College now offers a new central service for storing large volume of re
 <p style="text-indent: 15px"><b>Step 3:</b> Update IGF regarding your new RDS storage path in HPC</p>
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
 <p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over <span style="color:#ff0000">(<b>IMPORTANT</b>)</span></p>
+
+<p><b>Please note:</b> We can only copy data to RDS storage once all the runs (and analysis) for the project are finished.</p>
 
 
 
