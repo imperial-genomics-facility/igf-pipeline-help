@@ -37,11 +37,11 @@ Imperial College's Research Data Store is now linked to [Globus](https://www.glo
 * __Share__ RDS project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
 
 ### Requirements
-#### For users from Imperial College London
+##### For users from Imperial College London
 We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` ). For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
 
 
-#### For users without Imperial College account
+##### For users without Imperial College account
 Please send us the email id linked to your [Globus](https://www.globus.org/) account.
 
 ### Globus transfer process
