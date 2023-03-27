@@ -41,7 +41,7 @@ Check our new slides for Globus transfer: [globus data transfer](slide_htmls/glo
 <details>
 <summary>Click to expand slides here</summary>
 
-<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/globus_data_transfer.html" width="600px" height="400px" title="Accessing data from IGF"></iframe>
+<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/globus_data_transfer.html" width="600px" height="400px" title="Globus based transfer"></iframe>
 </details>
 
 ### Requirements
