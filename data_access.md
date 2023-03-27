@@ -36,6 +36,14 @@ Imperial College's Research Data Store is now linked to [Globus](https://www.glo
 * __Transfer__ large volumes of data between the RDS, your personal computer and Globus-accessible storage at other institutions
 * __Share__ RDS project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
 
+Check our new slides for Globus transfer: [globus data transfer](slide_htmls/globus_data_transfer.html)
+
+<details>
+<summary>Click to expand slides here</summary>
+
+<iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/globus_data_transfer.html" width="600px" height="400px" title="Accessing data from IGF"></iframe>
+</details>
+
 ### Requirements
 ##### For users from Imperial College London
 We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` ). For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
