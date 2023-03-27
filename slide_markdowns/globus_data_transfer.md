@@ -44,12 +44,12 @@ NEXT_SLIDE
 <p>
 Check the following links
 <ul>
-<li>For Imperial College users: <a src="https://wiki.imperial.ac.uk/display/HPC/Globus"></a>Transferring data to other sites with Globus</li>
+<li>For Imperial College users: <a src="https://wiki.imperial.ac.uk/display/HPC/Globus">Transferring data to other sites with Globus</a></li>
 <li>For external users: <a src="https://docs.globus.org/how-to/share-files/">How To Share Data Using Globus</a></li>
 </ul>
 </p>
 NEXT_SLIDE
-### Transfer data to your computing cluster - cont.
+### Transfer data to your computing cluster - docs
 <iframe src="https://docs.globus.org/how-to/share-files/" width="600px" height="315px" frameborder="1"></iframe>
 NEXT_SLIDE
 ### Transfer data to your Personal Computer
