@@ -1,4 +1,11 @@
 ## Globus data transfer
+* [What is Globus](#/1)
+* [How to login to Globus account](#/2)
+  * [Login to Globus - for Imperial College users](#/3)
+  * [Login to Globus - for external users](#/4)
+* [How to transfer data](#/5)
+  * [Transfer data to your computing cluster](#/6)
+  * [Transfer data to your Personal Computer using Globus](#/7)
 
 ## What is Globus
 "Globus is a non-profit service for secure, reliable research data management.
@@ -7,17 +14,23 @@ With Globus, subscribers can move, share, & discover data via a single interface
 <iframe src="https://player.vimeo.com/video/437243813?title=0&byline=0&portrait=0" width="560px" height="315px" frameborder="1"></iframe>
 
 ## How to login to Globus account
+* [For Imperial College users](#/3)
+* [For external users](#/4)
 
-### For Imperial users
+### Login to Globus - for Imperial College users
 Check the following Wiki page maintained by Imperial College's RCS team
 * [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
 
-### For external users
+### Login to Globus - for external users
 * Option 1: Use your existing organizational login
 * Option 2: Use Google or ORCID id
 <img src="../slide_images/globus_use_your_existing_login.png" style="border:1px solid black" width="600px" height="315px">
 
 ## How to transfer data
+* [Transfer data to your computing cluster](#/6)
+* [Transfer data to your Personal Computer using Globus](#/7)
+
+### Transfer data to your computing cluster
 Check the following links
 * For Imperial College users: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
 * For external users: [How To Share Data Using Globus ](https://docs.globus.org/how-to/share-files/)
