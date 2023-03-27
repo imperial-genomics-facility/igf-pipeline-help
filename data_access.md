@@ -43,7 +43,7 @@ Check our new slides for Globus transfer: [globus data transfer](slide_htmls/glo
 
 <iframe src="https://imperial-genomics-facility.github.io/igf-pipeline-help/slide_htmls/globus_data_transfer.html" width="600px" height="400px" title="Globus based transfer"></iframe>
 </details>
-
+<p/>
 ### Requirements
 ##### For users from Imperial College London
 We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` ). For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
