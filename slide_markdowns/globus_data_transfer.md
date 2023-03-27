@@ -10,13 +10,13 @@
   * [Transfer data to your Personal Computer using Globus](#/8)
 
 ## What is Globus
-<p>"Globus is a non-profit service for secure, reliable research data management.
-With Globus, subscribers can move, share, & discover data via a single interface – whether your files live on a supercomputer, lab cluster, tape archive, public cloud or your laptop, you can manage this data from anywhere, using your existing identities, via just a web browser.​"</p>
+<p>Globus is a non-profit service for secure, reliable research data management.
+With Globus, subscribers can move, share, & discover data via a single interface – whether your files live on a supercomputer, lab cluster, tape archive, public cloud or your laptop, you can manage this data from anywhere, using your existing identities, via just a web browser.</p>
 <ul>
 <li>Visit <a src="https://www.globus.org">https://www.globus.org</a></li>
 </ul>
 <p/>
-<!-iframe src="https://player.vimeo.com/video/437243813?title=0&byline=0&portrait=0" width="560px" height="315px" frameborder="1"></iframe-->
+
 
 ## How to login to Globus account
 * [For Imperial College users](#/3)
@@ -46,7 +46,7 @@ Check the following links
 <li>For external users: <a src="https://docs.globus.org/how-to/share-files/">How To Share Data Using Globus</a></li>
 </ul>
 </p>
-<!-iframe src="https://docs.globus.org/how-to/share-files/" width="600px" height="315px" frameborder="1"></iframe-->
+
 
 ### Transfer data to your Personal Computer using Globus
 <p>"For transferring data to your own computer, or another resource that doesn't have its own Globus endpoint, you will need to install Globus Connect Personal. This creates a Globus endpoint on your personal computer, allowing you to move data using the Globus web app."
