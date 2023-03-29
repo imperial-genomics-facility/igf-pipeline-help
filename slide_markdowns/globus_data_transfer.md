@@ -81,4 +81,4 @@ NEXT_SLIDE
 <ul>
 <li><a href="https://docs.globus.org/faq/transfer-sharing/">https://docs.globus.org/faq/transfer-sharing/</a></li>
 </ul>
-<iframe src="https://docs.globus.org/faq/transfer-sharing/#what_are_globus_collections" width="600px" height="315px" frameborder="1"></iframe>
+<iframe src="https://docs.globus.org/faq/transfer-sharing/" width="600px" height="315px" frameborder="1"></iframe>
