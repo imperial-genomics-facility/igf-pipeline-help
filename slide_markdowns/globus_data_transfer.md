@@ -1,16 +1,24 @@
 ## Globus data transfer
 NEXT_SLIDE
 #### Table of contents
-* [What is Globus](#/2)
-* [How to login to Globus account](#/4)
-  * [Login to Globus - for Imperial College users](#/5)
-  * [Login to Globus - for external users](#/6)
-* [How to transfer data](#/7)
-  * [Transfer data to your computing cluster](#/8)
-  * [Transfer data to your Personal Computer using Globus](#/10)
-* [What information are needed for Globus data transfer](#/11)
-* [How do you find shared data using Globus web app](#/12)
-* [Globus transfer process](#/13)
+<div style="font-size:30px">
+<ul>
+<li><a href="#/2">What is Globus</a></li>
+<li><a href="#/4">How to login to Globus account</a></li>
+  <ul>
+    <li><a href="#/5">Login to Globus - for Imperial College users</a></li>
+    <li><a href="#/6">Login to Globus - for external users</a></li>
+  </ul>
+<li><a href="#/7">How to transfer data</a></li>
+  <ul>
+    <li><a href="#/8">Transfer data to your computing cluster</a></li>
+    <li><a href="#/10">Transfer data to your Personal Computer using Globus</a></li>
+  </ul>
+<li><a href="#/11">What information are needed for Globus data transfer</a></li>
+<li><a href="#/12">How do you find shared data using Globus web app</a></li>
+<li><a href="#/13">Globus transfer process</a></li>
+</ul>
+</div>
 NEXT_SLIDE
 ## What is Globus
 <p align="left">"Globus is a non-profit service for secure, reliable research data management. With Globus, subscribers can move, share, & discover data via a single interface - whether your files live on a supercomputer, lab cluster, tape archive, public cloud or your laptop, you can manage this data from anywhere, using your existing identities, via just a web browser."</p>
@@ -87,11 +95,11 @@ NEXT_SLIDE
 </div>
 NEXT_SLIDE
 ### Globus transfer process
-<div align="left">
+<div align="left" style="font-size:30px">
 <ol>
 <li>We will create a new Globus collection after receiving the user’s request and copy existing data to it</li>
-<li>The new collection will be shared with the user’s Globus account (i.e., email id or username). We can add more than one user to the same Globus collection</li>
-<li>User needs to follow <a href="https://www.globus.org/">Globus</a> or <a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Imperial College’s documentation</a> and transfer data (to any preferred storage location)</li>
+<li>The new collection will be shared with the user's Globus account (i.e., email id or username). We can add more than one user to the same Globus collection</li>
+<li>User needs to follow <a href="https://www.globus.org/">Globus</a> or <a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Imperial College's documentation</a> and transfer data (to any preferred storage location)</li>
 <li>Files from any new sequencing run or analysis will get added to the existing Globus collection directory</li>
 <li>User needs to transfer any new batch of data separately after receiving email notification from us</li>
 <li>Each file on the Globus collection directory will be removed after 30 days of file creation</li>
