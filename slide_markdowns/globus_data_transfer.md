@@ -10,6 +10,7 @@ NEXT_SLIDE
   * [Transfer data to your Personal Computer using Globus](#/10)
 * [What information are needed for Globus data transfer](#/11)
 * [How do you find shared data using Globus web app](#/12)
+* [Globus transfer process](#/13)
 NEXT_SLIDE
 ## What is Globus
 <p align="left">"Globus is a non-profit service for secure, reliable research data management. With Globus, subscribers can move, share, & discover data via a single interface - whether your files live on a supercomputer, lab cluster, tape archive, public cloud or your laptop, you can manage this data from anywhere, using your existing identities, via just a web browser."</p>
@@ -85,3 +86,14 @@ NEXT_SLIDE
 <iframe src="https://docs.globus.org/faq/transfer-sharing/" width="600px" height="315px" frameborder="1"></iframe>
 </div>
 NEXT_SLIDE
+### Globus transfer process
+<div align="left">
+<ol>
+<li>We will create a new Globus collection after receiving the user’s request and copy existing data to it</li>
+<li>The new collection will be shared with the user’s Globus account (i.e., email id or username). We can add more than one user to the same Globus collection</li>
+<li>User needs to follow <a href="https://www.globus.org/">Globus</a> or <a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Imperial College’s documentation</a> and transfer data (to any preferred storage location)</li>
+<li>Files from any new sequencing run or analysis will get added to the existing Globus collection directory</li>
+<li>User needs to transfer any new batch of data separately after receiving email notification from us</li>
+<li>Each file on the Globus collection directory will be removed after 30 days of file creation</li>
+<li>We may remove old Globus collections without any prior notice, once all the files are removed from the collection directory</li>
+</ol>
