@@ -63,7 +63,7 @@ NEXT_SLIDE
 <iframe src="https://docs.globus.org/how-to/get-started/" width="600px" height="315px" frameborder="1"></iframe>
 NEXT_SLIDE
 #### Transfer data to your Personal Computer
-<div>
+<div style="font-size:32px">
 <p align="left">Use <b>Globus Connect Personal</b> for transferring data to your own computer. This creates a Globus endpoint on your personal computer, allowing you to move data using the Globus web app</p>
 <p align="left">Get Globus Connect Personal for:</p>
 <ul>
@@ -72,6 +72,13 @@ NEXT_SLIDE
 <li><a src="https://docs.globus.org/how-to/globus-connect-personal-linux">Linux</a></li>
 </ul>
 </div>
+
+```bash
+## Example commandline for Globus Connect Personal on Linux
+
+./globusconnect -start -restrict-paths rw/path/globus_download
+
+```
 NEXT_SLIDE
 ### What information are needed for Globus data transfer
 <div>
