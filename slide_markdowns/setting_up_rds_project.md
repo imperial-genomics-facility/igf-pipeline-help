@@ -53,6 +53,7 @@ i.e., a project account with a P or PS code (or non-project GL accounts)
 * Check the "Edit details" page and see if 'Monthly payment' is turned on
 
 #### Add or remove user IGF to [RDS group](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/)
+* **Skip this step if you are using Globus based transfer**
 * Add Imperial BRC Genomics Facility __(username: igf)__ as a new member of the RDS project allocation (when required)
 * Remove user __igf__ from the RDS allocation when all data transfer is over
 * Check our [help page](https://imperial-genomics-facility.github.io/igf-pipeline-help/data_access.html#imperial-college-research-data-store-based-transfer) for more details

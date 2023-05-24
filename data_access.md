@@ -21,7 +21,10 @@ title: IGF help pages - Data Access
 * [Change logs](#change-logs)
 
 ## Data access guide
+**Currently, Globus is our preferred mode of data transfer.**
+
 <span style="color:crimson"><b>Update:</b> We have stopped using iRODS server for data distribution from <b>October 2022</b>.</span>
+
 Check our new data access guide: [Accessing data from IGF](slide_htmls/accessing_data_files.html)
 
 <details>
@@ -65,6 +68,8 @@ Please send us the email id linked to your [Globus](https://www.globus.org/) acc
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 ## Imperial College Research Data Store based transfer
+<p><b>Please note: We can only use RDS transfer at the very end of the project when we have data from all the sequencing runs and analysis pipelines</b></p>
+
 Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new storage volume for your sequencing project:
 
 <p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/">Research Data Store</a> (and <a href="https://wiki.imperial.ac.uk/display/HPC/Research+Data+Store">wiki page</a>) and setup a new allocation for your peoject. Also, we have few slides regarding <a href="slide_htmls/setting_up_rds_project.html">setting-up RDS project allocation</a></p>
@@ -80,14 +85,13 @@ Imperial College now offers a new central service for storing large volume of re
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
 <p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over <span style="color:#ff0000">(<b>IMPORTANT</b>)</span></p>
 
-<p><b>Please note:</b> We can only copy data to RDS storage once all the runs (and analysis) for the project are finished.</p>
-
-
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 
 ## Illumina Basespace Sequence Hub based file transfer
+<p><b>Please note: We can only transfer fastq files via Basespace.</b></p>
+
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
 
 * Your basespace account email (existing account or a new free basic subscription account)
