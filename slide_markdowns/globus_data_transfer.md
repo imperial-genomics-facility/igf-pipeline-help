@@ -54,8 +54,8 @@ NEXT_SLIDE
 #### Transfer data to your computing cluster
 <p align="left">Check the following links:
 <ul>
-<li>For Imperial College users: <a src="https://wiki.imperial.ac.uk/display/HPC/Globus">Transferring data to other sites with Globus</a></li>
-<li>For external users: <a src="https://docs.globus.org/how-to/get-started/">How To Log In and Transfer Files with Globus</a></li>
+<li>For Imperial College users: <a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Transferring data to other sites with Globus</a></li>
+<li>For external users: <a href="https://docs.globus.org/how-to/get-started/">How To Log In and Transfer Files with Globus</a></li>
 </ul>
 </p>
 NEXT_SLIDE
@@ -67,9 +67,9 @@ NEXT_SLIDE
 <p align="left">Use <b>Globus Connect Personal</b> for transferring data to your own computer. This creates a Globus endpoint on your personal computer, allowing you to move data using the Globus web app</p>
 <p align="left">Get Globus Connect Personal for:</p>
 <ul>
-<li><a src="https://docs.globus.org/how-to/globus-connect-personal-mac">Mac OS X</a></li>
-<li><a src="https://docs.globus.org/how-to/globus-connect-personal-windows">Windows</a></li>
-<li><a src="https://docs.globus.org/how-to/globus-connect-personal-linux">Linux</a></li>
+<li><a href="https://docs.globus.org/how-to/globus-connect-personal-mac">Mac OS X</a></li>
+<li><a href="https://docs.globus.org/how-to/globus-connect-personal-windows">Windows</a></li>
+<li><a href="https://docs.globus.org/how-to/globus-connect-personal-linux">Linux</a></li>
 </ul>
 </div>
 
