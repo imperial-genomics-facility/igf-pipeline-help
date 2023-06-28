@@ -90,7 +90,7 @@ Imperial College now offers a new central service for storing large volume of re
 ### How to remove IGF user from the RDS allocation
 Follow these steps for removing IGF user from the RDS allocation:
 
-* Login to [RCS self-servic](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/) portal using your Imperial College credentials
+* Login to [RCS selfservice portal](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/) portal using your Imperial College credentials
 * Click on the **Research Data Storage projects** on the left panel
 * Click on the correct **"rds-xyz"** id to access the 'Membership" info for the selected RDS project
 * Check if you have admin priviledges for this project or not (i.e., if **Admin?** column has **yes** value or not)
