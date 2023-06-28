@@ -9,6 +9,7 @@ title: IGF help pages - Data Access
 * [Data access guide](#data-access-guide)
 * [Globus based transfer](#globus-based-transfer)
 * [Imperial College Research Data Store based transfer](#imperial-college-research-data-store-based-transfer)
+  * [How to remove IGF user from the RDS allocation](#how-to-remove-igf-user-from-the-rds-allocation)
 * [Illumina Basespace Sequence Hub based file transfer](#illumina-basespace-sequence-hub-based-file-transfer)
 * [Data access via iRODS server (Discontinued)](#data-access-via-irods-server-discontinued)
   * [Command line file transfer](#command-line-file-transfer)
@@ -84,6 +85,17 @@ Imperial College now offers a new central service for storing large volume of re
 <p style="text-indent: 15px"><b>Step 3:</b> Update IGF regarding your new RDS storage path in HPC</p>
 <p style="text-indent: 15px"><b>Step 4:</b> Data will be copied to the top level of the storage using the layout <code>RDS_PATH/live/PROJECT_NAME</code></p>
 <p style="text-indent: 15px"><b>Step 5:</b> Remove IGF user from the RDS allocation when all the sequencing runs are finished and data transfer is over <span style="color:#ff0000">(<b>IMPORTANT</b>)</span></p>
+
+
+### How to remove IGF user from the RDS allocation
+Follow these steps for removing IGF user from the RDS allocation:
+
+* Login to [RCS self-servic](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/) portal using your Imperial College credentials
+* Click on the **Research Data Storage projects** on the left panel
+* Click on the correct **"rds-xyz"** id to access the 'Membership" info for the selected RDS project
+* Check if you have admin priviledges for this project or not (i.e., if **Admin?** column has **yes** value or not)
+* Go to the row which has entry for user 'igf' and select the checkbox for **Remove?** column and click the **Update** button at the bottom of this page
+
 
 
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
