@@ -39,7 +39,6 @@ TODO: Intro
         <td><a href="https://nanostring.com/products/geomx-digital-spatial-profiler/geomx-dsp-overview/">geomxngspipeline</a></td>
         <td>Active</td>
       </tr>
-      
       <tr>
         <td>ChIP-Seq alignment, peak calling and QC</td>
         <td><a href="#nf-core_chipseq">nf-core/chipseq</a></td>
@@ -80,11 +79,11 @@ TODO: Intro
         <td><a href="#nf-core_ampliseq">nf-core/ampliseq</a></td>
         <td>Untested</td>
       </tr>
-      
     </tbody>
   </table>
 </div>
 -->
+
 <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
 
 <div>
@@ -105,14 +104,12 @@ TODO: Intro
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
         <td style="border:hidden;">
-        <p>
-          We need following details to configure and run this pipeline:
+        <p>We need following details to configure and run this pipeline:</p>
           <ul>
             <li>List of sample IGF ids</li>
             <li>Reference genome to use from Ensembl(e.g. Homo sapiens)</li>
             <li>Sample groups for DESeq2 analysis</li>
           </ul>
-        </p>
         <details>
           <summary>Click here for more information</summary><p/>
           <p><b>Reference genome</b></p>
@@ -122,27 +119,22 @@ TODO: Intro
               <li>Genome build tag (e.g., GRCh38)</li>
             </ul>
           <p><b>Sample metadata</b></p>
-          Simple metadata:<pre>sample_id,condition
-    IGF001,untreated
-    IGF002,treated</pre>
-    Complex metadata:<pre>
-  sample_id,treatment_1,treatment_2
+          Simple metadata:<pre>  sample_id,condition
+  IGF001,untreated
+  IGF002,treated</pre>
+    Complex metadata:<pre>  sample_id,treatment_1,treatment_2
   IGF001,untreated,untreated
   IGF002,untreated,treated
   IGF003,untreated,treated</pre>
           <p><b>Sample group info</b></p>
-          Simple group:
-          Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_basic/config.yaml">example</a>
-          <pre><code>
-  Group: treated-vs-untreated
-    variable_of_interest: condition
-    level_of_interest: treated
-          </pre></code>
-          Complex group:
-          Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_complex/config.yaml">example</a>
-          <pre>Group: treatment_1_alone
+          Simple group: Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_basic/config.yaml">example</a>
+          <pre>  Group: treated-vs-untreated
+      variable_of_interest: condition
+      level_of_interest: treated</pre>
+          Complex group: Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_complex/config.yaml">example</a>
+          <pre>  Group: treatment_1_alone
     variable_of_interest: treatment_1
-    level_of_interest: treated</pre>
+    Slevel_of_interest: treated</pre>
         </details></td>
       </tr>
       <tr>
