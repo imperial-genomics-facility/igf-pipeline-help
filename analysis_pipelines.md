@@ -83,8 +83,10 @@ TODO: Intro
     </tbody>
   </table>
 </div>
+
 <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
-<div class="table-responsive">
+
+<div>
   <table class="table" style="border:hidden;">
     <thead>
     </thead>
@@ -133,10 +135,10 @@ TODO: Intro
           </pre></code>
           Complex metadata:
           <pre><code>
-          sample_id,treatment_1,treatment_2
-          IGF001,untreated,untreated
-          IGF002,untreated,treated
-          IGF003,untreated,treated
+            sample_id,treatment_1,treatment_2
+            IGF001,untreated,untreated
+            IGF002,untreated,treated
+            IGF003,untreated,treated
           </pre></code>
           <p>
           <b>Sample group info</b>
@@ -171,8 +173,10 @@ TODO: Intro
     </tbody>
   </table>
 </div>
+
 <h2 id="nf-core_rnaseq">NF-core RNA-Seq workflow</h2>
-<div class="table-responsive">
+
+<div>
   <table class="table" style="border:hidden;">
     <thead>
     </thead>
@@ -226,8 +230,10 @@ TODO: Intro
     </tbody>
   </table>
 </div>
+
 <h2 id="nf-core_atacseq">NF-core ATAC-Seq workflow</h2>
-<div class="table-responsive">
+
+<div>
   <table class="table" style="border:hidden;">
     <thead>
     </thead>
@@ -297,8 +303,10 @@ TODO: Intro
     </tbody>
   </table>
 </div>
+
 <h2 id="geomxngspipeline">GeoMx NGS Pipeline</h2>
-<div class="table-responsive">
+
+<div>
   <table class="table" style="border:hidden;">
     <thead>
     </thead>
