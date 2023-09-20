@@ -84,12 +84,10 @@ TODO: Intro
   </table>
 </div>
 
+<h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
 
 <div>
-  <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
   <table class="table" style="border:hidden;">
-    <thead>
-    </thead>
     <tbody>
       <tr>
         <td style="border:hidden; width:25%"><b>Pipeline name:</b></td>
@@ -116,46 +114,40 @@ TODO: Intro
         </p>
         <details>
           <summary>Click here for more information</summary><p/>
-          <p>
-            <b>Reference genome</b>
+          <p><b>Reference genome</b></p>
             <ul>
               <li>Species name (e.g., homo sapiens)</li>
               <li>Ensembl release number (e.g., 110), for using any specific version of annotation</li>
               <li>Genome build tag (e.g., GRCh38)</li>
             </ul>
-          </p>
-          <p>
-          <b>Sample metadata</b>
-          </p>
+          <p><b>Sample metadata</b></p>
           Simple metadata:
           <pre><code>
-          sample_id,condition
-          IGF001,untreated
-          IGF002,treated
+  sample_id,condition
+  IGF001,untreated
+  IGF002,treated
           </pre></code>
           Complex metadata:
           <pre><code>
-            sample_id,treatment_1,treatment_2
-            IGF001,untreated,untreated
-            IGF002,untreated,treated
-            IGF003,untreated,treated
+  sample_id,treatment_1,treatment_2
+  IGF001,untreated,untreated
+  IGF002,untreated,treated
+  IGF003,untreated,treated
           </pre></code>
-          <p>
-          <b>Sample group info</b>
-          </p>
+          <p><b>Sample group info</b></p>
           Simple group:
           Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_basic/config.yaml">example</a>
           <pre><code>
-          Group: treated-vs-untreated
-            variable_of_interest: condition
-            level_of_interest: treated
+  Group: treated-vs-untreated
+    variable_of_interest: condition
+    level_of_interest: treated
           </pre></code>
           Complex group:
           Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_complex/config.yaml">example</a>
           <pre><code>
-          Group: treatment_1_alone
-            variable_of_interest: treatment_1
-            level_of_interest: treated
+  Group: treatment_1_alone
+    variable_of_interest: treatment_1
+    level_of_interest: treated
           </pre></code>
         </details></td>
       </tr>
