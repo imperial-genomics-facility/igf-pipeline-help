@@ -121,19 +121,15 @@ TODO: Intro
               <li>Genome build tag (e.g., GRCh38)</li>
             </ul>
           <p><b>Sample metadata</b></p>
-          Simple metadata:
-          <pre><code>
-  sample_id,condition
-  IGF001,untreated
-  IGF002,treated
-          </pre></code>
-          Complex metadata:
-          <pre><code>
+          Simple metadata:<pre><code class="language-markup">
+    sample_id,condition
+    IGF001,untreated
+    IGF002,treated</pre></code>
+    Complex metadata:<pre><code class="language-markup">
   sample_id,treatment_1,treatment_2
   IGF001,untreated,untreated
   IGF002,untreated,treated
-  IGF003,untreated,treated
-          </pre></code>
+  IGF003,untreated,treated</pre></code>
           <p><b>Sample group info</b></p>
           Simple group:
           Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_basic/config.yaml">example</a>
