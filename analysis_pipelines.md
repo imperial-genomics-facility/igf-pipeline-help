@@ -83,11 +83,6 @@ TODO: Intro
     </tbody>
   </table>
 </div>
-
-
-
-
-
 <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
 <div class="table-responsive">
   <table class="table" style="border:hidden;">
@@ -176,8 +171,6 @@ TODO: Intro
     </tbody>
   </table>
 </div>
-
-
 <h2 id="nf-core_rnaseq">NF-core RNA-Seq workflow</h2>
 <div class="table-responsive">
   <table class="table" style="border:hidden;">
@@ -233,7 +226,6 @@ TODO: Intro
     </tbody>
   </table>
 </div>
-
 <h2 id="nf-core_atacseq">NF-core ATAC-Seq workflow</h2>
 <div class="table-responsive">
   <table class="table" style="border:hidden;">
@@ -305,7 +297,6 @@ TODO: Intro
     </tbody>
   </table>
 </div>
-
 <h2 id="geomxngspipeline">GeoMx NGS Pipeline</h2>
 <div class="table-responsive">
   <table class="table" style="border:hidden;">
