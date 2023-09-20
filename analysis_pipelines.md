@@ -7,6 +7,7 @@ title: IGF help pages - Data Access
 
 TODO: Intro
 
+<!--
 
 <div class="table-responsive">
   <table class="table table-hover">
@@ -38,7 +39,7 @@ TODO: Intro
         <td><a href="https://nanostring.com/products/geomx-digital-spatial-profiler/geomx-dsp-overview/">geomxngspipeline</a></td>
         <td>Active</td>
       </tr>
-      <!--
+      
       <tr>
         <td>ChIP-Seq alignment, peak calling and QC</td>
         <td><a href="#nf-core_chipseq">nf-core/chipseq</a></td>
@@ -79,11 +80,11 @@ TODO: Intro
         <td><a href="#nf-core_ampliseq">nf-core/ampliseq</a></td>
         <td>Untested</td>
       </tr>
-      -->
+      
     </tbody>
   </table>
 </div>
-
+-->
 <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
 
 <div>
@@ -121,15 +122,14 @@ TODO: Intro
               <li>Genome build tag (e.g., GRCh38)</li>
             </ul>
           <p><b>Sample metadata</b></p>
-          Simple metadata:<pre><code class="language-markup">
-    sample_id,condition
+          Simple metadata:<pre>sample_id,condition
     IGF001,untreated
-    IGF002,treated</pre></code>
-    Complex metadata:<pre><code class="language-markup">
+    IGF002,treated</pre>
+    Complex metadata:<pre>
   sample_id,treatment_1,treatment_2
   IGF001,untreated,untreated
   IGF002,untreated,treated
-  IGF003,untreated,treated</pre></code>
+  IGF003,untreated,treated</pre>
           <p><b>Sample group info</b></p>
           Simple group:
           Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_basic/config.yaml">example</a>
@@ -140,11 +140,9 @@ TODO: Intro
           </pre></code>
           Complex group:
           Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_complex/config.yaml">example</a>
-          <pre><code>
-  Group: treatment_1_alone
+          <pre>Group: treatment_1_alone
     variable_of_interest: treatment_1
-    level_of_interest: treated
-          </pre></code>
+    level_of_interest: treated</pre>
         </details></td>
       </tr>
       <tr>
@@ -162,8 +160,7 @@ TODO: Intro
   </table>
 </div>
 
-
-
+<!--
 <div>
   <h2 id="nf-core_rnaseq">NF-core RNA-Seq workflow</h2>
   <table class="table" style="border:hidden;">
@@ -346,7 +343,7 @@ TODO: Intro
     </tbody>
   </table>
 </div>
-
+-->
 <!--
 
 
