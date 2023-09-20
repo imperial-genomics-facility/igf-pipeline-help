@@ -7,7 +7,6 @@ title: IGF help pages - Data Access
 
 TODO: Intro
 
-<!--
 
 <div class="table-responsive">
   <table class="table table-hover">
@@ -39,6 +38,7 @@ TODO: Intro
         <td><a href="https://nanostring.com/products/geomx-digital-spatial-profiler/geomx-dsp-overview/">geomxngspipeline</a></td>
         <td>Active</td>
       </tr>
+      <!--
       <tr>
         <td>ChIP-Seq alignment, peak calling and QC</td>
         <td><a href="#nf-core_chipseq">nf-core/chipseq</a></td>
@@ -79,10 +79,11 @@ TODO: Intro
         <td><a href="#nf-core_ampliseq">nf-core/ampliseq</a></td>
         <td>Untested</td>
       </tr>
+      -->
     </tbody>
   </table>
 </div>
--->
+
 
 <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
 
@@ -119,20 +120,20 @@ TODO: Intro
               <li>Genome build tag (e.g., GRCh38)</li>
             </ul>
           <p><b>Sample metadata</b></p>
-          Simple metadata:<pre><code>  sample_id,condition
+          Simple metadata:<pre style="background-color:#E8E8E8">  sample_id,condition
   IGF001,untreated
-  IGF002,treated</code></pre>
-    Complex metadata:<pre><code>  sample_id,treatment_1,treatment_2
+  IGF002,treated</pre>
+    Complex metadata:<pre style="background-color:#E8E8E8">  sample_id,treatment_1,treatment_2
   IGF001,untreated,untreated
   IGF002,untreated,treated
-  IGF003,untreated,treated</code></pre>
+  IGF003,untreated,treated</pre>
           <p><b>Sample group info</b></p>
           Simple group: Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_basic/config.yaml">example</a>
-          <pre>  Group: treated-vs-untreated
+          <pre style="background-color:#E8E8E8">  Group: treated-vs-untreated
       variable_of_interest: condition
       level_of_interest: treated</pre>
           Complex group: Check this <a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2/blob/master/.test/config_complex/config.yaml">example</a>
-          <pre>  Group: treatment_1_alone
+          <pre style="background-color:#E8E8E8">  Group: treatment_1_alone
     variable_of_interest: treatment_1
     Slevel_of_interest: treated</pre>
         </details></td>
@@ -152,7 +153,7 @@ TODO: Intro
   </table>
 </div>
 
-<!--
+
 <div>
   <h2 id="nf-core_rnaseq">NF-core RNA-Seq workflow</h2>
   <table class="table" style="border:hidden;">
@@ -174,30 +175,20 @@ TODO: Intro
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
         <td style="border:hidden;">
-          <p>
-            We need following details to configure and run this pipeline:
+          <p>We need following details to configure and run this pipeline:</p>
             <ul>
               <li>List of sample IGF ids and replicate information</li>
               <li>Reference genome from <a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>(e.g. GRCh38)</li>
               <li>List of <a href="https://nf-co.re/rnaseq/3.12.0/parameters/">parameters</a> for NF-core pipeline run</li>
             </ul>
-          </p>
           <details>
             <summary>Click here for more information</summary><p/>
-              <p>
-                <b>List of sample IGF ids</b>. For e.g.,
-                <pre><code>
-                IGF001
-                IGF002
-                </code></pre>
-              </p>
-              <p>
-               <b>List of NF-core RNA-Seq pipeline parameters</b>. For e.g.,
-               <pre><code>
-                 --aligner star_rsem
-                 --deseq2_vst
-               </pre></code>
-              </p>
+              <p><b>List of sample IGF ids</b>. For e.g.,</p>
+                <pre style="background-color:#E8E8E8">  IGF001
+  IGF002</pre>
+              <p><b>List of NF-core RNA-Seq pipeline parameters</b>. For e.g.,</p>
+               <pre style="background-color:#E8E8E8">  --aligner star_rsem
+  --deseq2_vst</pre>
           </details>
         </td>
       </tr>
@@ -208,8 +199,6 @@ TODO: Intro
     </tbody>
   </table>
 </div>
-
-
 
 <div>
   <h2 id="nf-core_atacseq">NF-core ATAC-Seq workflow</h2>
@@ -232,46 +221,32 @@ TODO: Intro
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
         <td style="border:hidden;">
-          <p>
-            We need following details to configure and run this pipeline:
+          <p>We need following details to configure and run this pipeline:</p>
             <ul>
               <li>List of sample IGF ids</li>
               <li>Control samples for peak calling (if any)</li>
               <li>Reference genome from <a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>(e.g. GRCh38)</li>
               <li>List of <a href="https://nf-co.re/atacseq/2.1.2/parameters/">parameters</a> for NF-core pipeline run</li>
             </ul>
-          </p>
           <details>
             <summary>Click here for more information</summary><p/>
-              <p>
-                <b>List of sample IGF ids and replicates</b>. For e.g.,
-                <pre><code>
-                #igf_id,sample_group,replicate_id
-                IGF001,CONTROL,1
-                IGF002,CONTROL,2
-                IGF003,CONTROL,3
-                </code></pre>
-              </p>
-              <p>
-                <b>Peak calling control samples (if any)</b>. For e.g.,
-                <pre><code>
-                #igf_id,sample_group,replicate_id,control,control_replicate
-                IGF001,CONTROL,1,,
-                IGF002,CONTROL,2,,
-                IGF003,CONTROL,3,,
-                IGF004,TREATMENT,1,CONTROL,1
-                IGF005,TREATMENT,2,CONTROL,2
-                IGF006,TREATMENT,3,CONTROL,3
-                </code></pre>
-              </p>
-              <p>
-               <b>List of NF-core ATAC-Seq pipeline parameters</b>. For e.g.,
-               <pre><code>
-                 --trim_nextseq 20
-                 --aligner bwa
-                 --narrow_peak
-               </pre></code>
-              </p>
+              <p><b>List of sample IGF ids and replicates</b>. For e.g.,</p>
+                <pre style="background-color:#E8E8E8">  #igf_id,sample_group,replicate_id
+  IGF001,CONTROL,1
+  IGF002,CONTROL,2
+  IGF003,CONTROL,3</pre>
+              <p><b>Peak calling control samples (if any)</b>. For e.g.,</p>
+                <pre style="background-color:#E8E8E8">  #igf_id,sample_group,replicate_id,control,control_replicate
+  IGF001,CONTROL,1,,
+  IGF002,CONTROL,2,,
+  IGF003,CONTROL,3,,
+  IGF004,TREATMENT,1,CONTROL,1
+  IGF005,TREATMENT,2,CONTROL,2
+  IGF006,TREATMENT,3,CONTROL,3</pre>
+              <p><b>List of NF-core ATAC-Seq pipeline parameters</b>. For e.g.,</p>
+               <pre style="background-color:#E8E8E8">  --trim_nextseq 20
+  --aligner bwa
+   --narrow_peak</pre>
           </details>
         </td>
       </tr>
@@ -302,24 +277,18 @@ TODO: Intro
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
         <td style="border:hidden;">
-          <p>
-            We need following details to configure and run this pipeline:
+          <p>We need following details to configure and run this pipeline:</p>
             <ul>
               <li>List of sample IGF ids and DSP ids</li>
               <li>GeoMx experiment configuration file</li>
               <li>Probe assay metadata describing the gene targets present in the data, PKC files can be found <a href="https://nanostring.com/products/geomx-digital-spatial-profiler/geomx-dsp-configuration-files/">here</a></li>
             </ul>
-          </p>
           <details>
             <summary>Click here for more information</summary><p/>
-              <p>
-                <b>List of sample IGF ids and DSP ids</b>. For e.g.,
-                <pre><code>
-                #igf_id,dsp_id
-                IGF001,DSP001
-                IGF002,DSP002
-                </code></pre>
-              </p>
+              <p><b>List of sample IGF ids and DSP ids</b>. For e.g.,</p>
+                <pre style="background-color:#E8E8E8">  #igf_id,dsp_id
+  IGF001,DSP001
+  IGF002,DSP002</pre>
           </details>
         </td>
       </tr>
@@ -335,7 +304,7 @@ TODO: Intro
     </tbody>
   </table>
 </div>
--->
+
 <!--
 
 
