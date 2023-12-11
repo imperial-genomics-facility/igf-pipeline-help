@@ -91,7 +91,7 @@ We now support running lots of community provided pipelines for the projects whi
     </tbody>
   </table>
 </div>
-</div>
+
 <div>
   <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
   <table class="table" style="border:hidden;">
