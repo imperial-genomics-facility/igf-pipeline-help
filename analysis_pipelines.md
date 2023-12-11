@@ -91,7 +91,7 @@ We now support running lots of community provided pipelines for the projects whi
     </tbody>
   </table>
 </div>
-
+<p/>
 <div>
   <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
   <table class="table" style="border:hidden;">
@@ -238,6 +238,7 @@ We now support running lots of community provided pipelines for the projects whi
               <li>List of sample IGF ids and their feature types, i.e. Gene Expression, VDJ-B or VDJ-T</li>
               <li>Cellranger multi group information</li>
               <li>Reference genome information, (default ref genome from 10X genomics)</li>
+            </ul>
           <details>
             <summary>Click here for more information</summary><p/>
               <p><b>List of sample IGF ids and feature types</b>. For e.g.,</p>
@@ -308,7 +309,7 @@ We now support running lots of community provided pipelines for the projects whi
   IGF005,TREATMENT,2,CONTROL,2
   IGF006,TREATMENT,3,CONTROL,3</pre>
               <p><b>List of NF-core ATAC-Seq pipeline parameters</b>. For e.g.,</p>
-               <pre style="background-color:#E8E8E8">  --trim_nextseq 20
+                <pre style="background-color:#E8E8E8">  --trim_nextseq 20
   --aligner bwa
    --narrow_peak</pre>
           </details>
@@ -527,7 +528,7 @@ We now support running lots of community provided pipelines for the projects whi
       </tr>
       <tr>
         <td style="border:hidden; width:50%"><b>How do you transfer data?</b></td>
-        <td style="border:hidden;">We add a new <code>analysis</code> directory to the Globus collection for analysis files.</td>
+        <td style="border:hidden;">We add a new <code>analysis</code> directory to the Globus collection for analysis files. Files are available only for <b>30 days</b>.</td>
       </tr>
       <tr>
         <td style="border:hidden; width:50%"><b>Will you run these pipelines automatically?</b></td>
@@ -539,11 +540,11 @@ We now support running lots of community provided pipelines for the projects whi
       </tr>
       <tr>
         <td style="border:hidden; width:50%"><b>Can we access your Nextflow Tower server?</b></td>
-        <td style="border:hidden;">We are open for discussions and can make it available for collaborative projects.</td>
+        <td style="border:hidden;">We are open for discussions.</td>
       </tr>
       <tr>
-        <td style="border:hidden; width:50%"><b>How do you manage multiple projects on HPC?</b></td>
-        <td style="border:hidden;">We use Apache Airflow as orchestration manager and queue multiple projects with correct <code>queue</code> and <code>pool</code> information.</td>
+        <td style="border:hidden; width:50%"><b>How do you manage multiple pipeline runs on HPC?</b></td>
+        <td style="border:hidden;">We use Apache Airflow as orchestration manager and queue multiple pipelines with correct <code>queue</code> and <code>pool</code> information.</td>
       </tr>
     </tbody>
   </table>
