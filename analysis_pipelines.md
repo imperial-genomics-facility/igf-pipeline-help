@@ -5,7 +5,7 @@ title: IGF help pages - Analysis pipelines
 
 <h1>Data Analysis Pipelines</h1>
 
-We now support running lots of community provided pipelines for the projects which are sequenced by us.
+We now support running lots of community provided and vendor supplied pipelines for projects which are sequenced by us.
 
 
 <div class="table-responsive">
@@ -18,6 +18,11 @@ We now support running lots of community provided pipelines for the projects whi
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a href="#faq">FAQ</a></td>
+        <td></td>
+        <td></td>
+      </tr>
       <tr>
         <td><a href="#snakemake-workflows_rna-seq-star-deseq2">RNA-Seq alignment and DE</a></td>
         <td><a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2">snakemake-workflows/rna-seq-star-deseq2</a></td>
@@ -83,15 +88,54 @@ We now support running lots of community provided pipelines for the projects whi
         <td><a href="#nf-core_ampliseq">nf-core/ampliseq</a></td>
         <td>Untested</td>
       </tr>
-      <tr>
-        <td><a href="#faq">FAQ</a></td>
-        <td></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
 </div>
 <p/>
+<div>
+  <h2 id="faq">FAQ</h2>
+  <table class="table" style="border:hidden;">
+    <tbody>
+      <tr>
+        <td style="border:hidden; width:50%"><b>Can we get a custom reference genome for our project?</b></td>
+        <td style="border:hidden;">Yes, we can build custom reference genome for collaborative projects.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>How do you transfer data?</b></td>
+        <td style="border:hidden;">We add a new <code>analysis</code> directory to the Globus collection for analysis files. Files are available only for <b>30 days</b>.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>Will you run these pipelines automatically?</b></td>
+        <td style="border:hidden;">No, we run them for any specific project based on users requests.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>How you run NF-core pipelines on HPC?</b></td>
+        <td style="border:hidden;">We use a custom configuration file to run NF-core workflows on Imperial College's HPC and track runs via a local installation of <a href="https://github.com/seqeralabs/nf-tower">Nextflow Tower (community edition)</a></td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>Can we access your Nextflow Tower server?</b></td>
+        <td style="border:hidden;">We are open for discussions.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>How do you manage multiple pipeline runs on HPC?</b></td>
+        <td style="border:hidden;">We use <a href="https://airflow.apache.org/">Apache Airflow</a> as orchestration manager and queue multiple pipelines with correct <code>queue</code> and <code>pool</code> information.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>Can you run these pipelines for externally sequenced fastq files?</b></td>
+        <td style="border:hidden;"><b>NO.</b> We can run them only for the projects which are sequenced by us. Internally, we organise our files following <a href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide/metadata.html">ENA metadata model</a> which helps us to configure these pipelines programmatically. But you can ask for our help if you are trying to run these pipelines on externally sequenced data.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>Can you add XYZ pipeline to this list?</b></td>
+        <td style="border:hidden;">Yes. We are continuously adding new pipelines to the above list. Feel free to suggest us if your project needs any new analysis pipeline.</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:50%"><b>Why some of these pipelines are marked Untested?</b></td>
+        <td style="border:hidden;">We have checked them only with test data but haven't used them for any real project.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
 <div>
   <h2 id="snakemake-workflows_rna-seq-star-deseq2">Snakemake RNA-Seq workflow</h2>
   <table class="table" style="border:hidden;">
@@ -513,38 +557,6 @@ We now support running lots of community provided pipelines for the projects whi
       <tr>
         <td style="border:hidden; width:25%"><b>Output results:</b></td>
         <td style="border:hidden;"><a href="https://nf-co.re/methylseq/latest/docs/output">NF-core methylseq output</a></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div align="right"><a href="#table-of-contents">Go to Top</a></div>
-<div>
-  <h2 id="faq">FAQ</h2>
-  <table class="table" style="border:hidden;">
-    <tbody>
-      <tr>
-        <td style="border:hidden; width:50%"><b>Can we get a custom reference genome for our project?</b></td>
-        <td style="border:hidden;">Yes, we can build custom reference genome for collaborative projects.</td>
-      </tr>
-      <tr>
-        <td style="border:hidden; width:50%"><b>How do you transfer data?</b></td>
-        <td style="border:hidden;">We add a new <code>analysis</code> directory to the Globus collection for analysis files. Files are available only for <b>30 days</b>.</td>
-      </tr>
-      <tr>
-        <td style="border:hidden; width:50%"><b>Will you run these pipelines automatically?</b></td>
-        <td style="border:hidden;">No, we run them for any specific project based on users requests.</td>
-      </tr>
-      <tr>
-        <td style="border:hidden; width:50%"><b>How you run NF-core pipelines on HPC?</b></td>
-        <td style="border:hidden;">We use a custom configuration file to run NF-core workflows on Imperial College's HPC and track runs via a local installation of Nextflow Tower (community edition)</td>
-      </tr>
-      <tr>
-        <td style="border:hidden; width:50%"><b>Can we access your Nextflow Tower server?</b></td>
-        <td style="border:hidden;">We are open for discussions.</td>
-      </tr>
-      <tr>
-        <td style="border:hidden; width:50%"><b>How do you manage multiple pipeline runs on HPC?</b></td>
-        <td style="border:hidden;">We use Apache Airflow as orchestration manager and queue multiple pipelines with correct <code>queue</code> and <code>pool</code> information.</td>
       </tr>
     </tbody>
   </table>
