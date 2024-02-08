@@ -39,6 +39,11 @@ We now support running lots of community provided and vendor supplied pipelines 
         <td>Active</td>
       </tr>
       <tr>
+        <td><a href="#cellranger-arc">Single cell Gene expression and ATAC-Seq multiome data analysis for 10X genomics library</a></td>
+        <td><a href="https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/overview/welcomer">Cellranger-ARC</a></td>
+        <td>Active</td>
+      </tr>
+      <tr>
         <td><a href="#nf-core_atacseq">ATAC-Seq alignment, peak calling and QC</a></td>
         <td><a href="https://nf-co.re/atacseq">nf-core/atacseq</a></td>
         <td>Active</td>
@@ -310,6 +315,54 @@ We now support running lots of community provided and vendor supplied pipelines 
 </div>
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 <div>
+  <h2 id="cellranger-arc">Single cell Gene expression and ATAC-Seq multiome data analysis for 10X genomics library</h2>
+  <table class="table" style="border:hidden;">
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:hidden; width:25%"><b>Pipeline name:</b></td>
+        <td style="border:hidden;"><a href="https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/overview/welcome">Cellranger-ARC</a></td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:25%"><b>Supported versions:</b></td>
+        <td style="border:hidden;">Latest (>= 2.0.2)</td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
+        <td style="border:hidden;">
+          <p>We need following details to configure and run this pipeline:</p>
+            <ul>
+              <li>List of sample IGF ids and their library type, i.e. Gene Expression or Chromatin Accessibility</li>
+              <li>Cellranger-ARC group information</li>
+              <li>Reference genome information, (default ref genome from 10X genomics)</li>
+            </ul>
+          <details>
+            <summary>Click here for more information</summary><p/>
+              <p><b>List of sample IGF ids and library type</b>. For e.g.,</p>
+                <pre style="background-color:#E8E8E8">  #igf_id,feature_types,cellranger_group
+  IGF001,Gene Expression,Group1
+  IGF002,Chromatin Accessibility,Group1
+  IGF003,Gene Expression,Group2
+  IGF004,Chromatin Accessibility,Group2</pre>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:hidden; width:25%"><b>Output results:</b></td>
+        <td style="border:hidden;">
+          <ul>
+            <li><a href="https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/pipelines/latest/output/overview">Cellranger-ARC output for individual groups</a></li>
+            <li><a href="https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/pipelines/latest/using/aggr">Output of Cellranger-ARC Aggr</a></li>
+            <li><a href="https://github.com/imperial-genomics-facility/scanpy-notebook-image/tree/master/templates">Scanpy QC report for individual and aggregated samples</a></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div align="right"><a href="#table-of-contents">Go to Top</a></div>
+<div>
   <h2 id="nf-core_atacseq">NF-core ATAC-Seq workflow</h2>
   <table class="table" style="border:hidden;">
     <thead>
@@ -355,7 +408,7 @@ We now support running lots of community provided and vendor supplied pipelines 
               <p><b>List of NF-core ATAC-Seq pipeline parameters</b>. For e.g.,</p>
                 <pre style="background-color:#E8E8E8">  --trim_nextseq 20
   --aligner bwa
-   --narrow_peak</pre>
+  --narrow_peak</pre>
           </details>
         </td>
       </tr>
