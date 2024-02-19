@@ -235,7 +235,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
-        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a></td>
+        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a>. E.g., human iGenomes annotations are from Ensembl release 75 (<a href="http://feb2014.archive.ensembl.org/index.html">February 2014</a>). Check out our <a href="#faq">FAQ</a> section for more information about custom reference genomes.</td>
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
@@ -280,13 +280,17 @@ We now support running lots of community provided and vendor supplied pipelines 
         <td style="border:hidden;">Latest (>= 7.2)</td>
       </tr>
       <tr>
+        <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
+        <td style="border:hidden;">Reference genomes from <a href="https://www.10xgenomics.com/support/software/cell-ranger/downloads">10X genomics</a>.</td>
+      </tr>
+      <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
         <td style="border:hidden;">
           <p>We need following details to configure and run this pipeline:</p>
             <ul>
               <li>List of sample IGF ids and their feature types, i.e. Gene Expression, VDJ-B or VDJ-T</li>
               <li>Cellranger multi group information</li>
-              <li>Reference genome information, (default ref genome from 10X genomics)</li>
+              <li>Reference genome information</li>
             </ul>
           <details>
             <summary>Click here for more information</summary><p/>
@@ -329,13 +333,17 @@ We now support running lots of community provided and vendor supplied pipelines 
         <td style="border:hidden;">Latest (>= 2.0.2)</td>
       </tr>
       <tr>
+        <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
+        <td style="border:hidden;">Reference genomes from <a href="https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/downloads/latest">10X genomics</a>.</td>
+      </tr>
+      <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
         <td style="border:hidden;">
           <p>We need following details to configure and run this pipeline:</p>
             <ul>
               <li>List of sample IGF ids and their library type, i.e. Gene Expression or Chromatin Accessibility</li>
               <li>Cellranger-ARC group information</li>
-              <li>Reference genome information, (default ref genome from 10X genomics)</li>
+              <li>Reference genome information</li>
             </ul>
           <details>
             <summary>Click here for more information</summary><p/>
@@ -378,7 +386,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
-        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a></td>
+        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a>. E.g., human iGenomes annotations are from Ensembl release 75 (<a href="http://feb2014.archive.ensembl.org/index.html">February 2014</a>). Check out our <a href="#faq">FAQ</a> section for more information about custom reference genomes.</td>
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
@@ -481,7 +489,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
-        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome - GATK.GRCh38</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a></td>
+        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome - GATK.GRCh38</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a>. E.g., human iGenomes annotations are from Ensembl release 75 (<a href="http://feb2014.archive.ensembl.org/index.html">February 2014</a>). Check out our <a href="#faq">FAQ</a> section for more information about custom reference genomes.</td>
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
@@ -536,7 +544,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
-        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a></td>
+        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a>. E.g., human iGenomes annotations are from Ensembl release 75 (<a href="http://feb2014.archive.ensembl.org/index.html">February 2014</a>). Check out our <a href="#faq">FAQ</a> section for more information about custom reference genomes.</td>
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
@@ -584,7 +592,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
-        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a></td>
+        <td style="border:hidden;"><a href="https://ewels.github.io/AWS-iGenomes/">iGenome</a>. Please note that the default iGenome annotations are <a href="https://nf-co.re/docs/usage/reference_genomes">currently out-of-date</a>. E.g., human iGenomes annotations are from Ensembl release 75 (<a href="http://feb2014.archive.ensembl.org/index.html">February 2014</a>). Check out our <a href="#faq">FAQ</a> section for more information about custom reference genomes.</td>
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Required inputs:</b></td>
