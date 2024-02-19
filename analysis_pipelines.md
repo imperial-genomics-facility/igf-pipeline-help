@@ -485,7 +485,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Supported versions:</b></td>
-        <td style="border:hidden;">Latest (>= 3.4.0</td>
+        <td style="border:hidden;">Latest (>= 3.4.0)</td>
       </tr>
       <tr>
         <td style="border:hidden; width:25%"><b>Default reference genome:</b></td>
