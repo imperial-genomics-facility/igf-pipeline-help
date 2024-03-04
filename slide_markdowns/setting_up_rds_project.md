@@ -17,6 +17,7 @@
 * [RCS website](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/)
 * [RDS config page](https://selfservice.rcs.imperial.ac.uk/groups/manage/rds/)
 * [IGF help page](https://imperial-genomics-facility.github.io/igf-pipeline-help/data_access.html)
+* [RDS help page](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/)
 
 #### What you need ?
 A unique entry from the college's grant management system

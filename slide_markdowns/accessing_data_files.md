@@ -9,14 +9,14 @@
 * [Understanding fastq output](#/12)
 * [Validation of the fastq files](#/13)
 
-#### Data Sharing via Globus
+#### Data Sharing via Globus (default)
 * [Globus](https://www.globus.org/) allowes the following options:
-  * __Transfer__ large volumes of data between the [RDS](https://wiki.imperial.ac.uk/display/HPC/Transferring+data+to+and+from+the+RDS), your personal computer and Globus-accessible storage at other institutions
-  * __Share__ [RDS](https://wiki.imperial.ac.uk/display/HPC/Transferring+data+to+and+from+the+RDS) project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
+  * __Transfer__ large volumes of data between the [RDS](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/), your personal computer and Globus-accessible storage at other institutions
+  * __Share__ [RDS](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/) project allocation data with selected third parties, without requiring them to have a College account (Globus identity required)
 
 #### Data Sharing via Globus requirements
   * We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing.
-  * For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
+  * For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/)
 
 #### Data upload to Research Data store (RDS)
 * Connect to Imperial College network (direct LAN connection or set up [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/virtual-private-network-vpn/))
@@ -27,6 +27,7 @@
 * Validate fastq files
 
 #### Basespace upload
+<span style="color:crimson"><b>Update:</b> We have stopped using Basespace for data distribution from <b>January 2024</b>.</span>
 * Fastq files can be shared via Basespace sequence hub (Illumina)
   * We use [Basespace London region](https://euw2.sh.basespace.illumina.com) for data upload and share
 * Data can be download via [Basespace cli](https://developer.basespace.illumina.com/docs/content/documentation/cli/cli-overview) or via [browser](https://euw2.sh.basespace.illumina.com)

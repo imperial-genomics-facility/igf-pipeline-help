@@ -50,7 +50,7 @@ Check our new slides for Globus transfer: [globus data transfer](slide_htmls/glo
 <p/>
 ### Requirements
 ##### For users from Imperial College London
-We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` ). For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://wiki.imperial.ac.uk/display/HPC/Globus)
+We will require your Colleges username (e.g., `username@ic.ac.uk`) for this mode of data sharing. Please note that data sharing will fail if you provide us alternate user names (e.g. <span style="color:crimson">following will not work</span> `your.fullname@imperial.ac.uk` or `user.name@ic.ac.uk` ). For more details, please have a look at Imperial College's guideline for Globus data transfer: [Transferring data to other sites with Globus](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/)
 
 
 ##### For users without Imperial College account
@@ -59,7 +59,7 @@ Please send us the email id linked to your [Globus](https://www.globus.org/) acc
 ### Globus transfer process
 * We will create a new Globus collection after receiving the user’s request and copy existing data to it.
 * The new collection will be shared with the user’s Globus account (i.e., email id or username). We can add more than one user to the same Globus collection.
-* User needs to follow [Globus](https://www.globus.org/) or [Imperial College’s documentation](https://wiki.imperial.ac.uk/display/HPC/Globus) and transfer data (to any preferred storage location).
+* User needs to follow [Globus](https://www.globus.org/) or [Imperial College’s documentation](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/) and transfer data (to any preferred storage location).
 * Files from any new sequencing run or analysis will get added to the existing Globus collection directory.
 * User needs to transfer any new batch of data separately after receiving email notification from us.
 * Each file on the Globus collection directory will be removed after 30 days of file creation.
@@ -73,7 +73,7 @@ Please send us the email id linked to your [Globus](https://www.globus.org/) acc
 
 Imperial College now offers a new central service for storing large volume of research data. Please follow these steps to setup a new storage volume for your sequencing project:
 
-<p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/">Research Data Store</a> (and <a href="https://wiki.imperial.ac.uk/display/HPC/Research+Data+Store">wiki page</a>) and setup a new allocation for your peoject. Also, we have few slides regarding <a href="slide_htmls/setting_up_rds_project.html">setting-up RDS project allocation</a></p>
+<p style="text-indent: 15px"><b>Step 1:</b> Check the documentation about <a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/">Research Data Store</a> (and <a href="https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/">wiki page</a>) and setup a new allocation for your peoject. Also, we have few slides regarding <a href="slide_htmls/setting_up_rds_project.html">setting-up RDS project allocation</a></p>
 
 <details>
 <summary>Click to expand slides here</summary>
@@ -101,7 +101,7 @@ Follow these steps for removing IGF user from the RDS allocation:
 <div align="right"><a href="#table-of-contents">Go to Top</a></div>
 
 
-## Illumina Basespace Sequence Hub based file transfer
+## Illumina Basespace Sequence Hub based file transfer (Discontinued)
 <p><b>Please note: We can only transfer fastq files via Basespace.</b></p>
 
 Fastq files from the sequencing runs can be uploaded to [Illumina BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html) based on your request. Following information are required for this specific mode of data transfer:
