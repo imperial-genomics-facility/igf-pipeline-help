@@ -36,7 +36,7 @@ NEXT_SLIDE
 #### Login to Globus - for Imperial College users
 <p align="left">Check the following Wiki page maintained by Imperial College's RCS team</p>
 <ul>
-<li><a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Transferring data to other sites with Globus</a></li>
+<li><a href="https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/">Transferring data to other sites with Globus</a></li>
 </ul>
 NEXT_SLIDE
 #### Login to Globus - for external users
@@ -54,7 +54,7 @@ NEXT_SLIDE
 #### Transfer data to your computing cluster
 <p align="left">Check the following links:
 <ul>
-<li>For Imperial College users: <a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Transferring data to other sites with Globus</a></li>
+<li>For Imperial College users: <a href="https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/">Transferring data to other sites with Globus</a></li>
 <li>For external users: <a href="https://docs.globus.org/how-to/get-started/">How To Log In and Transfer Files with Globus</a></li>
 </ul>
 </p>
@@ -105,7 +105,7 @@ NEXT_SLIDE
 <ol>
 <li>We will create a new Globus collection after receiving the user's request and copy existing data to it</li>
 <li>The new collection will be shared with the user's Globus account (i.e., email id or username). We can add more than one user to the same Globus collection</li>
-<li>User needs to follow <a href="https://www.globus.org/">Globus</a> or <a href="https://wiki.imperial.ac.uk/display/HPC/Globus">Imperial College's documentation</a> and transfer data (to any preferred storage location)</li>
+<li>User needs to follow <a href="https://www.globus.org/">Globus</a> or <a href="https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/transferringdata/globus/">Imperial College's documentation</a> and transfer data (to any preferred storage location)</li>
 <li>Files from any new sequencing run or analysis will get added to the existing Globus collection directory</li>
 <li>User needs to transfer any new batch of data separately after receiving email notification from us</li>
 <li>Each file on the Globus collection directory will be removed after 30 days of file creation</li>
