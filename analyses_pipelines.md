@@ -1,9 +1,9 @@
 ---
-layout: analysis_template
-title: IGF help pages - Analysis pipelines
+layout: analyses_template
+title: IGF help pages - Analyses pipelines
 ---
 
-<h1>Data Analysis Pipelines</h1>
+<h1>Data Analyses Pipelines</h1>
 
 We now support running lots of community provided and vendor supplied pipelines for projects which are sequenced by us.
 
