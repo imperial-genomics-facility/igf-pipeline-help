@@ -2,7 +2,7 @@
 layout: analyses_template
 title: IGF help pages - Analyses pipelines
 redirect_from:
-  - /igf-pipeline-help/analysis_pipelines
+  - /igf-pipeline-help/analysis_pipelines/
 ---
 
 <h1>Data Analyses Pipelines</h1>
