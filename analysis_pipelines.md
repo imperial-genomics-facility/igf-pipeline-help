@@ -26,7 +26,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       <tr>
         <td><a href="#snakemake-workflows_rna-seq-star-deseq2">RNA-Seq alignment and DE</a></td>
         <td><a href="https://github.com/snakemake-workflows/rna-seq-star-deseq2">snakemake-workflows/rna-seq-star-deseq2</a></td>
-        <td>Active</td>
+        <td>Inactive</td>
       </tr>
       <tr>
         <td><a href="#nf-core_rnaseq">RNA-Seq alignment and QC</a></td>
@@ -46,7 +46,7 @@ We now support running lots of community provided and vendor supplied pipelines 
       <tr>
         <td><a href="#nf-core_atacseq">ATAC-Seq alignment, peak calling and QC</a></td>
         <td><a href="https://nf-co.re/atacseq">nf-core/atacseq</a></td>
-        <td>Active</td>
+        <td>Inactive</td>
       </tr>
       <tr>
         <td><a href="#geomxngspipeline">Count data (DCC) and QC for GeoMx Digital Spatial Profiler (DSP) system</a></td>
@@ -56,17 +56,17 @@ We now support running lots of community provided and vendor supplied pipelines 
       <tr>
         <td><a href="#nf-core_sarek">WGS or Exome variant calling</a></td>
         <td><a href="https://nf-co.re/sarek">nf-core/sarek</a></td>
-        <td>Active</td>
+        <td>Inactive</td>
       </tr>
       <tr>
         <td><a href="#nf-core_smrnaseq">Small RNA-Seq alignment and QC</a></td>
         <td><a href="https://nf-co.re/smrnaseq">nf-core/smrnaseq</a></td>
-        <td>Active</td>
+        <td>Inactive</td>
       </tr>
       <tr>
         <td><a href="#nf-core_methylseq">Bisulfite-Sequencing alignment and QC</a></td>
         <td><a href="https://nf-co.re/methylseq">nf-core/methylseq</a></td>
-        <td>Active</td>
+        <td>Inactive</td>
       </tr>
       <tr>
         <td>ChIP-Seq alignment, peak calling and QC</td>
