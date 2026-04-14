@@ -3,7 +3,7 @@ layout: alignment_qc_template
 title: IGF help pages - Alignment QC
 ---
 
-# Legacy Alignment QC (not supported from 2022)
+# Legacy Alignment QC (not supported since 2022)
 
 Please check out help documentation of new [analysis pipelines](analysis_pipelines.html).
 
